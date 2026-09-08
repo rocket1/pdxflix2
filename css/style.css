@@ -114,11 +114,45 @@ main {
   color: var(--dark);
 }
 
-.movie-list {
+.content-card {
   background: var(--white);
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.tabs {
+  display: flex;
+  background: #f2f2f2;
+}
+
+.tab-btn {
+  flex: 1 1 0;
+  border: none;
+  background: transparent;
+  padding: 14px 10px;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  color: #888;
+  cursor: pointer;
+  font-family: inherit;
+  border-bottom: 3px solid transparent;
+}
+
+.tab-btn:hover {
+  color: var(--text);
+}
+
+.tab-btn.active {
+  background: var(--white);
+  color: var(--dark);
+  border-bottom-color: var(--pink);
+}
+
+.movie-list {
+  /* rows render directly inside .content-card, below .tabs */
 }
 
 .movie-row {
@@ -301,6 +335,88 @@ footer {
   padding: 24px 10px 10px;
 }
 
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin: 0 0 14px;
+  color: var(--text);
+  font-weight: 700;
+  font-size: 14px;
+  text-decoration: none;
+}
+.back-link:hover {
+  text-decoration: underline;
+}
+
+.movie-page {
+  background: var(--white);
+  border-radius: 10px;
+  padding: 22px;
+  display: flex;
+  gap: 22px;
+  flex-wrap: wrap;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.movie-page-poster {
+  flex: 0 0 200px;
+}
+
+.poster-img {
+  width: 100%;
+  display: block;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.poster-placeholder {
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  background: #eee;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 42px;
+}
+
+.movie-page-info {
+  flex: 1 1 280px;
+  min-width: 0;
+}
+
+.movie-page-title {
+  margin: 0 0 10px;
+  font-size: 26px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.movie-page-credits {
+  font-size: 14px;
+  color: #666;
+  margin: 0 0 10px;
+}
+
+.showtimes-heading {
+  margin: 26px 0 10px;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  color: #777;
+}
+
+.movie-page-theaters {
+  background: var(--white);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
 @media (max-width: 560px) {
   .movie-row-header {
     font-size: 16px;
@@ -308,5 +424,12 @@ footer {
   }
   .toolbar {
     padding: 12px;
+  }
+  .movie-page {
+    flex-direction: column;
+  }
+  .movie-page-poster {
+    flex: 0 0 auto;
+    max-width: 160px;
   }
 }

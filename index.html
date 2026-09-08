@@ -15,23 +15,29 @@
   </header>
 
   <main>
-    <div class="toolbar">
-      <input type="search" id="searchInput" placeholder="Search movies…" />
-      <div class="filter-group" id="filterToggle">
-        <button data-filter="all" class="active">All</button>
-        <button data-filter="first">First Run</button>
-        <button data-filter="second">Second Run</button>
+    <div id="listView">
+      <div class="toolbar">
+        <input type="search" id="searchInput" placeholder="Search movies…" />
+        <div class="filter-group" id="filterToggle">
+          <button data-filter="all" class="active">All</button>
+          <button data-filter="first">First Run</button>
+          <button data-filter="second">Second Run</button>
+        </div>
       </div>
-      <div class="filter-group" id="viewToggle">
-        <button data-view="movies" class="active">Movies</button>
-        <button data-view="theatres">Theatres</button>
-      </div>
-    </div>
-    <div class="meta-line" id="metaLine">Loading showtimes…</div>
+      <div class="meta-line" id="metaLine">Loading showtimes…</div>
 
-    <div class="movie-list" id="movieList">
-      <div class="no-results">Loading…</div>
+      <div class="content-card">
+        <div class="tabs" id="viewTabs">
+          <button class="tab-btn active" data-view="movies">Movies</button>
+          <button class="tab-btn" data-view="theatres">Theatres</button>
+        </div>
+        <div class="movie-list" id="movieList">
+          <div class="no-results">Loading…</div>
+        </div>
+      </div>
     </div>
+
+    <div id="movieDetailPage" hidden></div>
   </main>
 
   <footer>

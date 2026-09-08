@@ -4,16 +4,17 @@
     filter: 'all', // 'all' | 'first' | 'second'
     view: 'movies', // 'movies' | 'theatres'
     query: '',
-    openSlug: null,
     openTheatre: null,
     meta: null,
   };
 
+  const listViewEl = document.getElementById('listView');
+  const detailPageEl = document.getElementById('movieDetailPage');
   const listEl = document.getElementById('movieList');
   const metaEl = document.getElementById('metaLine');
   const searchEl = document.getElementById('searchInput');
   const filterButtons = Array.from(document.querySelectorAll('#filterToggle button'));
-  const viewButtons = Array.from(document.querySelectorAll('#viewToggle button'));
+  const tabButtons = Array.from(document.querySelectorAll('#viewTabs button'));
 
   function portlandNowMinutes() {
     const parts = new Intl.DateTimeFormat('en-US', {
@@ -44,6 +45,19 @@
     return toMinutes(time) < nowMin
       ? `<span class="time-past">${label}</span>`
       : `<span class="time-pill">${label}</span>`;
+  }
+
+  function theaterRowsHtml(theaters, nowMin) {
+    return theaters
+      .map((t) => {
+        const timesHtml = t.times.map((time) => timeSpanHtml(time, nowMin)).join('');
+        return `
+        <div class="theater-row">
+          <div class="theater-name"><a href="https://www.google.com/search?q=${encodeURIComponent(t.name + ' ' + t.address)}" target="_blank" rel="noopener">${escapeHtml(t.name)}</a></div>
+          <div class="times">${timesHtml}</div>
+        </div>`;
+      })
+      .join('');
   }
 
   function matchesFilter(movie) {
@@ -96,6 +110,41 @@
     metaEl.textContent = `${state.meta.city} · ${state.meta.movies.length} movies showing · data from ${state.meta.source}, updated ${when} · second-run = playing ${state.meta.secondRunThresholdDays}+ days after release`;
   }
 
+  // ---- Routing: '#/movie/<slug>' opens a subpage, anything else is the list ----
+
+  function parseRoute() {
+    const match = location.hash.match(/^#\/movie\/(.+)$/);
+    if (match) return { type: 'movie', slug: decodeURIComponent(match[1]) };
+    return { type: 'list' };
+  }
+
+  function goToMovie(slug) {
+    location.hash = '#/movie/' + encodeURIComponent(slug);
+  }
+
+  function renderRoute() {
+    const route = parseRoute();
+    if (route.type === 'movie') {
+      const movie = state.movies.find((m) => m.slug === route.slug);
+      if (movie) {
+        listViewEl.hidden = true;
+        detailPageEl.hidden = false;
+        detailPageEl.innerHTML = renderMovieSubpage(movie, portlandNowMinutes());
+        detailPageEl.querySelector('#backLink').addEventListener('click', (evt) => {
+          evt.preventDefault();
+          location.hash = '';
+        });
+        window.scrollTo(0, 0);
+        return;
+      }
+    }
+    listViewEl.hidden = false;
+    detailPageEl.hidden = true;
+    renderList();
+  }
+
+  // ---- List view (Movies / Theatres tabs) ----
+
   function renderList() {
     const nowMin = portlandNowMinutes();
     if (state.view === 'theatres') {
@@ -105,7 +154,7 @@
     }
   }
 
-  function renderMoviesView(nowMin) {
+  function renderMoviesView() {
     const visible = visibleMovies();
 
     if (visible.length === 0) {
@@ -115,62 +164,26 @@
 
     listEl.innerHTML = visible
       .map((movie) => {
-        const isOpen = movie.slug === state.openSlug;
         const badges = [];
         if (movie.isSecondRun) badges.push('<span class="badge second-run">Second Run</span>');
         if (movie.isClassic) badges.push('<span class="badge classic">Classic</span>');
 
         return `
-        <div class="movie-row${isOpen ? ' open' : ''}" data-slug="${escapeAttr(movie.slug)}">
-          <button class="movie-row-header" data-toggle="${escapeAttr(movie.slug)}">
+        <div class="movie-row">
+          <button class="movie-row-header" data-goto="${escapeAttr(movie.slug)}">
             <span class="title-wrap">
               <span>${escapeHtml(movie.title)}</span>
               ${badges.join('')}
             </span>
             <span class="chevron">&#9656;</span>
           </button>
-          <div class="movie-detail">
-            ${isOpen ? renderMovieDetail(movie, nowMin) : ''}
-          </div>
         </div>`;
       })
       .join('');
 
-    listEl.querySelectorAll('[data-toggle]').forEach((btn) => {
-      btn.addEventListener('click', () => {
-        const slug = btn.getAttribute('data-toggle');
-        state.openSlug = state.openSlug === slug ? null : slug;
-        renderList();
-      });
+    listEl.querySelectorAll('[data-goto]').forEach((btn) => {
+      btn.addEventListener('click', () => goToMovie(btn.getAttribute('data-goto')));
     });
-  }
-
-  function renderMovieDetail(movie, nowMin) {
-    const metaParts = [];
-    if (movie.rating) metaParts.push(movie.rating);
-    if (movie.runtime) metaParts.push(movie.runtime);
-    if (movie.genre) metaParts.push(movie.genre);
-    if (movie.releaseDate) {
-      const rd = new Date(movie.releaseDate + 'T00:00:00');
-      metaParts.push(`Released ${rd.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}`);
-    }
-
-    const theaters = movie.theaters
-      .map((t) => {
-        const timesHtml = t.times.map((time) => timeSpanHtml(time, nowMin)).join('');
-        return `
-        <div class="theater-row">
-          <div class="theater-name"><a href="https://www.google.com/search?q=${encodeURIComponent(t.name + ' ' + t.address)}" target="_blank" rel="noopener">${escapeHtml(t.name)}</a></div>
-          <div class="times">${timesHtml}</div>
-        </div>`;
-      })
-      .join('');
-
-    return `
-      <div class="detail-meta">${metaParts.map(escapeHtml).join(' &nbsp;·&nbsp; ')}</div>
-      ${movie.synopsis ? `<p class="detail-synopsis">${escapeHtml(movie.synopsis)}</p>` : ''}
-      ${theaters || '<div class="empty-detail">No showtimes found today.</div>'}
-    `;
   }
 
   function renderTheatresView(nowMin) {
@@ -214,11 +227,7 @@
       link.addEventListener('click', (evt) => {
         evt.preventDefault();
         evt.stopPropagation();
-        const slug = link.getAttribute('data-jump-movie');
-        state.view = 'movies';
-        state.openSlug = slug;
-        viewButtons.forEach((b) => b.classList.toggle('active', b.getAttribute('data-view') === 'movies'));
-        renderList();
+        goToMovie(link.getAttribute('data-jump-movie'));
       });
     });
   }
@@ -247,6 +256,50 @@
     return rows || '<div class="empty-detail">No movies found.</div>';
   }
 
+  // ---- Movie subpage ----
+
+  function renderMovieSubpage(movie, nowMin) {
+    const metaParts = [];
+    if (movie.rating) metaParts.push(movie.rating);
+    if (movie.runtime) metaParts.push(movie.runtime);
+    if (movie.genre) metaParts.push(movie.genre);
+    if (movie.releaseDate) {
+      const rd = new Date(movie.releaseDate + 'T00:00:00');
+      metaParts.push(`Released ${rd.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}`);
+    }
+
+    const badges = [];
+    if (movie.isSecondRun) badges.push('<span class="badge second-run">Second Run</span>');
+    if (movie.isClassic) badges.push('<span class="badge classic">Classic</span>');
+
+    const posterHtml = movie.poster
+      ? `<img class="poster-img" src="${escapeAttr(movie.poster)}" alt="${escapeAttr(movie.title)} poster" />`
+      : `<div class="poster-placeholder" aria-hidden="true">&#127916;</div>`;
+
+    const creditParts = [];
+    if (movie.director) creditParts.push(`Directed by ${movie.director}`);
+    if (movie.cast && movie.cast.length) creditParts.push(`Starring ${movie.cast.join(', ')}`);
+
+    const theatersHtml = theaterRowsHtml(movie.theaters || [], nowMin);
+
+    return `
+      <a href="#" class="back-link" id="backLink">&larr; Back to ${state.view === 'theatres' ? 'Theatres' : 'Movies'}</a>
+      <div class="movie-page">
+        <div class="movie-page-poster">${posterHtml}</div>
+        <div class="movie-page-info">
+          <h1 class="movie-page-title">${escapeHtml(movie.title)} ${badges.join('')}</h1>
+          <div class="detail-meta">${metaParts.map(escapeHtml).join(' &nbsp;·&nbsp; ')}</div>
+          ${creditParts.length ? `<div class="movie-page-credits">${creditParts.map(escapeHtml).join(' &nbsp;·&nbsp; ')}</div>` : ''}
+          ${movie.synopsis ? `<p class="detail-synopsis">${escapeHtml(movie.synopsis)}</p>` : ''}
+        </div>
+      </div>
+      <h2 class="showtimes-heading">Showtimes</h2>
+      <div class="movie-page-theaters">
+        ${theatersHtml || '<div class="empty-detail">No showtimes found today.</div>'}
+      </div>
+    `;
+  }
+
   function escapeHtml(str) {
     return String(str)
       .replace(/&/g, '&amp;')
@@ -266,9 +319,9 @@
     });
   });
 
-  viewButtons.forEach((btn) => {
+  tabButtons.forEach((btn) => {
     btn.addEventListener('click', () => {
-      viewButtons.forEach((b) => b.classList.remove('active'));
+      tabButtons.forEach((b) => b.classList.remove('active'));
       btn.classList.add('active');
       state.view = btn.getAttribute('data-view');
       renderList();
@@ -280,6 +333,8 @@
     renderList();
   });
 
+  window.addEventListener('hashchange', renderRoute);
+
   fetch('data/movies.json')
     .then((res) => {
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
@@ -289,7 +344,7 @@
       state.meta = data;
       state.movies = data.movies;
       renderMeta();
-      renderList();
+      renderRoute();
     })
     .catch((err) => {
       listEl.innerHTML = `<div class="no-results">Couldn't load showtimes data (data/movies.json). Run <code>npm run scrape</code> first.<br><small>${escapeHtml(err.message)}</small></div>`;

@@ -22,15 +22,19 @@ JSON file produced by a small scraper; no server framework required.
   own "Nth week in theaters" counter (or release year for older
   revival/repertory screenings) — coarser, but works with zero setup.
 - **`index.html` + `css/style.css` + `js/app.js`** is a plain static page
-  that fetches `data/movies.json` and renders it — search box, an All / First
-  Run / Second Run filter, and a **Movies / Theatres** view toggle:
-  - **Movies view** (default): alphabetical movie list, click a title to
-    expand its theaters/showtimes.
-  - **Theatres view**: alphabetical theater list instead — click a theater
-    to see every movie playing there today with its showtimes. This is built
-    client-side by inverting the same `data/movies.json`, so it stays in
-    sync automatically; clicking a movie inside a theater jumps back to
-    Movies view with that movie expanded.
+  that fetches `data/movies.json` and renders it. The search box and the
+  All / First Run / Second Run filter sit in the toolbar and apply to both
+  tabs below them:
+  - **Movies tab** (default): alphabetical movie list. Clicking a title
+    navigates to a movie subpage (poster image, rating/runtime/genre,
+    release date, synopsis, cast/director if TMDB is enabled, and
+    theaters/showtimes) at the URL `#/movie/<slug>` — shareable/bookmarkable,
+    and the browser back button returns to the list.
+  - **Theatres tab**: alphabetical theater list instead — click a theater to
+    expand every movie playing there today with its showtimes, inline. This
+    is built client-side by inverting the same `data/movies.json`, so it
+    stays in sync automatically; clicking a movie inside a theater opens
+    that movie's subpage.
 
 ## Usage
 

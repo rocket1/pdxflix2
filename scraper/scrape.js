@@ -88,11 +88,6 @@ function parseNowPlaying(html) {
 
     const rating = $el.find("[class^='rt']").first().text().trim();
 
-    const castText = $el.find('p.moviegenre .avec').first().text().trim();
-    const cast = castText
-      ? castText.split(/\s*&\s*/).map((s) => s.trim()).filter(Boolean)
-      : [];
-
     const genreP = $el.find('p.moviegenre').clone();
     genreP.find("[class^='rt']").remove();
     genreP.find('.avec').remove();
@@ -133,7 +128,6 @@ function parseNowPlaying(html) {
       year,
       week,
       poster,
-      cast,
       showtimeCount,
       upcoming: Boolean(playingWarn),
       playingNote: playingWarn || null,
@@ -180,25 +174,6 @@ function parseMovieTimes(html) {
     .sort((a, b) => a.name.localeCompare(b.name));
 }
 
-async function fetchTmdbCredits(tmdbId) {
-  const url = `${TMDB_BASE}/movie/${tmdbId}/credits?api_key=${TMDB_API_KEY}`;
-  try {
-    const res = await fetch(url);
-    if (!res.ok) return null;
-    const json = await res.json();
-    const cast = (json.cast || [])
-      .slice(0, 6)
-      .map((c) => c.name)
-      .filter(Boolean);
-    const directors = (json.crew || [])
-      .filter((c) => c.job === 'Director')
-      .map((c) => c.name);
-    return { cast, director: directors.length ? directors.join(', ') : null };
-  } catch {
-    return null;
-  }
-}
-
 async function fetchTmdbInfo(title, year) {
   if (!TMDB_API_KEY) return null;
   const params = new URLSearchParams({
@@ -214,10 +189,6 @@ async function fetchTmdbInfo(title, year) {
     const json = await res.json();
     const match = json.results && json.results[0];
     if (!match) return null;
-
-    await sleep(120);
-    const credits = await fetchTmdbCredits(match.id);
-
     return {
       releaseDate: match.release_date || null,
       overview: match.overview || null,
@@ -225,8 +196,6 @@ async function fetchTmdbInfo(title, year) {
       posterPath: match.poster_path
         ? `https://image.tmdb.org/t/p/w342${match.poster_path}`
         : null,
-      cast: credits ? credits.cast : [],
-      director: credits ? credits.director : null,
     };
   } catch {
     return null;
@@ -312,8 +281,6 @@ async function main() {
       week: movie.week,
       poster: (tmdb && tmdb.posterPath) || movie.poster || null,
       synopsis: (tmdb && tmdb.overview) || null,
-      cast: (tmdb && tmdb.cast && tmdb.cast.length ? tmdb.cast : movie.cast) || [],
-      director: (tmdb && tmdb.director) || null,
       releaseDate,
       releaseDateSource,
       daysSinceRelease,

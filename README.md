@@ -21,18 +21,10 @@ JSON file produced by a small scraper; no server framework required.
 - If no TMDB key is set, release date is estimated instead from CinemaClock's
   own "Nth week in theaters" counter (or release year for older
   revival/repertory screenings) — coarser, but works with zero setup.
-- Each movie also carries a short cast list — scraped from CinemaClock's own
-  listing (top-billed 2 names) by default, or the fuller TMDB credits (top 6
-  cast + director) when a TMDB key is set. CinemaClock has no director data,
-  so **director info (and sorting by it) only works with a TMDB key.**
 - **`index.html` + `css/style.css` + `js/app.js`** is a plain static page
-  that fetches `data/movies.json` and renders it — movie list, click a title
-  to expand theaters/showtimes/cast, search box, an All / First Run / Second
-  Run filter, and a **Sort by** control (Title, Theater, Actor, Director).
-  Sorting by theater uses each movie's alphabetically-first playing theater;
-  sorting by actor/director uses the first-billed cast member / director.
-  Movies missing that data (e.g. director without a TMDB key) sort to the
-  end, alphabetically by title.
+  that fetches `data/movies.json` and renders it — alphabetical movie list,
+  click a title to expand theaters/showtimes, search box, and an All / First
+  Run / Second Run filter.
 
 ## Usage
 

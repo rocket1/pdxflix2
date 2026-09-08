@@ -1,7 +1,7 @@
 {
   "city": "Portland, OR",
   "source": "cinemaclock.com",
-  "generatedAt": "2026-09-08T21:40:44.654Z",
+  "generatedAt": "2026-09-08T22:16:39.202Z",
   "secondRunThresholdDays": 45,
   "tmdbEnabled": false,
   "movies": [
@@ -16,6 +16,11 @@
       "week": null,
       "poster": "https://www.cinemaclock.com/images/posters/140x210/6/akira-1988-us-poster.jpg",
       "synopsis": null,
+      "cast": [
+        "Mitsuo Iwata",
+        "Nozomu Sasaki"
+      ],
+      "director": null,
       "releaseDate": "1988-07-01",
       "releaseDateSource": "year-only",
       "daysSinceRelease": 13949,
@@ -124,6 +129,10 @@
       "week": 1,
       "poster": "https://www.cinemaclock.com/images/posters/140x210/82/american-doctor-2026-orig-poster.jpg",
       "synopsis": null,
+      "cast": [
+        "by Poh Si Teng"
+      ],
+      "director": null,
       "releaseDate": "2026-09-08",
       "releaseDateSource": "week-estimate",
       "daysSinceRelease": 1,
@@ -151,6 +160,11 @@
       "week": 3,
       "poster": "https://www.cinemaclock.com/images/posters/140x210/38/bethlehem-kudumba-unit-2026-orig-poster.jpg",
       "synopsis": null,
+      "cast": [
+        "Mamitha Baiju",
+        "Nivin Pauly"
+      ],
+      "director": null,
       "releaseDate": "2026-08-25",
       "releaseDateSource": "week-estimate",
       "daysSinceRelease": 15,
@@ -188,6 +202,10 @@
       "week": null,
       "poster": "https://www.cinemaclock.com/images/posters/140x210/86/black-holes-2009-us-poster.jpg",
       "synopsis": null,
+      "cast": [
+        "by Thomas Lucas"
+      ],
+      "director": null,
       "releaseDate": "2006-07-01",
       "releaseDateSource": "year-only",
       "daysSinceRelease": 7375,
@@ -217,6 +235,11 @@
       "week": 2,
       "poster": "https://www.cinemaclock.com/images/posters/140x210/41/buddy-2026-orig-poster.jpg",
       "synopsis": null,
+      "cast": [
+        "Michael Shannon",
+        "Cristin Milioti"
+      ],
+      "director": null,
       "releaseDate": "2026-09-01",
       "releaseDateSource": "week-estimate",
       "daysSinceRelease": 8,
@@ -419,6 +442,11 @@
       "week": 1,
       "poster": "https://www.cinemaclock.com/images/posters/140x210/34/by-any-means-2026-orig-poster.jpg",
       "synopsis": null,
+      "cast": [
+        "Yahya Abdul-Mateen II",
+        "Mark Wahlberg"
+      ],
+      "director": null,
       "releaseDate": "2026-09-08",
       "releaseDateSource": "week-estimate",
       "daysSinceRelease": 1,
@@ -672,6 +700,11 @@
       "week": null,
       "poster": "https://www.cinemaclock.com/images/posters/140x210/18/cabaret-1972-orig-poster.jpg",
       "synopsis": null,
+      "cast": [
+        "Liza Minnelli",
+        "Michael York"
+      ],
+      "director": null,
       "releaseDate": "1972-07-01",
       "releaseDateSource": "year-only",
       "daysSinceRelease": 19793,
@@ -699,6 +732,11 @@
       "week": null,
       "poster": "https://www.cinemaclock.com/images/posters/140x210/14/cars-2006-us-poster.jpg",
       "synopsis": null,
+      "cast": [
+        "Owen Wilson",
+        "Paul Newman"
+      ],
+      "director": null,
       "releaseDate": "2006-07-01",
       "releaseDateSource": "year-only",
       "daysSinceRelease": 7375,
@@ -921,6 +959,11 @@
       "week": null,
       "poster": "https://www.cinemaclock.com/images/posters/140x210/96/cha-shou-1981-orig-poster.jpg",
       "synopsis": null,
+      "cast": [
+        "Philip Kwok",
+        "Siu-Ho Chin"
+      ],
+      "director": null,
       "releaseDate": "1981-07-01",
       "releaseDateSource": "year-only",
       "daysSinceRelease": 16506,
@@ -948,6 +991,11 @@
       "week": 1,
       "poster": "https://www.cinemaclock.com/images/posters/140x210/97/cocoon-aru-natsu-no-shojo-tachi-yori-2025-orig-poster.jpg",
       "synopsis": null,
+      "cast": [
+        "Maria Abo",
+        "Chinatsu Akasaki"
+      ],
+      "director": null,
       "releaseDate": "2026-09-08",
       "releaseDateSource": "week-estimate",
       "daysSinceRelease": 1,
@@ -1016,6 +1064,11 @@
       "week": 2,
       "poster": "https://www.cinemaclock.com/images/posters/140x210/6/grove-2026-orig-poster.jpg",
       "synopsis": null,
+      "cast": [
+        "Jun Ji-Hyun",
+        "Koo Kyo-Hwan"
+      ],
+      "director": null,
       "releaseDate": "2026-09-01",
       "releaseDateSource": "week-estimate",
       "daysSinceRelease": 8,
@@ -1070,6 +1123,11 @@
       "week": 2,
       "poster": "https://www.cinemaclock.com/images/posters/140x210/39/coyote-vs-acme-2026-orig-poster.jpg",
       "synopsis": null,
+      "cast": [
+        "Will Forte",
+        "Lana Condor"
+      ],
+      "director": null,
       "releaseDate": "2026-09-01",
       "releaseDateSource": "week-estimate",
       "daysSinceRelease": 8,
@@ -1366,6 +1424,11 @@
       "week": null,
       "poster": "https://www.cinemaclock.com/images/posters/140x210/91/day-of-the-dead-1985-us-poster.jpg",
       "synopsis": null,
+      "cast": [
+        "Lori Cardille",
+        "Terry Alexander"
+      ],
+      "director": null,
       "releaseDate": "1985-07-01",
       "releaseDateSource": "year-only",
       "daysSinceRelease": 15045,
@@ -1393,6 +1456,11 @@
       "week": 1,
       "poster": "https://www.cinemaclock.com/images/posters/140x210/72/gei-a-ma-de-qing-shu-2026-orig-poster.jpg",
       "synopsis": null,
+      "cast": [
+        "Sitong Li",
+        "Yantong Wang"
+      ],
+      "director": null,
       "releaseDate": "2026-09-08",
       "releaseDateSource": "week-estimate",
       "daysSinceRelease": 1,
@@ -1422,6 +1490,11 @@
       "week": 1,
       "poster": "https://www.cinemaclock.com/images/posters/140x210/73/fall-2-deadpoint-2026-orig-poster.jpg",
       "synopsis": null,
+      "cast": [
+        "Virginia Gardner",
+        "Grace Caroline Currey"
+      ],
+      "director": null,
       "releaseDate": "2026-09-08",
       "releaseDateSource": "week-estimate",
       "daysSinceRelease": 1,
@@ -1598,6 +1671,11 @@
       "week": 2,
       "poster": "https://www.cinemaclock.com/images/posters/140x210/39/finding-emily-2026-us-poster.jpg",
       "synopsis": null,
+      "cast": [
+        "Angourie Rice",
+        "Spike Fearn"
+      ],
+      "director": null,
       "releaseDate": "2026-09-01",
       "releaseDateSource": "week-estimate",
       "daysSinceRelease": 8,
@@ -1643,6 +1721,11 @@
       "week": null,
       "poster": "https://www.cinemaclock.com/images/posters/140x210/2/grease-1978-poster.jpg",
       "synopsis": null,
+      "cast": [
+        "John Travolta",
+        "Olivia Newton-John"
+      ],
+      "director": null,
       "releaseDate": "1978-07-01",
       "releaseDateSource": "year-only",
       "daysSinceRelease": 17602,
@@ -1670,6 +1753,11 @@
       "week": null,
       "poster": "https://www.cinemaclock.com/images/posters/140x210/20/grease-2-1982-us-poster.jpg",
       "synopsis": null,
+      "cast": [
+        "Maxwell Caulfield",
+        "Michelle Pfeiffer"
+      ],
+      "director": null,
       "releaseDate": "1982-07-01",
       "releaseDateSource": "year-only",
       "daysSinceRelease": 16141,
@@ -1697,6 +1785,11 @@
       "week": 2,
       "poster": "https://www.cinemaclock.com/images/posters/140x210/92/idiots-2026-orig-poster.jpg",
       "synopsis": null,
+      "cast": [
+        "O'Shea Jackson Jr.",
+        "Killer Mike"
+      ],
+      "director": null,
       "releaseDate": "2026-09-01",
       "releaseDateSource": "week-estimate",
       "daysSinceRelease": 8,
@@ -1725,6 +1818,11 @@
       "week": 3,
       "poster": "https://www.cinemaclock.com/images/posters/140x210/58/insidious-6-2026-us-poster.jpg",
       "synopsis": null,
+      "cast": [
+        "Lin Shaye",
+        "Sam Spruell"
+      ],
+      "director": null,
       "releaseDate": "2026-08-25",
       "releaseDateSource": "week-estimate",
       "daysSinceRelease": 15,
@@ -1868,6 +1966,11 @@
       "week": 2,
       "poster": "https://www.cinemaclock.com/images/posters/140x210/62/it-ends-2025-orig-poster.jpg",
       "synopsis": null,
+      "cast": [
+        "Mitchell Cole",
+        "Akira Jackson"
+      ],
+      "director": null,
       "releaseDate": "2026-09-01",
       "releaseDateSource": "week-estimate",
       "daysSinceRelease": 8,
@@ -1916,6 +2019,11 @@
       "week": null,
       "poster": "https://www.cinemaclock.com/images/posters/140x210/61/kaze-no-tani-no-naushika-1984-orig-poster.jpg",
       "synopsis": null,
+      "cast": [
+        "Sumi Shimamoto",
+        "Mahito Tsujimura"
+      ],
+      "director": null,
       "releaseDate": "1984-07-01",
       "releaseDateSource": "year-only",
       "daysSinceRelease": 15410,
@@ -2040,6 +2148,11 @@
       "week": 1,
       "poster": "https://www.cinemaclock.com/images/posters/140x210/29/late-fame-2025-orig-poster.jpg",
       "synopsis": null,
+      "cast": [
+        "Willem Dafoe",
+        "Jake Lacy"
+      ],
+      "director": null,
       "releaseDate": "2026-09-08",
       "releaseDateSource": "week-estimate",
       "daysSinceRelease": 1,
@@ -2069,6 +2182,11 @@
       "week": 1,
       "poster": "https://www.cinemaclock.com/images/posters/140x210/23/mao-he-laosha-xing-pan-qi-yuan-2025-orig-poster.jpg",
       "synopsis": null,
+      "cast": [
+        "Li Baixin",
+        "Mino Eek"
+      ],
+      "director": null,
       "releaseDate": "2026-09-08",
       "releaseDateSource": "week-estimate",
       "daysSinceRelease": 1,
@@ -2146,6 +2264,11 @@
       "week": 11,
       "poster": "https://www.cinemaclock.com/images/posters/140x210/51/minions-and-monsters-2026-orig-poster.jpg",
       "synopsis": null,
+      "cast": [
+        "Zoey Deutch",
+        "Christoph Waltz"
+      ],
+      "director": null,
       "releaseDate": "2026-06-30",
       "releaseDateSource": "week-estimate",
       "daysSinceRelease": 71,
@@ -2204,6 +2327,11 @@
       "week": 1,
       "poster": "https://www.cinemaclock.com/images/posters/140x210/49/mirzapur-2026-orig-poster.jpg",
       "synopsis": null,
+      "cast": [
+        "Pankaj Tripathi",
+        "Ali Fazal"
+      ],
+      "director": null,
       "releaseDate": "2026-09-08",
       "releaseDateSource": "week-estimate",
       "daysSinceRelease": 1,
@@ -2252,6 +2380,11 @@
       "week": 3,
       "poster": "https://www.cinemaclock.com/images/posters/140x210/6/mutiny-2026-us-poster.jpg",
       "synopsis": null,
+      "cast": [
+        "Jason Statham",
+        "Annabelle Wallis"
+      ],
+      "director": null,
       "releaseDate": "2026-08-25",
       "releaseDateSource": "week-estimate",
       "daysSinceRelease": 15,
@@ -2307,6 +2440,11 @@
       "week": 1,
       "poster": "https://www.cinemaclock.com/images/posters/140x210/6/onslaught-2026-can-poster.jpg",
       "synopsis": null,
+      "cast": [
+        "Dan Stevens",
+        "Adria Arjona"
+      ],
+      "director": null,
       "releaseDate": "2026-09-08",
       "releaseDateSource": "week-estimate",
       "daysSinceRelease": 1,
@@ -2548,6 +2686,11 @@
       "week": 5,
       "poster": "https://www.cinemaclock.com/images/posters/140x210/95/paw-patrol-the-dino-movie-2026-orig-poster.jpg",
       "synopsis": null,
+      "cast": [
+        "Mckenna Grace",
+        "Terry Crews"
+      ],
+      "director": null,
       "releaseDate": "2026-08-11",
       "releaseDateSource": "week-estimate",
       "daysSinceRelease": 29,
@@ -2694,6 +2837,11 @@
       "week": null,
       "poster": "https://www.cinemaclock.com/images/posters/140x210/10/purple-rain-1984-us-poster.jpg",
       "synopsis": null,
+      "cast": [
+        "Prince",
+        "Apollonia Kotero"
+      ],
+      "director": null,
       "releaseDate": "1984-07-01",
       "releaseDateSource": "year-only",
       "daysSinceRelease": 15410,
@@ -2721,6 +2869,11 @@
       "week": 1,
       "poster": "https://www.cinemaclock.com/images/posters/140x210/2/romanchakam-2026-orig-poster.jpg",
       "synopsis": null,
+      "cast": [
+        "Ananthika Sanilkumar",
+        "Sumanth Prabhas"
+      ],
+      "director": null,
       "releaseDate": "2026-09-08",
       "releaseDateSource": "week-estimate",
       "daysSinceRelease": 1,
@@ -2748,6 +2901,10 @@
       "week": 15,
       "poster": "https://www.cinemaclock.com/images/posters/140x210/23/running-wild-return-to-the-river-2026-orig-poster.jpg",
       "synopsis": null,
+      "cast": [
+        "by Myles Connolly"
+      ],
+      "director": null,
       "releaseDate": "2026-06-02",
       "releaseDateSource": "week-estimate",
       "daysSinceRelease": 99,
@@ -2776,6 +2933,11 @@
       "week": null,
       "poster": "https://www.cinemaclock.com/images/posters/140x210/86/space-the-new-frontier-2024-us-poster.jpg",
       "synopsis": null,
+      "cast": [
+        "by Dave Duce",
+        "Jake Flannery"
+      ],
+      "director": null,
       "releaseDate": "2024-07-01",
       "releaseDateSource": "year-only",
       "daysSinceRelease": 800,
@@ -2804,6 +2966,11 @@
       "week": 6,
       "poster": "https://www.cinemaclock.com/images/posters/140x210/19/spider-man-brand-new-day-2026-orig-poster.jpg",
       "synopsis": null,
+      "cast": [
+        "Tom Holland",
+        "Zendaya"
+      ],
+      "director": null,
       "releaseDate": "2026-08-04",
       "releaseDateSource": "week-estimate",
       "daysSinceRelease": 36,
@@ -3064,6 +3231,11 @@
       "week": null,
       "poster": "https://www.cinemaclock.com/images/posters/140x210/83/star-trek-ii-the-wrath-of-khan-1982-us-poster.jpg",
       "synopsis": null,
+      "cast": [
+        "William Shatner",
+        "Leonard Nimoy"
+      ],
+      "director": null,
       "releaseDate": "1982-07-01",
       "releaseDateSource": "year-only",
       "daysSinceRelease": 16141,
@@ -3179,6 +3351,11 @@
       "week": null,
       "poster": "https://www.cinemaclock.com/images/posters/140x210/31/star-trek-iii-the-search-for-spock-1984-us-poster.jpg",
       "synopsis": null,
+      "cast": [
+        "William Shatner",
+        "Leonard Nimoy"
+      ],
+      "director": null,
       "releaseDate": "1984-07-01",
       "releaseDateSource": "year-only",
       "daysSinceRelease": 15410,
@@ -3286,6 +3463,11 @@
       "week": null,
       "poster": "https://www.cinemaclock.com/images/posters/140x210/42/star-trek-iv-the-voyage-home-1986-poster.jpg",
       "synopsis": null,
+      "cast": [
+        "William Shatner",
+        "Leonard Nimoy"
+      ],
+      "director": null,
       "releaseDate": null,
       "releaseDateSource": "unknown",
       "daysSinceRelease": null,
@@ -3401,6 +3583,11 @@
       "week": null,
       "poster": "https://www.cinemaclock.com/images/posters/140x210/96/star-trek-the-motion-picture-1979-us-poster.jpg",
       "synopsis": null,
+      "cast": [
+        "William Shatner",
+        "Leonard Nimoy"
+      ],
+      "director": null,
       "releaseDate": "1979-07-01",
       "releaseDateSource": "year-only",
       "daysSinceRelease": 17237,
@@ -3492,6 +3679,11 @@
       "week": null,
       "poster": "https://www.cinemaclock.com/images/posters/140x210/12/steel-magnolias-1989-us-poster.jpg",
       "synopsis": null,
+      "cast": [
+        "Sally Field",
+        "Dolly Parton"
+      ],
+      "director": null,
       "releaseDate": "1989-07-01",
       "releaseDateSource": "year-only",
       "daysSinceRelease": 13584,
@@ -3559,6 +3751,11 @@
       "week": null,
       "poster": "https://www.cinemaclock.com/images/posters/140x210/73/the-changeling-1980-i-movie-poster.jpg",
       "synopsis": null,
+      "cast": [
+        "George C. Scott",
+        "Trish Van Devere"
+      ],
+      "director": null,
       "releaseDate": "1980-07-01",
       "releaseDateSource": "year-only",
       "daysSinceRelease": 16871,
@@ -3594,6 +3791,8 @@
       "week": 1,
       "poster": "https://www.cinemaclock.com/images/posters/140x210/82/lau-chu-hoa-2026-orig-poster.jpg",
       "synopsis": null,
+      "cast": [],
+      "director": null,
       "releaseDate": "2026-09-08",
       "releaseDateSource": "week-estimate",
       "daysSinceRelease": 1,
@@ -3621,6 +3820,11 @@
       "week": 2,
       "poster": "https://www.cinemaclock.com/images/posters/140x210/78/the-dog-stars-2026-orig-poster.jpg",
       "synopsis": null,
+      "cast": [
+        "Jacob Elordi",
+        "Margaret Qualley"
+      ],
+      "director": null,
       "releaseDate": "2026-09-01",
       "releaseDateSource": "week-estimate",
       "daysSinceRelease": 8,
@@ -3904,6 +4108,11 @@
       "week": 4,
       "poster": "https://www.cinemaclock.com/images/posters/140x210/12/the-end-of-oak-street-2026-orig-poster.jpg",
       "synopsis": null,
+      "cast": [
+        "Anne Hathaway",
+        "Ewan McGregor"
+      ],
+      "director": null,
       "releaseDate": "2026-08-18",
       "releaseDateSource": "week-estimate",
       "daysSinceRelease": 22,
@@ -4056,6 +4265,11 @@
       "week": 9,
       "poster": "https://www.cinemaclock.com/images/posters/140x210/85/the-invite-2026-orig-poster.jpg",
       "synopsis": null,
+      "cast": [
+        "Seth Rogen",
+        "Olivia Wilde"
+      ],
+      "director": null,
       "releaseDate": "2026-07-14",
       "releaseDateSource": "week-estimate",
       "daysSinceRelease": 57,
@@ -4092,6 +4306,11 @@
       "week": 3,
       "poster": "https://www.cinemaclock.com/images/posters/140x210/71/the-magic-faraway-tree-2026-us-poster.jpg",
       "synopsis": null,
+      "cast": [
+        "Nonso Anozie",
+        "Sonny Meo"
+      ],
+      "director": null,
       "releaseDate": "2026-08-25",
       "releaseDateSource": "week-estimate",
       "daysSinceRelease": 15,
@@ -4123,6 +4342,11 @@
       "week": 8,
       "poster": "https://www.cinemaclock.com/images/posters/140x210/47/the-odyssey-2026-us-poster.jpg",
       "synopsis": null,
+      "cast": [
+        "Matt Damon",
+        "Tom Holland"
+      ],
+      "director": null,
       "releaseDate": "2026-07-21",
       "releaseDateSource": "week-estimate",
       "daysSinceRelease": 50,
@@ -4311,6 +4535,11 @@
       "week": 1,
       "poster": "https://www.cinemaclock.com/images/posters/140x210/17/the-salt-path-2024-orig-poster.jpg",
       "synopsis": null,
+      "cast": [
+        "Gillian Anderson",
+        "Jason Isaacs"
+      ],
+      "director": null,
       "releaseDate": "2026-09-08",
       "releaseDateSource": "week-estimate",
       "daysSinceRelease": 1,
@@ -4377,6 +4606,11 @@
       "week": 1,
       "poster": "https://www.cinemaclock.com/images/posters/140x210/87/the-sun-never-sets-2026-orig-poster.jpg",
       "synopsis": null,
+      "cast": [
+        "Dakota Fanning",
+        "Phil Phillips"
+      ],
+      "director": null,
       "releaseDate": "2026-09-08",
       "releaseDateSource": "week-estimate",
       "daysSinceRelease": 1,
@@ -4441,6 +4675,11 @@
       "week": null,
       "poster": "https://www.cinemaclock.com/images/posters/140x210/39/to-die-for-1995-us-poster.jpg",
       "synopsis": null,
+      "cast": [
+        "Nicole Kidman",
+        "Matt Dillon"
+      ],
+      "director": null,
       "releaseDate": "1995-07-01",
       "releaseDateSource": "year-only",
       "daysSinceRelease": 11393,
@@ -4468,6 +4707,11 @@
       "week": 3,
       "poster": "https://www.cinemaclock.com/images/posters/140x210/23/tony-2026-orig-poster.jpg",
       "synopsis": null,
+      "cast": [
+        "Dominic Sessa",
+        "Antonio Banderas"
+      ],
+      "director": null,
       "releaseDate": "2026-08-25",
       "releaseDateSource": "week-estimate",
       "daysSinceRelease": 15,
@@ -4539,6 +4783,11 @@
       "week": 12,
       "poster": "https://www.cinemaclock.com/images/posters/140x210/52/toy-story-5-2026-orig-poster.jpg",
       "synopsis": null,
+      "cast": [
+        "Keanu Reeves",
+        "Tom Hanks"
+      ],
+      "director": null,
       "releaseDate": "2026-06-23",
       "releaseDateSource": "week-estimate",
       "daysSinceRelease": 78,
@@ -4638,6 +4887,11 @@
       "week": 1,
       "poster": "https://www.cinemaclock.com/images/posters/140x210/88/virginia-woolf-s-night-and-day-2026-us-poster.jpg",
       "synopsis": null,
+      "cast": [
+        "Haley Bennett",
+        "Elyas M'Barek"
+      ],
+      "director": null,
       "releaseDate": "2026-09-08",
       "releaseDateSource": "week-estimate",
       "daysSinceRelease": 1,

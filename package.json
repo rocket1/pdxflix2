@@ -1,0 +1,14 @@
+{
+  "name": "pdxflix2",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Portland, OR movie showtimes board with second-run detection.",
+  "type": "commonjs",
+  "scripts": {
+    "scrape": "node scraper/scrape.js",
+    "serve": "node -e \"require('http').createServer((req,res)=>{const fs=require('fs'),path=require('path');let p=path.join(process.cwd(), req.url==='/'?'/index.html':req.url.split('?')[0]);fs.readFile(p,(err,data)=>{if(err){res.writeHead(404);res.end('Not found');return;}const ext=path.extname(p);const types={'.html':'text/html','.css':'text/css','.js':'application/javascript','.json':'application/json'};res.writeHead(200,{'Content-Type':types[ext]||'application/octet-stream'});res.end(data);});}).listen(8080,()=>console.log('http://localhost:8080'))\""
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0"
+  }
+}

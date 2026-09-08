@@ -1,0 +1,4659 @@
+{
+  "city": "Portland, OR",
+  "source": "cinemaclock.com",
+  "generatedAt": "2026-09-08T21:40:44.654Z",
+  "secondRunThresholdDays": 45,
+  "tmdbEnabled": false,
+  "movies": [
+    {
+      "title": "Akira",
+      "slug": "akira-1988",
+      "rating": "R",
+      "runtime": "2h 04m",
+      "runtimeMinutes": 124,
+      "genre": "Animation",
+      "year": 1988,
+      "week": null,
+      "poster": "https://www.cinemaclock.com/images/posters/140x210/6/akira-1988-us-poster.jpg",
+      "synopsis": null,
+      "releaseDate": "1988-07-01",
+      "releaseDateSource": "year-only",
+      "daysSinceRelease": 13949,
+      "isSecondRun": true,
+      "isClassic": true,
+      "theaters": [
+        {
+          "name": "AMC Dine-In Progress Ridge 13",
+          "address": "12345 SW Horizon Blvd, Beaverton, OR 97007",
+          "slug": "amc-dine-in-progress-ridge-13",
+          "times": [
+            "18:15"
+          ]
+        },
+        {
+          "name": "AMC Vancouver Mall 23",
+          "address": "8700 NE Vancouver Mall Dr., Vancouver, WA 98662",
+          "slug": "amc-vancouver-mall-23",
+          "times": [
+            "16:00",
+            "19:00"
+          ]
+        },
+        {
+          "name": "Century 16 Cedar Hills",
+          "address": "3200 SW Hocken, Beaverton, OR 97005",
+          "slug": "century-16-cedar-hills",
+          "times": [
+            "13:00",
+            "16:00",
+            "19:00",
+            "22:00"
+          ]
+        },
+        {
+          "name": "Century 16 Eastport Plaza",
+          "address": "4040 SE 82 Ave., Portland, OR 97266",
+          "slug": "century-16-eastport-plaza",
+          "times": [
+            "16:10",
+            "19:15",
+            "22:25"
+          ]
+        },
+        {
+          "name": "Century Clackamas Town Center & XD",
+          "address": "12000 SE 82nd Ave., Portland, OR 97086",
+          "slug": "century-clackamas-town-center-xd",
+          "times": [
+            "12:30",
+            "15:35",
+            "18:40",
+            "21:50"
+          ]
+        },
+        {
+          "name": "Hollywood Theatre Portland",
+          "address": "4122 NE Sandy Blvd., Portland, OR 97212",
+          "slug": "hollywood-theatre-portland",
+          "times": [
+            "18:30",
+            "21:15"
+          ]
+        },
+        {
+          "name": "Regal Bridgeport Village & IMAX",
+          "address": "7329 S.W. Bridgeport Road, Tigard, OR 97224",
+          "slug": "regal-bridgeport-village-imax",
+          "times": [
+            "15:10",
+            "18:25",
+            "19:00",
+            "21:40",
+            "23:30",
+            "23:55"
+          ]
+        },
+        {
+          "name": "Regal Evergreen Parkway & RPX",
+          "address": "2625 N.W. 188th, Hillsboro, OR 97124",
+          "slug": "regal-evergreen-parkway-rpx",
+          "times": [
+            "17:15",
+            "23:15"
+          ]
+        },
+        {
+          "name": "Regal Lloyd Center & IMAX",
+          "address": "1510 N.E. Multnomah St., Portland, OR 97232",
+          "slug": "regal-lloyd-center-imax",
+          "times": [
+            "12:50",
+            "19:15"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "American Doctor",
+      "slug": "american-doctor-2026",
+      "rating": "14A",
+      "runtime": "1h 31m",
+      "runtimeMinutes": 91,
+      "genre": "Documentary",
+      "year": null,
+      "week": 1,
+      "poster": "https://www.cinemaclock.com/images/posters/140x210/82/american-doctor-2026-orig-poster.jpg",
+      "synopsis": null,
+      "releaseDate": "2026-09-08",
+      "releaseDateSource": "week-estimate",
+      "daysSinceRelease": 1,
+      "isSecondRun": false,
+      "isClassic": false,
+      "theaters": [
+        {
+          "name": "Regal Fox Tower",
+          "address": "846 S.W. Park Ave., Portland, OR 97205",
+          "slug": "regal-fox-tower",
+          "times": [
+            "14:20"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Bethlehem Kudumba Unit",
+      "slug": "bethlehem-kudumba-unit-2026",
+      "rating": null,
+      "runtime": "2h 37m",
+      "runtimeMinutes": 157,
+      "genre": "Romantic drama",
+      "year": null,
+      "week": 3,
+      "poster": "https://www.cinemaclock.com/images/posters/140x210/38/bethlehem-kudumba-unit-2026-orig-poster.jpg",
+      "synopsis": null,
+      "releaseDate": "2026-08-25",
+      "releaseDateSource": "week-estimate",
+      "daysSinceRelease": 15,
+      "isSecondRun": false,
+      "isClassic": false,
+      "theaters": [
+        {
+          "name": "Century 16 Cedar Hills",
+          "address": "3200 SW Hocken, Beaverton, OR 97005",
+          "slug": "century-16-cedar-hills",
+          "times": [
+            "18:00",
+            "22:30"
+          ]
+        },
+        {
+          "name": "Regal Movies On TV",
+          "address": "2929 S.W. 234th Ave., Hillsboro, OR 97123",
+          "slug": "regal-movies-on-tv",
+          "times": [
+            "19:20",
+            "23:05"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Black Holes: The Other Side of Infinity",
+      "slug": "black-holes-the-other-side-of-infinity-2006",
+      "rating": null,
+      "runtime": null,
+      "runtimeMinutes": null,
+      "genre": "37m Documentary",
+      "year": 2006,
+      "week": null,
+      "poster": "https://www.cinemaclock.com/images/posters/140x210/86/black-holes-2009-us-poster.jpg",
+      "synopsis": null,
+      "releaseDate": "2006-07-01",
+      "releaseDateSource": "year-only",
+      "daysSinceRelease": 7375,
+      "isSecondRun": true,
+      "isClassic": true,
+      "theaters": [
+        {
+          "name": "OMSI Empirical Theater",
+          "address": "1945 SE Water Ave., Portland, OR 97214",
+          "slug": "omsi-empirical-theater",
+          "times": [
+            "12:30",
+            "14:30",
+            "16:00"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Buddy",
+      "slug": "buddy-2026",
+      "rating": "13+",
+      "runtime": "1h 35m",
+      "runtimeMinutes": 95,
+      "genre": "Sci-fi horror",
+      "year": null,
+      "week": 2,
+      "poster": "https://www.cinemaclock.com/images/posters/140x210/41/buddy-2026-orig-poster.jpg",
+      "synopsis": null,
+      "releaseDate": "2026-09-01",
+      "releaseDateSource": "week-estimate",
+      "daysSinceRelease": 8,
+      "isSecondRun": false,
+      "isClassic": false,
+      "theaters": [
+        {
+          "name": "AMC Classic Mill Plain 8",
+          "address": "11700 SE 7th St., Vancouver, WA 98683",
+          "slug": "amc-classic-mill-plain-8",
+          "times": [
+            "19:45"
+          ]
+        },
+        {
+          "name": "AMC Dine-In Progress Ridge 13",
+          "address": "12345 SW Horizon Blvd, Beaverton, OR 97007",
+          "slug": "amc-dine-in-progress-ridge-13",
+          "times": [
+            "14:45",
+            "17:30",
+            "18:30",
+            "20:15"
+          ]
+        },
+        {
+          "name": "AMC Vancouver Mall 23",
+          "address": "8700 NE Vancouver Mall Dr., Vancouver, WA 98662",
+          "slug": "amc-vancouver-mall-23",
+          "times": [
+            "19:00"
+          ]
+        },
+        {
+          "name": "Canby Cinema 8",
+          "address": "252 NE 2nd Avenue, Canby, OR 97013",
+          "slug": "canby-cinema-8",
+          "times": [
+            "19:20"
+          ]
+        },
+        {
+          "name": "Century 16 Cedar Hills",
+          "address": "3200 SW Hocken, Beaverton, OR 97005",
+          "slug": "century-16-cedar-hills",
+          "times": [
+            "11:55",
+            "14:25",
+            "16:55",
+            "19:25"
+          ]
+        },
+        {
+          "name": "Century 16 Eastport Plaza",
+          "address": "4040 SE 82 Ave., Portland, OR 97266",
+          "slug": "century-16-eastport-plaza",
+          "times": [
+            "15:30",
+            "18:00",
+            "20:30",
+            "21:40",
+            "23:00"
+          ]
+        },
+        {
+          "name": "Century Clackamas Town Center & XD",
+          "address": "12000 SE 82nd Ave., Portland, OR 97086",
+          "slug": "century-clackamas-town-center-xd",
+          "times": [
+            "11:45",
+            "14:20",
+            "16:55",
+            "19:30",
+            "22:05"
+          ]
+        },
+        {
+          "name": "Cornelius 9 Cinemas",
+          "address": "200 N. 26th Ave., Cornelius, OR 97113",
+          "slug": "cornelius-9-cinemas",
+          "times": [
+            "19:00",
+            "21:20"
+          ]
+        },
+        {
+          "name": "Oak Grove 8 Cinemas",
+          "address": "16100 SE McLoughlin Blvd, Milwaukie, OR 97267",
+          "slug": "oak-grove-8-cinemas",
+          "times": [
+            "17:00",
+            "19:15"
+          ]
+        },
+        {
+          "name": "Regal Bridgeport Village & IMAX",
+          "address": "7329 S.W. Bridgeport Road, Tigard, OR 97224",
+          "slug": "regal-bridgeport-village-imax",
+          "times": [
+            "16:50",
+            "19:25",
+            "22:00"
+          ]
+        },
+        {
+          "name": "Regal Cascade IMAX & RPX",
+          "address": "1101 S.E. 160th Ave., Vancouver, WA 98683",
+          "slug": "regal-cascade-imax-rpx",
+          "times": [
+            "18:00",
+            "20:35"
+          ]
+        },
+        {
+          "name": "Regal Cinema 99",
+          "address": "9010 N.E. Hwy 99, Vancouver, WA 98665",
+          "slug": "regal-cinema-99",
+          "times": [
+            "19:40"
+          ]
+        },
+        {
+          "name": "Regal City Center",
+          "address": "801 C Street, Vancouver, WA 98660",
+          "slug": "regal-city-center",
+          "times": [
+            "14:10",
+            "23:30"
+          ]
+        },
+        {
+          "name": "Regal Evergreen Parkway & RPX",
+          "address": "2625 N.W. 188th, Hillsboro, OR 97124",
+          "slug": "regal-evergreen-parkway-rpx",
+          "times": [
+            "14:30",
+            "22:30"
+          ]
+        },
+        {
+          "name": "Regal Fox Tower",
+          "address": "846 S.W. Park Ave., Portland, OR 97205",
+          "slug": "regal-fox-tower",
+          "times": [
+            "16:20",
+            "18:00",
+            "20:30"
+          ]
+        },
+        {
+          "name": "Regal Hilltop Cinema",
+          "address": "325 Beavercreek Rd, Oregon City, OR 97045",
+          "slug": "regal-hilltop-cinema",
+          "times": [
+            "12:15",
+            "15:00",
+            "17:30",
+            "20:00",
+            "21:45"
+          ]
+        },
+        {
+          "name": "Regal Movies On TV",
+          "address": "2929 S.W. 234th Ave., Hillsboro, OR 97123",
+          "slug": "regal-movies-on-tv",
+          "times": [
+            "18:00",
+            "20:40"
+          ]
+        },
+        {
+          "name": "Regal Stark Street",
+          "address": "2929 N.E. Kane Dr., Gresham, OR 97030",
+          "slug": "regal-stark-street",
+          "times": [
+            "13:15",
+            "15:50",
+            "18:25",
+            "21:00"
+          ]
+        },
+        {
+          "name": "Scappoose Cinema",
+          "address": "33520 SW Edward Lane, Scappoose, OR 97056",
+          "slug": "scappoose-cinema",
+          "times": [
+            "19:05"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "By Any Means",
+      "slug": "by-any-means-2026",
+      "rating": "13+",
+      "runtime": null,
+      "runtimeMinutes": null,
+      "genre": "Action thriller",
+      "year": null,
+      "week": 1,
+      "poster": "https://www.cinemaclock.com/images/posters/140x210/34/by-any-means-2026-orig-poster.jpg",
+      "synopsis": null,
+      "releaseDate": "2026-09-08",
+      "releaseDateSource": "week-estimate",
+      "daysSinceRelease": 1,
+      "isSecondRun": false,
+      "isClassic": false,
+      "theaters": [
+        {
+          "name": "AMC Classic Mill Plain 8",
+          "address": "11700 SE 7th St., Vancouver, WA 98683",
+          "slug": "amc-classic-mill-plain-8",
+          "times": [
+            "15:30",
+            "17:45",
+            "20:30"
+          ]
+        },
+        {
+          "name": "AMC Dine-In Progress Ridge 13",
+          "address": "12345 SW Horizon Blvd, Beaverton, OR 97007",
+          "slug": "amc-dine-in-progress-ridge-13",
+          "times": [
+            "14:45",
+            "17:30",
+            "20:15"
+          ]
+        },
+        {
+          "name": "AMC Vancouver Mall 23",
+          "address": "8700 NE Vancouver Mall Dr., Vancouver, WA 98662",
+          "slug": "amc-vancouver-mall-23",
+          "times": [
+            "15:45",
+            "18:30"
+          ]
+        },
+        {
+          "name": "Canby Cinema 8",
+          "address": "252 NE 2nd Avenue, Canby, OR 97013",
+          "slug": "canby-cinema-8",
+          "times": [
+            "14:50",
+            "17:05",
+            "19:10"
+          ]
+        },
+        {
+          "name": "Century 16 Cedar Hills",
+          "address": "3200 SW Hocken, Beaverton, OR 97005",
+          "slug": "century-16-cedar-hills",
+          "times": [
+            "11:35",
+            "14:15",
+            "16:55",
+            "19:35",
+            "22:15"
+          ]
+        },
+        {
+          "name": "Century 16 Eastport Plaza",
+          "address": "4040 SE 82 Ave., Portland, OR 97266",
+          "slug": "century-16-eastport-plaza",
+          "times": [
+            "14:15",
+            "17:00",
+            "19:30",
+            "22:35"
+          ]
+        },
+        {
+          "name": "Century Clackamas Town Center & XD",
+          "address": "12000 SE 82nd Ave., Portland, OR 97086",
+          "slug": "century-clackamas-town-center-xd",
+          "times": [
+            "10:30",
+            "13:15",
+            "16:00",
+            "18:45",
+            "21:30"
+          ]
+        },
+        {
+          "name": "Cornelius 9 Cinemas",
+          "address": "200 N. 26th Ave., Cornelius, OR 97113",
+          "slug": "cornelius-9-cinemas",
+          "times": [
+            "14:40",
+            "17:10",
+            "19:40",
+            "22:10"
+          ]
+        },
+        {
+          "name": "Living Room Theaters Portland",
+          "address": "341 SW 10th Ave, Portland, OR 97205",
+          "slug": "living-room-theaters-portland",
+          "times": [
+            "12:15",
+            "14:30",
+            "16:50",
+            "19:15"
+          ]
+        },
+        {
+          "name": "Oak Grove 8 Cinemas",
+          "address": "16100 SE McLoughlin Blvd, Milwaukie, OR 97267",
+          "slug": "oak-grove-8-cinemas",
+          "times": [
+            "14:20",
+            "16:45",
+            "19:10"
+          ]
+        },
+        {
+          "name": "Regal Bridgeport Village & IMAX",
+          "address": "7329 S.W. Bridgeport Road, Tigard, OR 97224",
+          "slug": "regal-bridgeport-village-imax",
+          "times": [
+            "14:00",
+            "16:45",
+            "19:30",
+            "22:15",
+            "23:15"
+          ]
+        },
+        {
+          "name": "Regal Cascade IMAX & RPX",
+          "address": "1101 S.E. 160th Ave., Vancouver, WA 98683",
+          "slug": "regal-cascade-imax-rpx",
+          "times": [
+            "12:40",
+            "15:20",
+            "18:00",
+            "20:40"
+          ]
+        },
+        {
+          "name": "Regal Cinema 99",
+          "address": "9010 N.E. Hwy 99, Vancouver, WA 98665",
+          "slug": "regal-cinema-99",
+          "times": [
+            "13:45",
+            "16:45",
+            "20:00"
+          ]
+        },
+        {
+          "name": "Regal City Center",
+          "address": "801 C Street, Vancouver, WA 98660",
+          "slug": "regal-city-center",
+          "times": [
+            "12:00",
+            "14:35",
+            "17:20",
+            "20:00"
+          ]
+        },
+        {
+          "name": "Regal Evergreen Parkway & RPX",
+          "address": "2625 N.W. 188th, Hillsboro, OR 97124",
+          "slug": "regal-evergreen-parkway-rpx",
+          "times": [
+            "12:00",
+            "15:00",
+            "18:00",
+            "21:00"
+          ]
+        },
+        {
+          "name": "Regal Fox Tower",
+          "address": "846 S.W. Park Ave., Portland, OR 97205",
+          "slug": "regal-fox-tower",
+          "times": [
+            "14:00",
+            "16:45",
+            "19:20"
+          ]
+        },
+        {
+          "name": "Regal Hilltop Cinema",
+          "address": "325 Beavercreek Rd, Oregon City, OR 97045",
+          "slug": "regal-hilltop-cinema",
+          "times": [
+            "12:45",
+            "15:30",
+            "18:15",
+            "21:00"
+          ]
+        },
+        {
+          "name": "Regal Lloyd Center & IMAX",
+          "address": "1510 N.E. Multnomah St., Portland, OR 97232",
+          "slug": "regal-lloyd-center-imax",
+          "times": [
+            "14:10",
+            "17:05",
+            "20:00",
+            "23:15"
+          ]
+        },
+        {
+          "name": "Regal Movies On TV",
+          "address": "2929 S.W. 234th Ave., Hillsboro, OR 97123",
+          "slug": "regal-movies-on-tv",
+          "times": [
+            "12:20",
+            "15:10",
+            "18:00",
+            "20:50"
+          ]
+        },
+        {
+          "name": "Regal Pioneer Place",
+          "address": "340 S.W. Morrison, Portland, OR 97204",
+          "slug": "regal-pioneer-place",
+          "times": [
+            "14:50",
+            "17:40",
+            "20:20"
+          ]
+        },
+        {
+          "name": "Regal Stark Street",
+          "address": "2929 N.E. Kane Dr., Gresham, OR 97030",
+          "slug": "regal-stark-street",
+          "times": [
+            "14:20",
+            "17:10",
+            "20:00"
+          ]
+        },
+        {
+          "name": "Scappoose Cinema",
+          "address": "33520 SW Edward Lane, Scappoose, OR 97056",
+          "slug": "scappoose-cinema",
+          "times": [
+            "14:50",
+            "17:05",
+            "19:10"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Cabaret",
+      "slug": "cabaret-1972",
+      "rating": "PG",
+      "runtime": "2h 04m",
+      "runtimeMinutes": 124,
+      "genre": "Musical romantic drama",
+      "year": 1972,
+      "week": null,
+      "poster": "https://www.cinemaclock.com/images/posters/140x210/18/cabaret-1972-orig-poster.jpg",
+      "synopsis": null,
+      "releaseDate": "1972-07-01",
+      "releaseDateSource": "year-only",
+      "daysSinceRelease": 19793,
+      "isSecondRun": true,
+      "isClassic": true,
+      "theaters": [
+        {
+          "name": "Moreland Theatre",
+          "address": "6712 SE Milwaukie Ave., Portland, OR 97202",
+          "slug": "moreland-theatre",
+          "times": [
+            "19:00"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Cars",
+      "slug": "cars-2006",
+      "rating": "G",
+      "runtime": "1h 36m",
+      "runtimeMinutes": 96,
+      "genre": "Animation",
+      "year": 2006,
+      "week": null,
+      "poster": "https://www.cinemaclock.com/images/posters/140x210/14/cars-2006-us-poster.jpg",
+      "synopsis": null,
+      "releaseDate": "2006-07-01",
+      "releaseDateSource": "year-only",
+      "daysSinceRelease": 7375,
+      "isSecondRun": true,
+      "isClassic": true,
+      "theaters": [
+        {
+          "name": "AMC Classic Mill Plain 8",
+          "address": "11700 SE 7th St., Vancouver, WA 98683",
+          "slug": "amc-classic-mill-plain-8",
+          "times": [
+            "16:45"
+          ]
+        },
+        {
+          "name": "AMC Dine-In Progress Ridge 13",
+          "address": "12345 SW Horizon Blvd, Beaverton, OR 97007",
+          "slug": "amc-dine-in-progress-ridge-13",
+          "times": [
+            "14:30",
+            "16:00",
+            "17:30"
+          ]
+        },
+        {
+          "name": "AMC Vancouver Mall 23",
+          "address": "8700 NE Vancouver Mall Dr., Vancouver, WA 98662",
+          "slug": "amc-vancouver-mall-23",
+          "times": [
+            "16:00"
+          ]
+        },
+        {
+          "name": "Canby Cinema 8",
+          "address": "252 NE 2nd Avenue, Canby, OR 97013",
+          "slug": "canby-cinema-8",
+          "times": [
+            "14:40"
+          ]
+        },
+        {
+          "name": "Century 16 Cedar Hills",
+          "address": "3200 SW Hocken, Beaverton, OR 97005",
+          "slug": "century-16-cedar-hills",
+          "times": [
+            "10:45",
+            "13:35",
+            "16:25",
+            "19:15"
+          ]
+        },
+        {
+          "name": "Century 16 Eastport Plaza",
+          "address": "4040 SE 82 Ave., Portland, OR 97266",
+          "slug": "century-16-eastport-plaza",
+          "times": [
+            "13:45",
+            "16:30",
+            "19:25"
+          ]
+        },
+        {
+          "name": "Century Clackamas Town Center & XD",
+          "address": "12000 SE 82nd Ave., Portland, OR 97086",
+          "slug": "century-clackamas-town-center-xd",
+          "times": [
+            "10:50",
+            "12:15",
+            "13:35",
+            "15:15",
+            "16:20",
+            "19:05"
+          ]
+        },
+        {
+          "name": "Liberty Theatre Camas",
+          "address": "315 NE 4th Ave., Camas, WA 98607",
+          "slug": "liberty-theatre-camas",
+          "times": [
+            "16:30",
+            "18:30"
+          ]
+        },
+        {
+          "name": "Oak Grove 8 Cinemas",
+          "address": "16100 SE McLoughlin Blvd, Milwaukie, OR 97267",
+          "slug": "oak-grove-8-cinemas",
+          "times": [
+            "14:30"
+          ]
+        },
+        {
+          "name": "Regal Bridgeport Village & IMAX",
+          "address": "7329 S.W. Bridgeport Road, Tigard, OR 97224",
+          "slug": "regal-bridgeport-village-imax",
+          "times": [
+            "14:30",
+            "17:30",
+            "20:30",
+            "23:30"
+          ]
+        },
+        {
+          "name": "Regal Cascade IMAX & RPX",
+          "address": "1101 S.E. 160th Ave., Vancouver, WA 98683",
+          "slug": "regal-cascade-imax-rpx",
+          "times": [
+            "14:50",
+            "17:45",
+            "20:40",
+            "23:55"
+          ]
+        },
+        {
+          "name": "Regal Cinema 99",
+          "address": "9010 N.E. Hwy 99, Vancouver, WA 98665",
+          "slug": "regal-cinema-99",
+          "times": [
+            "14:00",
+            "17:00"
+          ]
+        },
+        {
+          "name": "Regal City Center",
+          "address": "801 C Street, Vancouver, WA 98660",
+          "slug": "regal-city-center",
+          "times": [
+            "12:20",
+            "15:10",
+            "16:30",
+            "18:00",
+            "20:45"
+          ]
+        },
+        {
+          "name": "Regal Evergreen Parkway & RPX",
+          "address": "2625 N.W. 188th, Hillsboro, OR 97124",
+          "slug": "regal-evergreen-parkway-rpx",
+          "times": [
+            "13:25",
+            "16:25",
+            "19:30",
+            "22:15",
+            "23:00"
+          ]
+        },
+        {
+          "name": "Regal Hilltop Cinema",
+          "address": "325 Beavercreek Rd, Oregon City, OR 97045",
+          "slug": "regal-hilltop-cinema",
+          "times": [
+            "12:30",
+            "15:30"
+          ]
+        },
+        {
+          "name": "Regal Lloyd Center & IMAX",
+          "address": "1510 N.E. Multnomah St., Portland, OR 97232",
+          "slug": "regal-lloyd-center-imax",
+          "times": [
+            "12:40",
+            "15:50"
+          ]
+        },
+        {
+          "name": "Regal Movies On TV",
+          "address": "2929 S.W. 234th Ave., Hillsboro, OR 97123",
+          "slug": "regal-movies-on-tv",
+          "times": [
+            "12:05",
+            "15:00",
+            "18:00",
+            "20:55"
+          ]
+        },
+        {
+          "name": "Regal Pioneer Place",
+          "address": "340 S.W. Morrison, Portland, OR 97204",
+          "slug": "regal-pioneer-place",
+          "times": [
+            "14:40"
+          ]
+        },
+        {
+          "name": "Regal Stark Street",
+          "address": "2929 N.E. Kane Dr., Gresham, OR 97030",
+          "slug": "regal-stark-street",
+          "times": [
+            "13:30",
+            "23:25"
+          ]
+        },
+        {
+          "name": "Sandy Cinema",
+          "address": "16605 Champion Way, Sandy, OR 97055",
+          "slug": "sandy-cinema",
+          "times": [
+            "12:00",
+            "14:40"
+          ]
+        },
+        {
+          "name": "Scappoose Cinema",
+          "address": "33520 SW Edward Lane, Scappoose, OR 97056",
+          "slug": "scappoose-cinema",
+          "times": [
+            "14:25"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Cha shou",
+      "slug": "cha-shou-1981",
+      "rating": null,
+      "runtime": "1h 32m",
+      "runtimeMinutes": 92,
+      "genre": "Action drama",
+      "year": 1981,
+      "week": null,
+      "poster": "https://www.cinemaclock.com/images/posters/140x210/96/cha-shou-1981-orig-poster.jpg",
+      "synopsis": null,
+      "releaseDate": "1981-07-01",
+      "releaseDateSource": "year-only",
+      "daysSinceRelease": 16506,
+      "isSecondRun": true,
+      "isClassic": true,
+      "theaters": [
+        {
+          "name": "Hollywood Theatre Portland",
+          "address": "4122 NE Sandy Blvd., Portland, OR 97212",
+          "slug": "hollywood-theatre-portland",
+          "times": [
+            "19:30"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Cocoon",
+      "slug": "cocoon-2025",
+      "rating": "G",
+      "runtime": "1h 25m",
+      "runtimeMinutes": 85,
+      "genre": "Animation",
+      "year": null,
+      "week": 1,
+      "poster": "https://www.cinemaclock.com/images/posters/140x210/97/cocoon-aru-natsu-no-shojo-tachi-yori-2025-orig-poster.jpg",
+      "synopsis": null,
+      "releaseDate": "2026-09-08",
+      "releaseDateSource": "week-estimate",
+      "daysSinceRelease": 1,
+      "isSecondRun": false,
+      "isClassic": false,
+      "theaters": [
+        {
+          "name": "Century Clackamas Town Center & XD",
+          "address": "12000 SE 82nd Ave., Portland, OR 97086",
+          "slug": "century-clackamas-town-center-xd",
+          "times": [
+            "12:05",
+            "14:30",
+            "16:55",
+            "19:20"
+          ]
+        },
+        {
+          "name": "Regal Bridgeport Village & IMAX",
+          "address": "7329 S.W. Bridgeport Road, Tigard, OR 97224",
+          "slug": "regal-bridgeport-village-imax",
+          "times": [
+            "12:20",
+            "14:50",
+            "17:25",
+            "22:30"
+          ]
+        },
+        {
+          "name": "Regal Fox Tower",
+          "address": "846 S.W. Park Ave., Portland, OR 97205",
+          "slug": "regal-fox-tower",
+          "times": [
+            "15:25"
+          ]
+        },
+        {
+          "name": "Regal Lloyd Center & IMAX",
+          "address": "1510 N.E. Multnomah St., Portland, OR 97232",
+          "slug": "regal-lloyd-center-imax",
+          "times": [
+            "16:15"
+          ]
+        },
+        {
+          "name": "Regal Movies On TV",
+          "address": "2929 S.W. 234th Ave., Hillsboro, OR 97123",
+          "slug": "regal-movies-on-tv",
+          "times": [
+            "13:50",
+            "16:25",
+            "19:00",
+            "23:15"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Colony",
+      "slug": "colony-2026",
+      "rating": "13+",
+      "runtime": "2h 02m",
+      "runtimeMinutes": 122,
+      "genre": "Horror/thriller",
+      "year": null,
+      "week": 2,
+      "poster": "https://www.cinemaclock.com/images/posters/140x210/6/grove-2026-orig-poster.jpg",
+      "synopsis": null,
+      "releaseDate": "2026-09-01",
+      "releaseDateSource": "week-estimate",
+      "daysSinceRelease": 8,
+      "isSecondRun": false,
+      "isClassic": false,
+      "theaters": [
+        {
+          "name": "Century 16 Eastport Plaza",
+          "address": "4040 SE 82 Ave., Portland, OR 97266",
+          "slug": "century-16-eastport-plaza",
+          "times": [
+            "16:15",
+            "19:15",
+            "22:15"
+          ]
+        },
+        {
+          "name": "Century Clackamas Town Center & XD",
+          "address": "12000 SE 82nd Ave., Portland, OR 97086",
+          "slug": "century-clackamas-town-center-xd",
+          "times": [
+            "21:50"
+          ]
+        },
+        {
+          "name": "CineMagic Theater",
+          "address": "2021 SE Hawthorne Blvd, Portland, OR 97214",
+          "slug": "cinemagic-theater",
+          "times": [
+            "21:35"
+          ]
+        },
+        {
+          "name": "Regal Evergreen Parkway & RPX",
+          "address": "2625 N.W. 188th, Hillsboro, OR 97124",
+          "slug": "regal-evergreen-parkway-rpx",
+          "times": [
+            "14:15",
+            "20:05"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Coyote v. Acme",
+      "slug": "coyote-v-acme-2026",
+      "rating": "PG",
+      "runtime": "1h 43m",
+      "runtimeMinutes": 103,
+      "genre": "Animation",
+      "year": null,
+      "week": 2,
+      "poster": "https://www.cinemaclock.com/images/posters/140x210/39/coyote-vs-acme-2026-orig-poster.jpg",
+      "synopsis": null,
+      "releaseDate": "2026-09-01",
+      "releaseDateSource": "week-estimate",
+      "daysSinceRelease": 8,
+      "isSecondRun": false,
+      "isClassic": false,
+      "theaters": [
+        {
+          "name": "Academy Theater",
+          "address": "7818 SE Stark St., Portland, OR 97215",
+          "slug": "academy-theater",
+          "times": [
+            "15:45",
+            "19:00"
+          ]
+        },
+        {
+          "name": "AMC Classic Mill Plain 8",
+          "address": "11700 SE 7th St., Vancouver, WA 98683",
+          "slug": "amc-classic-mill-plain-8",
+          "times": [
+            "16:15",
+            "20:25"
+          ]
+        },
+        {
+          "name": "AMC Dine-In Progress Ridge 13",
+          "address": "12345 SW Horizon Blvd, Beaverton, OR 97007",
+          "slug": "amc-dine-in-progress-ridge-13",
+          "times": [
+            "14:30",
+            "17:15",
+            "20:00"
+          ]
+        },
+        {
+          "name": "AMC Vancouver Mall 23",
+          "address": "8700 NE Vancouver Mall Dr., Vancouver, WA 98662",
+          "slug": "amc-vancouver-mall-23",
+          "times": [
+            "14:15",
+            "17:00",
+            "19:45"
+          ]
+        },
+        {
+          "name": "Canby Cinema 8",
+          "address": "252 NE 2nd Avenue, Canby, OR 97013",
+          "slug": "canby-cinema-8",
+          "times": [
+            "14:15",
+            "16:30",
+            "18:45"
+          ]
+        },
+        {
+          "name": "Century 16 Cedar Hills",
+          "address": "3200 SW Hocken, Beaverton, OR 97005",
+          "slug": "century-16-cedar-hills",
+          "times": [
+            "12:45",
+            "13:30",
+            "14:40",
+            "16:05",
+            "17:15",
+            "18:40",
+            "19:50",
+            "21:15"
+          ]
+        },
+        {
+          "name": "Century 16 Eastport Plaza",
+          "address": "4040 SE 82 Ave., Portland, OR 97266",
+          "slug": "century-16-eastport-plaza",
+          "times": [
+            "13:40",
+            "16:20",
+            "19:00",
+            "22:15"
+          ]
+        },
+        {
+          "name": "Century Clackamas Town Center & XD",
+          "address": "12000 SE 82nd Ave., Portland, OR 97086",
+          "slug": "century-clackamas-town-center-xd",
+          "times": [
+            "11:15",
+            "13:55",
+            "15:55",
+            "16:35",
+            "19:15",
+            "21:15",
+            "21:55"
+          ]
+        },
+        {
+          "name": "Cornelius 9 Cinemas",
+          "address": "200 N. 26th Ave., Cornelius, OR 97113",
+          "slug": "cornelius-9-cinemas",
+          "times": [
+            "14:20",
+            "16:45",
+            "19:10",
+            "20:10",
+            "21:30"
+          ]
+        },
+        {
+          "name": "Jubitz Cinema at Portlander Inn",
+          "address": "10350 N. Vancouver Way, Portland, OR 97217",
+          "slug": "jubitz-cinema-at-portlander-inn",
+          "times": [
+            "09:30",
+            "12:00",
+            "15:30",
+            "19:00"
+          ]
+        },
+        {
+          "name": "Lake Theater & Cafe",
+          "address": "106 N. State St., Lake Oswego, OR 97034",
+          "slug": "lake-theater-cafe",
+          "times": [
+            "16:30",
+            "19:00"
+          ]
+        },
+        {
+          "name": "Laurelhurst Theater",
+          "address": "2735 East Burnside St., Portland, OR 97214",
+          "slug": "laurelhurst-theater",
+          "times": [
+            "16:15",
+            "19:00"
+          ]
+        },
+        {
+          "name": "Milwaukie Cinemas",
+          "address": "11011 SE Main St., Milwaukie, OR 97222",
+          "slug": "milwaukie-cinemas",
+          "times": [
+            "14:30",
+            "16:45",
+            "19:00"
+          ]
+        },
+        {
+          "name": "Oak Grove 8 Cinemas",
+          "address": "16100 SE McLoughlin Blvd, Milwaukie, OR 97267",
+          "slug": "oak-grove-8-cinemas",
+          "times": [
+            "14:35",
+            "16:50",
+            "19:15"
+          ]
+        },
+        {
+          "name": "Regal Bridgeport Village & IMAX",
+          "address": "7329 S.W. Bridgeport Road, Tigard, OR 97224",
+          "slug": "regal-bridgeport-village-imax",
+          "times": [
+            "13:50",
+            "16:30",
+            "19:05",
+            "21:45",
+            "23:15"
+          ]
+        },
+        {
+          "name": "Regal Cascade IMAX & RPX",
+          "address": "1101 S.E. 160th Ave., Vancouver, WA 98683",
+          "slug": "regal-cascade-imax-rpx",
+          "times": [
+            "12:40",
+            "15:20",
+            "18:15",
+            "21:00"
+          ]
+        },
+        {
+          "name": "Regal Cinema 99",
+          "address": "9010 N.E. Hwy 99, Vancouver, WA 98665",
+          "slug": "regal-cinema-99",
+          "times": [
+            "13:00",
+            "15:30",
+            "18:00",
+            "20:00"
+          ]
+        },
+        {
+          "name": "Regal City Center",
+          "address": "801 C Street, Vancouver, WA 98660",
+          "slug": "regal-city-center",
+          "times": [
+            "13:00",
+            "15:30",
+            "17:35",
+            "18:50",
+            "20:15",
+            "23:45"
+          ]
+        },
+        {
+          "name": "Regal Evergreen Parkway & RPX",
+          "address": "2625 N.W. 188th, Hillsboro, OR 97124",
+          "slug": "regal-evergreen-parkway-rpx",
+          "times": [
+            "14:00",
+            "16:40",
+            "19:20",
+            "22:00"
+          ]
+        },
+        {
+          "name": "Regal Hilltop Cinema",
+          "address": "325 Beavercreek Rd, Oregon City, OR 97045",
+          "slug": "regal-hilltop-cinema",
+          "times": [
+            "13:30",
+            "16:15",
+            "19:00",
+            "22:00"
+          ]
+        },
+        {
+          "name": "Regal Lloyd Center & IMAX",
+          "address": "1510 N.E. Multnomah St., Portland, OR 97232",
+          "slug": "regal-lloyd-center-imax",
+          "times": [
+            "14:20",
+            "17:15",
+            "20:15",
+            "23:30"
+          ]
+        },
+        {
+          "name": "Regal Pioneer Place",
+          "address": "340 S.W. Morrison, Portland, OR 97204",
+          "slug": "regal-pioneer-place",
+          "times": [
+            "14:10",
+            "17:20",
+            "20:00"
+          ]
+        },
+        {
+          "name": "Regal Stark Street",
+          "address": "2929 N.E. Kane Dr., Gresham, OR 97030",
+          "slug": "regal-stark-street",
+          "times": [
+            "13:45",
+            "16:30",
+            "19:30",
+            "23:15"
+          ]
+        },
+        {
+          "name": "Scappoose Cinema",
+          "address": "33520 SW Edward Lane, Scappoose, OR 97056",
+          "slug": "scappoose-cinema",
+          "times": [
+            "14:15",
+            "16:30",
+            "18:45"
+          ]
+        },
+        {
+          "name": "St. Johns Theater & Pub",
+          "address": "8203 North Ivanhoe St., Portland, OR 97203",
+          "slug": "st-johns-theater-pub",
+          "times": [
+            "12:00"
+          ]
+        },
+        {
+          "name": "St. Johns Twin Cinemas",
+          "address": "8704 North Lombard St., St. Johns, OR 97203",
+          "slug": "st-johns-twin-cinemas",
+          "times": [
+            "16:30",
+            "19:00"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Day of the Dead",
+      "slug": "day-of-the-dead-1985",
+      "rating": "R",
+      "runtime": "1h 42m",
+      "runtimeMinutes": 102,
+      "genre": "Horror/thriller",
+      "year": 1985,
+      "week": null,
+      "poster": "https://www.cinemaclock.com/images/posters/140x210/91/day-of-the-dead-1985-us-poster.jpg",
+      "synopsis": null,
+      "releaseDate": "1985-07-01",
+      "releaseDateSource": "year-only",
+      "daysSinceRelease": 15045,
+      "isSecondRun": true,
+      "isClassic": true,
+      "theaters": [
+        {
+          "name": "Academy Theater",
+          "address": "7818 SE Stark St., Portland, OR 97215",
+          "slug": "academy-theater",
+          "times": [
+            "16:00"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Dear You",
+      "slug": "dear-you-2026",
+      "rating": "G",
+      "runtime": "1h 58m",
+      "runtimeMinutes": 118,
+      "genre": "Drama",
+      "year": null,
+      "week": 1,
+      "poster": "https://www.cinemaclock.com/images/posters/140x210/72/gei-a-ma-de-qing-shu-2026-orig-poster.jpg",
+      "synopsis": null,
+      "releaseDate": "2026-09-08",
+      "releaseDateSource": "week-estimate",
+      "daysSinceRelease": 1,
+      "isSecondRun": false,
+      "isClassic": false,
+      "theaters": [
+        {
+          "name": "Century 16 Eastport Plaza",
+          "address": "4040 SE 82 Ave., Portland, OR 97266",
+          "slug": "century-16-eastport-plaza",
+          "times": [
+            "13:35",
+            "16:35",
+            "19:35"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Fall 2: Deadpoint",
+      "slug": "fall-2-deadpoint-2026",
+      "rating": "13+",
+      "runtime": null,
+      "runtimeMinutes": null,
+      "genre": "Dramatic thriller",
+      "year": null,
+      "week": 1,
+      "poster": "https://www.cinemaclock.com/images/posters/140x210/73/fall-2-deadpoint-2026-orig-poster.jpg",
+      "synopsis": null,
+      "releaseDate": "2026-09-08",
+      "releaseDateSource": "week-estimate",
+      "daysSinceRelease": 1,
+      "isSecondRun": false,
+      "isClassic": false,
+      "theaters": [
+        {
+          "name": "AMC Dine-In Progress Ridge 13",
+          "address": "12345 SW Horizon Blvd, Beaverton, OR 97007",
+          "slug": "amc-dine-in-progress-ridge-13",
+          "times": [
+            "20:15"
+          ]
+        },
+        {
+          "name": "AMC Vancouver Mall 23",
+          "address": "8700 NE Vancouver Mall Dr., Vancouver, WA 98662",
+          "slug": "amc-vancouver-mall-23",
+          "times": [
+            "19:00"
+          ]
+        },
+        {
+          "name": "Canby Cinema 8",
+          "address": "252 NE 2nd Avenue, Canby, OR 97013",
+          "slug": "canby-cinema-8",
+          "times": [
+            "17:05",
+            "19:15"
+          ]
+        },
+        {
+          "name": "Century 16 Cedar Hills",
+          "address": "3200 SW Hocken, Beaverton, OR 97005",
+          "slug": "century-16-cedar-hills",
+          "times": [
+            "12:30",
+            "15:00",
+            "17:30",
+            "20:00",
+            "22:30"
+          ]
+        },
+        {
+          "name": "Cornelius 9 Cinemas",
+          "address": "200 N. 26th Ave., Cornelius, OR 97113",
+          "slug": "cornelius-9-cinemas",
+          "times": [
+            "14:40",
+            "17:05",
+            "19:30",
+            "21:55"
+          ]
+        },
+        {
+          "name": "Oak Grove 8 Cinemas",
+          "address": "16100 SE McLoughlin Blvd, Milwaukie, OR 97267",
+          "slug": "oak-grove-8-cinemas",
+          "times": [
+            "16:50",
+            "19:05"
+          ]
+        },
+        {
+          "name": "Regal Bridgeport Village & IMAX",
+          "address": "7329 S.W. Bridgeport Road, Tigard, OR 97224",
+          "slug": "regal-bridgeport-village-imax",
+          "times": [
+            "16:30",
+            "19:15",
+            "22:00"
+          ]
+        },
+        {
+          "name": "Regal Cascade IMAX & RPX",
+          "address": "1101 S.E. 160th Ave., Vancouver, WA 98683",
+          "slug": "regal-cascade-imax-rpx",
+          "times": [
+            "17:30",
+            "20:00"
+          ]
+        },
+        {
+          "name": "Regal Cinema 99",
+          "address": "9010 N.E. Hwy 99, Vancouver, WA 98665",
+          "slug": "regal-cinema-99",
+          "times": [
+            "16:30",
+            "19:50"
+          ]
+        },
+        {
+          "name": "Regal City Center",
+          "address": "801 C Street, Vancouver, WA 98660",
+          "slug": "regal-city-center",
+          "times": [
+            "18:15",
+            "20:50"
+          ]
+        },
+        {
+          "name": "Regal Evergreen Parkway & RPX",
+          "address": "2625 N.W. 188th, Hillsboro, OR 97124",
+          "slug": "regal-evergreen-parkway-rpx",
+          "times": [
+            "16:00",
+            "18:45",
+            "21:30"
+          ]
+        },
+        {
+          "name": "Regal Hilltop Cinema",
+          "address": "325 Beavercreek Rd, Oregon City, OR 97045",
+          "slug": "regal-hilltop-cinema",
+          "times": [
+            "18:45",
+            "22:00"
+          ]
+        },
+        {
+          "name": "Regal Lloyd Center & IMAX",
+          "address": "1510 N.E. Multnomah St., Portland, OR 97232",
+          "slug": "regal-lloyd-center-imax",
+          "times": [
+            "19:00"
+          ]
+        },
+        {
+          "name": "Regal Movies On TV",
+          "address": "2929 S.W. 234th Ave., Hillsboro, OR 97123",
+          "slug": "regal-movies-on-tv",
+          "times": [
+            "17:10",
+            "19:50"
+          ]
+        },
+        {
+          "name": "Regal Pioneer Place",
+          "address": "340 S.W. Morrison, Portland, OR 97204",
+          "slug": "regal-pioneer-place",
+          "times": [
+            "17:30",
+            "20:10"
+          ]
+        },
+        {
+          "name": "Regal Stark Street",
+          "address": "2929 N.E. Kane Dr., Gresham, OR 97030",
+          "slug": "regal-stark-street",
+          "times": [
+            "16:45",
+            "19:20"
+          ]
+        },
+        {
+          "name": "Scappoose Cinema",
+          "address": "33520 SW Edward Lane, Scappoose, OR 97056",
+          "slug": "scappoose-cinema",
+          "times": [
+            "17:05",
+            "19:15"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Finding Emily",
+      "slug": "finding-emily-2026",
+      "rating": "G",
+      "runtime": "1h 51m",
+      "runtimeMinutes": 111,
+      "genre": "Romantic comedy",
+      "year": null,
+      "week": 2,
+      "poster": "https://www.cinemaclock.com/images/posters/140x210/39/finding-emily-2026-us-poster.jpg",
+      "synopsis": null,
+      "releaseDate": "2026-09-01",
+      "releaseDateSource": "week-estimate",
+      "daysSinceRelease": 8,
+      "isSecondRun": false,
+      "isClassic": false,
+      "theaters": [
+        {
+          "name": "Century 16 Cedar Hills",
+          "address": "3200 SW Hocken, Beaverton, OR 97005",
+          "slug": "century-16-cedar-hills",
+          "times": [
+            "10:25"
+          ]
+        },
+        {
+          "name": "Century 16 Eastport Plaza",
+          "address": "4040 SE 82 Ave., Portland, OR 97266",
+          "slug": "century-16-eastport-plaza",
+          "times": [
+            "14:00",
+            "16:50",
+            "19:40"
+          ]
+        },
+        {
+          "name": "Regal Cascade IMAX & RPX",
+          "address": "1101 S.E. 160th Ave., Vancouver, WA 98683",
+          "slug": "regal-cascade-imax-rpx",
+          "times": [
+            "12:30"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Grease",
+      "slug": "grease-1978",
+      "rating": "PG",
+      "runtime": "1h 50m",
+      "runtimeMinutes": 110,
+      "genre": "Musical romantic comedy",
+      "year": 1978,
+      "week": null,
+      "poster": "https://www.cinemaclock.com/images/posters/140x210/2/grease-1978-poster.jpg",
+      "synopsis": null,
+      "releaseDate": "1978-07-01",
+      "releaseDateSource": "year-only",
+      "daysSinceRelease": 17602,
+      "isSecondRun": true,
+      "isClassic": true,
+      "theaters": [
+        {
+          "name": "Moreland Theatre",
+          "address": "6712 SE Milwaukie Ave., Portland, OR 97202",
+          "slug": "moreland-theatre",
+          "times": [
+            "14:00"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Grease 2",
+      "slug": "grease-2-1982",
+      "rating": "PG",
+      "runtime": "1h 55m",
+      "runtimeMinutes": 115,
+      "genre": "Musical romantic comedy-drama",
+      "year": 1982,
+      "week": null,
+      "poster": "https://www.cinemaclock.com/images/posters/140x210/20/grease-2-1982-us-poster.jpg",
+      "synopsis": null,
+      "releaseDate": "1982-07-01",
+      "releaseDateSource": "year-only",
+      "daysSinceRelease": 16141,
+      "isSecondRun": true,
+      "isClassic": true,
+      "theaters": [
+        {
+          "name": "Moreland Theatre",
+          "address": "6712 SE Milwaukie Ave., Portland, OR 97202",
+          "slug": "moreland-theatre",
+          "times": [
+            "16:30"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Idiots",
+      "slug": "idiots-2026",
+      "rating": "13+",
+      "runtime": "1h 38m",
+      "runtimeMinutes": 98,
+      "genre": "Criminal comedy",
+      "year": null,
+      "week": 2,
+      "poster": "https://www.cinemaclock.com/images/posters/140x210/92/idiots-2026-orig-poster.jpg",
+      "synopsis": null,
+      "releaseDate": "2026-09-01",
+      "releaseDateSource": "week-estimate",
+      "daysSinceRelease": 8,
+      "isSecondRun": false,
+      "isClassic": false,
+      "theaters": [
+        {
+          "name": "Regal Movies On TV",
+          "address": "2929 S.W. 234th Ave., Hillsboro, OR 97123",
+          "slug": "regal-movies-on-tv",
+          "times": [
+            "14:10",
+            "23:30"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Insidious 6",
+      "slug": "insidious-6-2026",
+      "rating": "PG-13",
+      "runtime": "1h 46m",
+      "runtimeMinutes": 106,
+      "genre": "Horror/thriller",
+      "year": null,
+      "week": 3,
+      "poster": "https://www.cinemaclock.com/images/posters/140x210/58/insidious-6-2026-us-poster.jpg",
+      "synopsis": null,
+      "releaseDate": "2026-08-25",
+      "releaseDateSource": "week-estimate",
+      "daysSinceRelease": 15,
+      "isSecondRun": false,
+      "isClassic": false,
+      "theaters": [
+        {
+          "name": "AMC Classic Mill Plain 8",
+          "address": "11700 SE 7th St., Vancouver, WA 98683",
+          "slug": "amc-classic-mill-plain-8",
+          "times": [
+            "16:30"
+          ]
+        },
+        {
+          "name": "AMC Dine-In Progress Ridge 13",
+          "address": "12345 SW Horizon Blvd, Beaverton, OR 97007",
+          "slug": "amc-dine-in-progress-ridge-13",
+          "times": [
+            "17:00",
+            "19:45"
+          ]
+        },
+        {
+          "name": "AMC Vancouver Mall 23",
+          "address": "8700 NE Vancouver Mall Dr., Vancouver, WA 98662",
+          "slug": "amc-vancouver-mall-23",
+          "times": [
+            "13:30",
+            "16:15",
+            "19:45"
+          ]
+        },
+        {
+          "name": "Century 16 Cedar Hills",
+          "address": "3200 SW Hocken, Beaverton, OR 97005",
+          "slug": "century-16-cedar-hills",
+          "times": [
+            "11:30",
+            "14:15",
+            "17:00",
+            "19:45",
+            "22:30"
+          ]
+        },
+        {
+          "name": "Century 16 Eastport Plaza",
+          "address": "4040 SE 82 Ave., Portland, OR 97266",
+          "slug": "century-16-eastport-plaza",
+          "times": [
+            "13:30",
+            "16:25",
+            "19:45",
+            "22:45"
+          ]
+        },
+        {
+          "name": "Century Clackamas Town Center & XD",
+          "address": "12000 SE 82nd Ave., Portland, OR 97086",
+          "slug": "century-clackamas-town-center-xd",
+          "times": [
+            "11:05",
+            "13:55",
+            "16:45",
+            "19:35",
+            "22:25"
+          ]
+        },
+        {
+          "name": "Cornelius 9 Cinemas",
+          "address": "200 N. 26th Ave., Cornelius, OR 97113",
+          "slug": "cornelius-9-cinemas",
+          "times": [
+            "14:35",
+            "17:05",
+            "19:35",
+            "22:05"
+          ]
+        },
+        {
+          "name": "Regal Bridgeport Village & IMAX",
+          "address": "7329 S.W. Bridgeport Road, Tigard, OR 97224",
+          "slug": "regal-bridgeport-village-imax",
+          "times": [
+            "12:15",
+            "18:00"
+          ]
+        },
+        {
+          "name": "Regal Cascade IMAX & RPX",
+          "address": "1101 S.E. 160th Ave., Vancouver, WA 98683",
+          "slug": "regal-cascade-imax-rpx",
+          "times": [
+            "15:25",
+            "18:00",
+            "20:45"
+          ]
+        },
+        {
+          "name": "Regal Evergreen Parkway & RPX",
+          "address": "2625 N.W. 188th, Hillsboro, OR 97124",
+          "slug": "regal-evergreen-parkway-rpx",
+          "times": [
+            "14:00",
+            "16:45",
+            "19:30"
+          ]
+        },
+        {
+          "name": "Regal Movies On TV",
+          "address": "2929 S.W. 234th Ave., Hillsboro, OR 97123",
+          "slug": "regal-movies-on-tv",
+          "times": [
+            "12:15",
+            "15:00",
+            "17:45",
+            "20:30"
+          ]
+        },
+        {
+          "name": "Regal Stark Street",
+          "address": "2929 N.E. Kane Dr., Gresham, OR 97030",
+          "slug": "regal-stark-street",
+          "times": [
+            "14:30",
+            "17:15",
+            "20:00",
+            "23:45"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "It Ends",
+      "slug": "it-ends-2025",
+      "rating": "R",
+      "runtime": "1h 29m",
+      "runtimeMinutes": 89,
+      "genre": "Fantasy drama",
+      "year": null,
+      "week": 2,
+      "poster": "https://www.cinemaclock.com/images/posters/140x210/62/it-ends-2025-orig-poster.jpg",
+      "synopsis": null,
+      "releaseDate": "2026-09-01",
+      "releaseDateSource": "week-estimate",
+      "daysSinceRelease": 8,
+      "isSecondRun": false,
+      "isClassic": false,
+      "theaters": [
+        {
+          "name": "Century 16 Eastport Plaza",
+          "address": "4040 SE 82 Ave., Portland, OR 97266",
+          "slug": "century-16-eastport-plaza",
+          "times": [
+            "22:40"
+          ]
+        },
+        {
+          "name": "Century Clackamas Town Center & XD",
+          "address": "12000 SE 82nd Ave., Portland, OR 97086",
+          "slug": "century-clackamas-town-center-xd",
+          "times": [
+            "12:40",
+            "15:05",
+            "17:30",
+            "19:55",
+            "22:20"
+          ]
+        },
+        {
+          "name": "Regal Fox Tower",
+          "address": "846 S.W. Park Ave., Portland, OR 97205",
+          "slug": "regal-fox-tower",
+          "times": [
+            "12:55",
+            "20:45"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Kaze no tani no Naushika",
+      "slug": "kaze-no-tani-no-naushika-1984",
+      "rating": "PG",
+      "runtime": "1h 24m",
+      "runtimeMinutes": 84,
+      "genre": "Animation",
+      "year": 1984,
+      "week": null,
+      "poster": "https://www.cinemaclock.com/images/posters/140x210/61/kaze-no-tani-no-naushika-1984-orig-poster.jpg",
+      "synopsis": null,
+      "releaseDate": "1984-07-01",
+      "releaseDateSource": "year-only",
+      "daysSinceRelease": 15410,
+      "isSecondRun": true,
+      "isClassic": true,
+      "theaters": [
+        {
+          "name": "Regal Bridgeport Village & IMAX",
+          "address": "7329 S.W. Bridgeport Road, Tigard, OR 97224",
+          "slug": "regal-bridgeport-village-imax",
+          "times": [
+            "12:00",
+            "15:00",
+            "18:00",
+            "21:00"
+          ]
+        },
+        {
+          "name": "Regal Cascade IMAX & RPX",
+          "address": "1101 S.E. 160th Ave., Vancouver, WA 98683",
+          "slug": "regal-cascade-imax-rpx",
+          "times": [
+            "14:35",
+            "17:35",
+            "20:35",
+            "23:45"
+          ]
+        },
+        {
+          "name": "Regal Cinema 99",
+          "address": "9010 N.E. Hwy 99, Vancouver, WA 98665",
+          "slug": "regal-cinema-99",
+          "times": [
+            "13:15",
+            "16:00",
+            "19:00"
+          ]
+        },
+        {
+          "name": "Regal City Center",
+          "address": "801 C Street, Vancouver, WA 98660",
+          "slug": "regal-city-center",
+          "times": [
+            "14:15",
+            "16:55",
+            "19:45",
+            "23:35"
+          ]
+        },
+        {
+          "name": "Regal Evergreen Parkway & RPX",
+          "address": "2625 N.W. 188th, Hillsboro, OR 97124",
+          "slug": "regal-evergreen-parkway-rpx",
+          "times": [
+            "14:10",
+            "17:20",
+            "20:25",
+            "23:00"
+          ]
+        },
+        {
+          "name": "Regal Fox Tower",
+          "address": "846 S.W. Park Ave., Portland, OR 97205",
+          "slug": "regal-fox-tower",
+          "times": [
+            "13:40",
+            "16:50",
+            "19:40"
+          ]
+        },
+        {
+          "name": "Regal Hilltop Cinema",
+          "address": "325 Beavercreek Rd, Oregon City, OR 97045",
+          "slug": "regal-hilltop-cinema",
+          "times": [
+            "12:30",
+            "15:30",
+            "18:30"
+          ]
+        },
+        {
+          "name": "Regal Lloyd Center & IMAX",
+          "address": "1510 N.E. Multnomah St., Portland, OR 97232",
+          "slug": "regal-lloyd-center-imax",
+          "times": [
+            "13:30",
+            "16:30",
+            "19:40"
+          ]
+        },
+        {
+          "name": "Regal Movies On TV",
+          "address": "2929 S.W. 234th Ave., Hillsboro, OR 97123",
+          "slug": "regal-movies-on-tv",
+          "times": [
+            "14:40",
+            "17:35",
+            "20:35",
+            "23:35"
+          ]
+        },
+        {
+          "name": "Regal Stark Street",
+          "address": "2929 N.E. Kane Dr., Gresham, OR 97030",
+          "slug": "regal-stark-street",
+          "times": [
+            "13:30",
+            "16:30",
+            "19:30"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Late Fame",
+      "slug": "late-fame-2025",
+      "rating": null,
+      "runtime": "1h 36m",
+      "runtimeMinutes": 96,
+      "genre": "Drama",
+      "year": null,
+      "week": 1,
+      "poster": "https://www.cinemaclock.com/images/posters/140x210/29/late-fame-2025-orig-poster.jpg",
+      "synopsis": null,
+      "releaseDate": "2026-09-08",
+      "releaseDateSource": "week-estimate",
+      "daysSinceRelease": 1,
+      "isSecondRun": false,
+      "isClassic": false,
+      "theaters": [
+        {
+          "name": "Living Room Theaters Portland",
+          "address": "341 SW 10th Ave, Portland, OR 97205",
+          "slug": "living-room-theaters-portland",
+          "times": [
+            "12:10",
+            "14:15",
+            "19:30"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Mâo Hé Lâoshâ: Xîng Pán Qí Yuán",
+      "slug": "mao-he-laosha-xing-pan-qi-yuan-2025",
+      "rating": null,
+      "runtime": "1h 44m",
+      "runtimeMinutes": 104,
+      "genre": "Animation",
+      "year": null,
+      "week": 1,
+      "poster": "https://www.cinemaclock.com/images/posters/140x210/23/mao-he-laosha-xing-pan-qi-yuan-2025-orig-poster.jpg",
+      "synopsis": null,
+      "releaseDate": "2026-09-08",
+      "releaseDateSource": "week-estimate",
+      "daysSinceRelease": 1,
+      "isSecondRun": false,
+      "isClassic": false,
+      "theaters": [
+        {
+          "name": "AMC Vancouver Mall 23",
+          "address": "8700 NE Vancouver Mall Dr., Vancouver, WA 98662",
+          "slug": "amc-vancouver-mall-23",
+          "times": [
+            "14:30"
+          ]
+        },
+        {
+          "name": "Canby Cinema 8",
+          "address": "252 NE 2nd Avenue, Canby, OR 97013",
+          "slug": "canby-cinema-8",
+          "times": [
+            "14:30"
+          ]
+        },
+        {
+          "name": "Oak Grove 8 Cinemas",
+          "address": "16100 SE McLoughlin Blvd, Milwaukie, OR 97267",
+          "slug": "oak-grove-8-cinemas",
+          "times": [
+            "14:40"
+          ]
+        },
+        {
+          "name": "Regal Bridgeport Village & IMAX",
+          "address": "7329 S.W. Bridgeport Road, Tigard, OR 97224",
+          "slug": "regal-bridgeport-village-imax",
+          "times": [
+            "14:00",
+            "23:30"
+          ]
+        },
+        {
+          "name": "Regal Cascade IMAX & RPX",
+          "address": "1101 S.E. 160th Ave., Vancouver, WA 98683",
+          "slug": "regal-cascade-imax-rpx",
+          "times": [
+            "15:10"
+          ]
+        },
+        {
+          "name": "Regal Movies On TV",
+          "address": "2929 S.W. 234th Ave., Hillsboro, OR 97123",
+          "slug": "regal-movies-on-tv",
+          "times": [
+            "12:30",
+            "15:00"
+          ]
+        },
+        {
+          "name": "Scappoose Cinema",
+          "address": "33520 SW Edward Lane, Scappoose, OR 97056",
+          "slug": "scappoose-cinema",
+          "times": [
+            "14:50"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Minions & Monsters",
+      "slug": "minions-and-monsters-2026",
+      "rating": "PG",
+      "runtime": null,
+      "runtimeMinutes": null,
+      "genre": "Animation",
+      "year": null,
+      "week": 11,
+      "poster": "https://www.cinemaclock.com/images/posters/140x210/51/minions-and-monsters-2026-orig-poster.jpg",
+      "synopsis": null,
+      "releaseDate": "2026-06-30",
+      "releaseDateSource": "week-estimate",
+      "daysSinceRelease": 71,
+      "isSecondRun": true,
+      "isClassic": false,
+      "theaters": [
+        {
+          "name": "Avalon Theatre Portland",
+          "address": "3451 SE Belmont St., Portland, OR 97214",
+          "slug": "avalon-theatre-portland",
+          "times": [
+            "13:15",
+            "15:15",
+            "17:15",
+            "19:15"
+          ]
+        },
+        {
+          "name": "Kennedy School Theater",
+          "address": "5736 N.E. 33rd Ave., Portland, OR 97211",
+          "slug": "kennedy-school-theater",
+          "times": [
+            "16:00"
+          ]
+        },
+        {
+          "name": "Regal Bridgeport Village & IMAX",
+          "address": "7329 S.W. Bridgeport Road, Tigard, OR 97224",
+          "slug": "regal-bridgeport-village-imax",
+          "times": [
+            "14:20",
+            "23:50"
+          ]
+        },
+        {
+          "name": "Wunderland Cinema Beaverton",
+          "address": "17235 NW Corridor Court, Beaverton, OR 97006",
+          "slug": "wunderland-cinema-beaverton",
+          "times": [
+            "13:15",
+            "15:15",
+            "17:15",
+            "19:15"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Mirzapur",
+      "slug": "mirzapur-2026",
+      "rating": "13+",
+      "runtime": null,
+      "runtimeMinutes": null,
+      "genre": "Action thriller",
+      "year": null,
+      "week": 1,
+      "poster": "https://www.cinemaclock.com/images/posters/140x210/49/mirzapur-2026-orig-poster.jpg",
+      "synopsis": null,
+      "releaseDate": "2026-09-08",
+      "releaseDateSource": "week-estimate",
+      "daysSinceRelease": 1,
+      "isSecondRun": false,
+      "isClassic": false,
+      "theaters": [
+        {
+          "name": "Century 16 Cedar Hills",
+          "address": "3200 SW Hocken, Beaverton, OR 97005",
+          "slug": "century-16-cedar-hills",
+          "times": [
+            "13:20",
+            "17:30",
+            "21:30",
+            "21:55"
+          ]
+        },
+        {
+          "name": "Century Clackamas Town Center & XD",
+          "address": "12000 SE 82nd Ave., Portland, OR 97086",
+          "slug": "century-clackamas-town-center-xd",
+          "times": [
+            "10:55",
+            "15:10",
+            "19:25"
+          ]
+        },
+        {
+          "name": "Regal Movies On TV",
+          "address": "2929 S.W. 234th Ave., Hillsboro, OR 97123",
+          "slug": "regal-movies-on-tv",
+          "times": [
+            "14:55"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Mutiny",
+      "slug": "mutiny-2026",
+      "rating": "R",
+      "runtime": "1h 35m",
+      "runtimeMinutes": 95,
+      "genre": "Action thriller",
+      "year": null,
+      "week": 3,
+      "poster": "https://www.cinemaclock.com/images/posters/140x210/6/mutiny-2026-us-poster.jpg",
+      "synopsis": null,
+      "releaseDate": "2026-08-25",
+      "releaseDateSource": "week-estimate",
+      "daysSinceRelease": 15,
+      "isSecondRun": false,
+      "isClassic": false,
+      "theaters": [
+        {
+          "name": "Century 16 Cedar Hills",
+          "address": "3200 SW Hocken, Beaverton, OR 97005",
+          "slug": "century-16-cedar-hills",
+          "times": [
+            "22:10"
+          ]
+        },
+        {
+          "name": "Century 16 Eastport Plaza",
+          "address": "4040 SE 82 Ave., Portland, OR 97266",
+          "slug": "century-16-eastport-plaza",
+          "times": [
+            "22:25"
+          ]
+        },
+        {
+          "name": "Century Clackamas Town Center & XD",
+          "address": "12000 SE 82nd Ave., Portland, OR 97086",
+          "slug": "century-clackamas-town-center-xd",
+          "times": [
+            "12:00",
+            "14:35",
+            "17:10",
+            "19:45",
+            "22:20"
+          ]
+        },
+        {
+          "name": "Regal City Center",
+          "address": "801 C Street, Vancouver, WA 98660",
+          "slug": "regal-city-center",
+          "times": [
+            "20:30"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Onslaught",
+      "slug": "onslaught-2026",
+      "rating": "13+",
+      "runtime": null,
+      "runtimeMinutes": null,
+      "genre": "Horror/thriller",
+      "year": null,
+      "week": 1,
+      "poster": "https://www.cinemaclock.com/images/posters/140x210/6/onslaught-2026-can-poster.jpg",
+      "synopsis": null,
+      "releaseDate": "2026-09-08",
+      "releaseDateSource": "week-estimate",
+      "daysSinceRelease": 1,
+      "isSecondRun": false,
+      "isClassic": false,
+      "theaters": [
+        {
+          "name": "AMC Classic Mill Plain 8",
+          "address": "11700 SE 7th St., Vancouver, WA 98683",
+          "slug": "amc-classic-mill-plain-8",
+          "times": [
+            "19:30"
+          ]
+        },
+        {
+          "name": "AMC Dine-In Progress Ridge 13",
+          "address": "12345 SW Horizon Blvd, Beaverton, OR 97007",
+          "slug": "amc-dine-in-progress-ridge-13",
+          "times": [
+            "15:15",
+            "17:45",
+            "20:15"
+          ]
+        },
+        {
+          "name": "AMC Vancouver Mall 23",
+          "address": "8700 NE Vancouver Mall Dr., Vancouver, WA 98662",
+          "slug": "amc-vancouver-mall-23",
+          "times": [
+            "15:00",
+            "17:00",
+            "19:30"
+          ]
+        },
+        {
+          "name": "Canby Cinema 8",
+          "address": "252 NE 2nd Avenue, Canby, OR 97013",
+          "slug": "canby-cinema-8",
+          "times": [
+            "14:35",
+            "16:50",
+            "19:05"
+          ]
+        },
+        {
+          "name": "Century 16 Cedar Hills",
+          "address": "3200 SW Hocken, Beaverton, OR 97005",
+          "slug": "century-16-cedar-hills",
+          "times": [
+            "12:35",
+            "15:00",
+            "17:25",
+            "19:50",
+            "22:15"
+          ]
+        },
+        {
+          "name": "Century 16 Eastport Plaza",
+          "address": "4040 SE 82 Ave., Portland, OR 97266",
+          "slug": "century-16-eastport-plaza",
+          "times": [
+            "15:05",
+            "17:35",
+            "20:05",
+            "22:35"
+          ]
+        },
+        {
+          "name": "Century Clackamas Town Center & XD",
+          "address": "12000 SE 82nd Ave., Portland, OR 97086",
+          "slug": "century-clackamas-town-center-xd",
+          "times": [
+            "12:20",
+            "14:50",
+            "17:20",
+            "19:50",
+            "22:20"
+          ]
+        },
+        {
+          "name": "Lake Theater & Cafe",
+          "address": "106 N. State St., Lake Oswego, OR 97034",
+          "slug": "lake-theater-cafe",
+          "times": [
+            "17:00",
+            "19:45"
+          ]
+        },
+        {
+          "name": "Oak Grove 8 Cinemas",
+          "address": "16100 SE McLoughlin Blvd, Milwaukie, OR 97267",
+          "slug": "oak-grove-8-cinemas",
+          "times": [
+            "14:45",
+            "16:55",
+            "19:05"
+          ]
+        },
+        {
+          "name": "Regal Bridgeport Village & IMAX",
+          "address": "7329 S.W. Bridgeport Road, Tigard, OR 97224",
+          "slug": "regal-bridgeport-village-imax",
+          "times": [
+            "13:40",
+            "16:15",
+            "18:50",
+            "21:25",
+            "23:05"
+          ]
+        },
+        {
+          "name": "Regal Cascade IMAX & RPX",
+          "address": "1101 S.E. 160th Ave., Vancouver, WA 98683",
+          "slug": "regal-cascade-imax-rpx",
+          "times": [
+            "13:00",
+            "15:50",
+            "18:20",
+            "20:55"
+          ]
+        },
+        {
+          "name": "Regal Cinema 99",
+          "address": "9010 N.E. Hwy 99, Vancouver, WA 98665",
+          "slug": "regal-cinema-99",
+          "times": [
+            "14:30",
+            "17:15",
+            "19:30"
+          ]
+        },
+        {
+          "name": "Regal City Center",
+          "address": "801 C Street, Vancouver, WA 98660",
+          "slug": "regal-city-center",
+          "times": [
+            "12:45",
+            "14:05",
+            "16:25",
+            "19:10"
+          ]
+        },
+        {
+          "name": "Regal Evergreen Parkway & RPX",
+          "address": "2625 N.W. 188th, Hillsboro, OR 97124",
+          "slug": "regal-evergreen-parkway-rpx",
+          "times": [
+            "14:00",
+            "16:40",
+            "19:25",
+            "22:00",
+            "23:20"
+          ]
+        },
+        {
+          "name": "Regal Fox Tower",
+          "address": "846 S.W. Park Ave., Portland, OR 97205",
+          "slug": "regal-fox-tower",
+          "times": [
+            "13:30",
+            "16:00",
+            "18:40",
+            "21:00"
+          ]
+        },
+        {
+          "name": "Regal Hilltop Cinema",
+          "address": "325 Beavercreek Rd, Oregon City, OR 97045",
+          "slug": "regal-hilltop-cinema",
+          "times": [
+            "12:00",
+            "16:00",
+            "18:45",
+            "21:15"
+          ]
+        },
+        {
+          "name": "Regal Lloyd Center & IMAX",
+          "address": "1510 N.E. Multnomah St., Portland, OR 97232",
+          "slug": "regal-lloyd-center-imax",
+          "times": [
+            "12:00",
+            "14:40",
+            "17:25",
+            "20:30"
+          ]
+        },
+        {
+          "name": "Regal Movies On TV",
+          "address": "2929 S.W. 234th Ave., Hillsboro, OR 97123",
+          "slug": "regal-movies-on-tv",
+          "times": [
+            "12:15",
+            "14:50",
+            "17:25",
+            "20:00"
+          ]
+        },
+        {
+          "name": "Regal Stark Street",
+          "address": "2929 N.E. Kane Dr., Gresham, OR 97030",
+          "slug": "regal-stark-street",
+          "times": [
+            "14:15",
+            "16:45",
+            "19:15",
+            "23:45"
+          ]
+        },
+        {
+          "name": "Scappoose Cinema",
+          "address": "33520 SW Edward Lane, Scappoose, OR 97056",
+          "slug": "scappoose-cinema",
+          "times": [
+            "14:35",
+            "16:50",
+            "19:05"
+          ]
+        },
+        {
+          "name": "St. Johns Twin Cinemas",
+          "address": "8704 North Lombard St., St. Johns, OR 97203",
+          "slug": "st-johns-twin-cinemas",
+          "times": [
+            "16:15",
+            "19:20"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "PAW Patrol: The Dino Movie",
+      "slug": "paw-patrol-the-dino-movie-2026",
+      "rating": "PG",
+      "runtime": null,
+      "runtimeMinutes": null,
+      "genre": "Animation",
+      "year": null,
+      "week": 5,
+      "poster": "https://www.cinemaclock.com/images/posters/140x210/95/paw-patrol-the-dino-movie-2026-orig-poster.jpg",
+      "synopsis": null,
+      "releaseDate": "2026-08-11",
+      "releaseDateSource": "week-estimate",
+      "daysSinceRelease": 29,
+      "isSecondRun": false,
+      "isClassic": false,
+      "theaters": [
+        {
+          "name": "AMC Classic Mill Plain 8",
+          "address": "11700 SE 7th St., Vancouver, WA 98683",
+          "slug": "amc-classic-mill-plain-8",
+          "times": [
+            "15:30",
+            "18:10"
+          ]
+        },
+        {
+          "name": "AMC Dine-In Progress Ridge 13",
+          "address": "12345 SW Horizon Blvd, Beaverton, OR 97007",
+          "slug": "amc-dine-in-progress-ridge-13",
+          "times": [
+            "14:30",
+            "15:45"
+          ]
+        },
+        {
+          "name": "AMC Vancouver Mall 23",
+          "address": "8700 NE Vancouver Mall Dr., Vancouver, WA 98662",
+          "slug": "amc-vancouver-mall-23",
+          "times": [
+            "13:30",
+            "17:30"
+          ]
+        },
+        {
+          "name": "Canby Cinema 8",
+          "address": "252 NE 2nd Avenue, Canby, OR 97013",
+          "slug": "canby-cinema-8",
+          "times": [
+            "15:10"
+          ]
+        },
+        {
+          "name": "Century 16 Cedar Hills",
+          "address": "3200 SW Hocken, Beaverton, OR 97005",
+          "slug": "century-16-cedar-hills",
+          "times": [
+            "12:25",
+            "14:50",
+            "17:15"
+          ]
+        },
+        {
+          "name": "Century 16 Eastport Plaza",
+          "address": "4040 SE 82 Ave., Portland, OR 97266",
+          "slug": "century-16-eastport-plaza",
+          "times": [
+            "14:15"
+          ]
+        },
+        {
+          "name": "Century Clackamas Town Center & XD",
+          "address": "12000 SE 82nd Ave., Portland, OR 97086",
+          "slug": "century-clackamas-town-center-xd",
+          "times": [
+            "11:40",
+            "14:05",
+            "16:30",
+            "19:00",
+            "21:25"
+          ]
+        },
+        {
+          "name": "Cornelius 9 Cinemas",
+          "address": "200 N. 26th Ave., Cornelius, OR 97113",
+          "slug": "cornelius-9-cinemas",
+          "times": [
+            "14:30",
+            "16:45"
+          ]
+        },
+        {
+          "name": "Milwaukie Cinemas",
+          "address": "11011 SE Main St., Milwaukie, OR 97222",
+          "slug": "milwaukie-cinemas",
+          "times": [
+            "13:30",
+            "15:45",
+            "18:30"
+          ]
+        },
+        {
+          "name": "Oak Grove 8 Cinemas",
+          "address": "16100 SE McLoughlin Blvd, Milwaukie, OR 97267",
+          "slug": "oak-grove-8-cinemas",
+          "times": [
+            "14:50"
+          ]
+        },
+        {
+          "name": "Regal Cascade IMAX & RPX",
+          "address": "1101 S.E. 160th Ave., Vancouver, WA 98683",
+          "slug": "regal-cascade-imax-rpx",
+          "times": [
+            "12:10",
+            "14:55"
+          ]
+        },
+        {
+          "name": "Regal Cinema 99",
+          "address": "9010 N.E. Hwy 99, Vancouver, WA 98665",
+          "slug": "regal-cinema-99",
+          "times": [
+            "14:15"
+          ]
+        },
+        {
+          "name": "Regal Movies On TV",
+          "address": "2929 S.W. 234th Ave., Hillsboro, OR 97123",
+          "slug": "regal-movies-on-tv",
+          "times": [
+            "14:20",
+            "16:50",
+            "23:45"
+          ]
+        },
+        {
+          "name": "Scappoose Cinema",
+          "address": "33520 SW Edward Lane, Scappoose, OR 97056",
+          "slug": "scappoose-cinema",
+          "times": [
+            "15:05"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Purple Rain",
+      "slug": "purple-rain-1984",
+      "rating": "R",
+      "runtime": "1h 51m",
+      "runtimeMinutes": 111,
+      "genre": "Musical romantic drama",
+      "year": 1984,
+      "week": null,
+      "poster": "https://www.cinemaclock.com/images/posters/140x210/10/purple-rain-1984-us-poster.jpg",
+      "synopsis": null,
+      "releaseDate": "1984-07-01",
+      "releaseDateSource": "year-only",
+      "daysSinceRelease": 15410,
+      "isSecondRun": true,
+      "isClassic": true,
+      "theaters": [
+        {
+          "name": "Moreland Theatre",
+          "address": "6712 SE Milwaukie Ave., Portland, OR 97202",
+          "slug": "moreland-theatre",
+          "times": [
+            "21:30"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Romanchakam",
+      "slug": "romanchakam-2026",
+      "rating": null,
+      "runtime": null,
+      "runtimeMinutes": null,
+      "genre": "Romantic drama",
+      "year": null,
+      "week": 1,
+      "poster": "https://www.cinemaclock.com/images/posters/140x210/2/romanchakam-2026-orig-poster.jpg",
+      "synopsis": null,
+      "releaseDate": "2026-09-08",
+      "releaseDateSource": "week-estimate",
+      "daysSinceRelease": 1,
+      "isSecondRun": false,
+      "isClassic": false,
+      "theaters": [
+        {
+          "name": "Century 16 Cedar Hills",
+          "address": "3200 SW Hocken, Beaverton, OR 97005",
+          "slug": "century-16-cedar-hills",
+          "times": [
+            "21:40"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Running Wild: Return to the River",
+      "slug": "running-wild-return-to-the-river-2026",
+      "rating": null,
+      "runtime": null,
+      "runtimeMinutes": null,
+      "genre": "45m Documentary",
+      "year": null,
+      "week": 15,
+      "poster": "https://www.cinemaclock.com/images/posters/140x210/23/running-wild-return-to-the-river-2026-orig-poster.jpg",
+      "synopsis": null,
+      "releaseDate": "2026-06-02",
+      "releaseDateSource": "week-estimate",
+      "daysSinceRelease": 99,
+      "isSecondRun": true,
+      "isClassic": false,
+      "theaters": [
+        {
+          "name": "OMSI Empirical Theater",
+          "address": "1945 SE Water Ave., Portland, OR 97214",
+          "slug": "omsi-empirical-theater",
+          "times": [
+            "11:00",
+            "15:00"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Space: The New Frontier",
+      "slug": "space-the-new-frontier-2024",
+      "rating": null,
+      "runtime": null,
+      "runtimeMinutes": null,
+      "genre": "40m Documentary",
+      "year": 2024,
+      "week": null,
+      "poster": "https://www.cinemaclock.com/images/posters/140x210/86/space-the-new-frontier-2024-us-poster.jpg",
+      "synopsis": null,
+      "releaseDate": "2024-07-01",
+      "releaseDateSource": "year-only",
+      "daysSinceRelease": 800,
+      "isSecondRun": true,
+      "isClassic": false,
+      "theaters": [
+        {
+          "name": "OMSI Empirical Theater",
+          "address": "1945 SE Water Ave., Portland, OR 97214",
+          "slug": "omsi-empirical-theater",
+          "times": [
+            "12:30",
+            "16:30"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Spider-Man: Brand New Day",
+      "slug": "spider-man-brand-new-day-2026",
+      "rating": "PG-13",
+      "runtime": "2h 30m",
+      "runtimeMinutes": 150,
+      "genre": "Fantasy action adventure",
+      "year": null,
+      "week": 6,
+      "poster": "https://www.cinemaclock.com/images/posters/140x210/19/spider-man-brand-new-day-2026-orig-poster.jpg",
+      "synopsis": null,
+      "releaseDate": "2026-08-04",
+      "releaseDateSource": "week-estimate",
+      "daysSinceRelease": 36,
+      "isSecondRun": false,
+      "isClassic": false,
+      "theaters": [
+        {
+          "name": "AMC Classic Mill Plain 8",
+          "address": "11700 SE 7th St., Vancouver, WA 98683",
+          "slug": "amc-classic-mill-plain-8",
+          "times": [
+            "16:00",
+            "19:15"
+          ]
+        },
+        {
+          "name": "AMC Dine-In Progress Ridge 13",
+          "address": "12345 SW Horizon Blvd, Beaverton, OR 97007",
+          "slug": "amc-dine-in-progress-ridge-13",
+          "times": [
+            "16:00",
+            "19:30"
+          ]
+        },
+        {
+          "name": "AMC Vancouver Mall 23",
+          "address": "8700 NE Vancouver Mall Dr., Vancouver, WA 98662",
+          "slug": "amc-vancouver-mall-23",
+          "times": [
+            "13:45",
+            "16:50",
+            "17:15",
+            "19:00",
+            "20:15"
+          ]
+        },
+        {
+          "name": "Canby Cinema 8",
+          "address": "252 NE 2nd Avenue, Canby, OR 97013",
+          "slug": "canby-cinema-8",
+          "times": [
+            "15:35",
+            "18:30"
+          ]
+        },
+        {
+          "name": "Century 16 Cedar Hills",
+          "address": "3200 SW Hocken, Beaverton, OR 97005",
+          "slug": "century-16-cedar-hills",
+          "times": [
+            "11:15",
+            "14:35",
+            "15:25",
+            "17:55",
+            "18:45",
+            "21:15",
+            "22:05"
+          ]
+        },
+        {
+          "name": "Century 16 Eastport Plaza",
+          "address": "4040 SE 82 Ave., Portland, OR 97266",
+          "slug": "century-16-eastport-plaza",
+          "times": [
+            "14:20",
+            "15:55",
+            "19:20",
+            "22:20"
+          ]
+        },
+        {
+          "name": "Century Clackamas Town Center & XD",
+          "address": "12000 SE 82nd Ave., Portland, OR 97086",
+          "slug": "century-clackamas-town-center-xd",
+          "times": [
+            "10:45",
+            "11:55",
+            "14:15",
+            "15:20",
+            "18:15",
+            "18:45",
+            "21:40",
+            "22:10"
+          ]
+        },
+        {
+          "name": "Cornelius 9 Cinemas",
+          "address": "200 N. 26th Ave., Cornelius, OR 97113",
+          "slug": "cornelius-9-cinemas",
+          "times": [
+            "15:25",
+            "18:30",
+            "21:35"
+          ]
+        },
+        {
+          "name": "Living Room Theaters Portland",
+          "address": "341 SW 10th Ave, Portland, OR 97205",
+          "slug": "living-room-theaters-portland",
+          "times": [
+            "12:15",
+            "15:15",
+            "19:00"
+          ]
+        },
+        {
+          "name": "Oak Grove 8 Cinemas",
+          "address": "16100 SE McLoughlin Blvd, Milwaukie, OR 97267",
+          "slug": "oak-grove-8-cinemas",
+          "times": [
+            "15:30",
+            "18:30"
+          ]
+        },
+        {
+          "name": "Regal Bridgeport Village & IMAX",
+          "address": "7329 S.W. Bridgeport Road, Tigard, OR 97224",
+          "slug": "regal-bridgeport-village-imax",
+          "times": [
+            "14:50",
+            "15:05",
+            "18:15",
+            "18:30",
+            "21:55",
+            "22:00",
+            "23:25",
+            "23:40"
+          ]
+        },
+        {
+          "name": "Regal Cascade IMAX & RPX",
+          "address": "1101 S.E. 160th Ave., Vancouver, WA 98683",
+          "slug": "regal-cascade-imax-rpx",
+          "times": [
+            "12:00",
+            "14:40",
+            "15:35",
+            "17:20",
+            "19:10",
+            "20:30",
+            "23:30"
+          ]
+        },
+        {
+          "name": "Regal Cinema 99",
+          "address": "9010 N.E. Hwy 99, Vancouver, WA 98665",
+          "slug": "regal-cinema-99",
+          "times": [
+            "12:45",
+            "16:30",
+            "19:30"
+          ]
+        },
+        {
+          "name": "Regal City Center",
+          "address": "801 C Street, Vancouver, WA 98660",
+          "slug": "regal-city-center",
+          "times": [
+            "13:55",
+            "17:10",
+            "19:20"
+          ]
+        },
+        {
+          "name": "Regal Evergreen Parkway & RPX",
+          "address": "2625 N.W. 188th, Hillsboro, OR 97124",
+          "slug": "regal-evergreen-parkway-rpx",
+          "times": [
+            "14:40",
+            "15:40",
+            "18:15",
+            "19:15",
+            "21:50",
+            "22:40",
+            "23:05"
+          ]
+        },
+        {
+          "name": "Regal Fox Tower",
+          "address": "846 S.W. Park Ave., Portland, OR 97205",
+          "slug": "regal-fox-tower",
+          "times": [
+            "14:30",
+            "16:40",
+            "19:50"
+          ]
+        },
+        {
+          "name": "Regal Hilltop Cinema",
+          "address": "325 Beavercreek Rd, Oregon City, OR 97045",
+          "slug": "regal-hilltop-cinema",
+          "times": [
+            "12:15",
+            "14:30",
+            "18:00",
+            "21:30"
+          ]
+        },
+        {
+          "name": "Regal Lloyd Center & IMAX",
+          "address": "1510 N.E. Multnomah St., Portland, OR 97232",
+          "slug": "regal-lloyd-center-imax",
+          "times": [
+            "12:30",
+            "16:00",
+            "19:30"
+          ]
+        },
+        {
+          "name": "Regal Movies On TV",
+          "address": "2929 S.W. 234th Ave., Hillsboro, OR 97123",
+          "slug": "regal-movies-on-tv",
+          "times": [
+            "14:45",
+            "18:10",
+            "23:20"
+          ]
+        },
+        {
+          "name": "Regal Pioneer Place",
+          "address": "340 S.W. Morrison, Portland, OR 97204",
+          "slug": "regal-pioneer-place",
+          "times": [
+            "14:00",
+            "16:40",
+            "19:55"
+          ]
+        },
+        {
+          "name": "Regal Stark Street",
+          "address": "2929 N.E. Kane Dr., Gresham, OR 97030",
+          "slug": "regal-stark-street",
+          "times": [
+            "13:00",
+            "16:25",
+            "19:50"
+          ]
+        },
+        {
+          "name": "Scappoose Cinema",
+          "address": "33520 SW Edward Lane, Scappoose, OR 97056",
+          "slug": "scappoose-cinema",
+          "times": [
+            "15:35",
+            "18:30"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Star Trek II: The Wrath of Khan",
+      "slug": "star-trek-ii-the-wrath-of-khan-1982",
+      "rating": "PG",
+      "runtime": "1h 53m",
+      "runtimeMinutes": 113,
+      "genre": "Sci-fi thriller",
+      "year": 1982,
+      "week": null,
+      "poster": "https://www.cinemaclock.com/images/posters/140x210/83/star-trek-ii-the-wrath-of-khan-1982-us-poster.jpg",
+      "synopsis": null,
+      "releaseDate": "1982-07-01",
+      "releaseDateSource": "year-only",
+      "daysSinceRelease": 16141,
+      "isSecondRun": true,
+      "isClassic": true,
+      "theaters": [
+        {
+          "name": "AMC Vancouver Mall 23",
+          "address": "8700 NE Vancouver Mall Dr., Vancouver, WA 98662",
+          "slug": "amc-vancouver-mall-23",
+          "times": [
+            "16:00"
+          ]
+        },
+        {
+          "name": "Century 16 Eastport Plaza",
+          "address": "4040 SE 82 Ave., Portland, OR 97266",
+          "slug": "century-16-eastport-plaza",
+          "times": [
+            "14:40"
+          ]
+        },
+        {
+          "name": "Century Clackamas Town Center & XD",
+          "address": "12000 SE 82nd Ave., Portland, OR 97086",
+          "slug": "century-clackamas-town-center-xd",
+          "times": [
+            "14:40"
+          ]
+        },
+        {
+          "name": "Regal Bridgeport Village & IMAX",
+          "address": "7329 S.W. Bridgeport Road, Tigard, OR 97224",
+          "slug": "regal-bridgeport-village-imax",
+          "times": [
+            "14:35"
+          ]
+        },
+        {
+          "name": "Regal Cascade IMAX & RPX",
+          "address": "1101 S.E. 160th Ave., Vancouver, WA 98683",
+          "slug": "regal-cascade-imax-rpx",
+          "times": [
+            "14:35"
+          ]
+        },
+        {
+          "name": "Regal Cinema 99",
+          "address": "9010 N.E. Hwy 99, Vancouver, WA 98665",
+          "slug": "regal-cinema-99",
+          "times": [
+            "13:30"
+          ]
+        },
+        {
+          "name": "Regal City Center",
+          "address": "801 C Street, Vancouver, WA 98660",
+          "slug": "regal-city-center",
+          "times": [
+            "15:15"
+          ]
+        },
+        {
+          "name": "Regal Evergreen Parkway & RPX",
+          "address": "2625 N.W. 188th, Hillsboro, OR 97124",
+          "slug": "regal-evergreen-parkway-rpx",
+          "times": [
+            "14:35"
+          ]
+        },
+        {
+          "name": "Regal Fox Tower",
+          "address": "846 S.W. Park Ave., Portland, OR 97205",
+          "slug": "regal-fox-tower",
+          "times": [
+            "12:50"
+          ]
+        },
+        {
+          "name": "Regal Lloyd Center & IMAX",
+          "address": "1510 N.E. Multnomah St., Portland, OR 97232",
+          "slug": "regal-lloyd-center-imax",
+          "times": [
+            "14:35"
+          ]
+        },
+        {
+          "name": "Regal Movies On TV",
+          "address": "2929 S.W. 234th Ave., Hillsboro, OR 97123",
+          "slug": "regal-movies-on-tv",
+          "times": [
+            "14:35"
+          ]
+        },
+        {
+          "name": "Regal Stark Street",
+          "address": "2929 N.E. Kane Dr., Gresham, OR 97030",
+          "slug": "regal-stark-street",
+          "times": [
+            "14:35"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Star Trek III: The Search for Spock",
+      "slug": "star-trek-iii-the-search-for-spock-1984",
+      "rating": "PG",
+      "runtime": "1h 45m",
+      "runtimeMinutes": 105,
+      "genre": "Science-fiction",
+      "year": 1984,
+      "week": null,
+      "poster": "https://www.cinemaclock.com/images/posters/140x210/31/star-trek-iii-the-search-for-spock-1984-us-poster.jpg",
+      "synopsis": null,
+      "releaseDate": "1984-07-01",
+      "releaseDateSource": "year-only",
+      "daysSinceRelease": 15410,
+      "isSecondRun": true,
+      "isClassic": true,
+      "theaters": [
+        {
+          "name": "Century 16 Eastport Plaza",
+          "address": "4040 SE 82 Ave., Portland, OR 97266",
+          "slug": "century-16-eastport-plaza",
+          "times": [
+            "18:30"
+          ]
+        },
+        {
+          "name": "Century Clackamas Town Center & XD",
+          "address": "12000 SE 82nd Ave., Portland, OR 97086",
+          "slug": "century-clackamas-town-center-xd",
+          "times": [
+            "18:30"
+          ]
+        },
+        {
+          "name": "Regal Bridgeport Village & IMAX",
+          "address": "7329 S.W. Bridgeport Road, Tigard, OR 97224",
+          "slug": "regal-bridgeport-village-imax",
+          "times": [
+            "17:50"
+          ]
+        },
+        {
+          "name": "Regal Cascade IMAX & RPX",
+          "address": "1101 S.E. 160th Ave., Vancouver, WA 98683",
+          "slug": "regal-cascade-imax-rpx",
+          "times": [
+            "17:50"
+          ]
+        },
+        {
+          "name": "Regal Cinema 99",
+          "address": "9010 N.E. Hwy 99, Vancouver, WA 98665",
+          "slug": "regal-cinema-99",
+          "times": [
+            "16:15"
+          ]
+        },
+        {
+          "name": "Regal City Center",
+          "address": "801 C Street, Vancouver, WA 98660",
+          "slug": "regal-city-center",
+          "times": [
+            "18:30"
+          ]
+        },
+        {
+          "name": "Regal Evergreen Parkway & RPX",
+          "address": "2625 N.W. 188th, Hillsboro, OR 97124",
+          "slug": "regal-evergreen-parkway-rpx",
+          "times": [
+            "17:50"
+          ]
+        },
+        {
+          "name": "Regal Fox Tower",
+          "address": "846 S.W. Park Ave., Portland, OR 97205",
+          "slug": "regal-fox-tower",
+          "times": [
+            "17:00"
+          ]
+        },
+        {
+          "name": "Regal Lloyd Center & IMAX",
+          "address": "1510 N.E. Multnomah St., Portland, OR 97232",
+          "slug": "regal-lloyd-center-imax",
+          "times": [
+            "17:50"
+          ]
+        },
+        {
+          "name": "Regal Movies On TV",
+          "address": "2929 S.W. 234th Ave., Hillsboro, OR 97123",
+          "slug": "regal-movies-on-tv",
+          "times": [
+            "17:50"
+          ]
+        },
+        {
+          "name": "Regal Stark Street",
+          "address": "2929 N.E. Kane Dr., Gresham, OR 97030",
+          "slug": "regal-stark-street",
+          "times": [
+            "17:50"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Star Trek IV: The Voyage Home",
+      "slug": "star-trek-iv-the-voyage-home-1986",
+      "rating": "PG",
+      "runtime": "1h 59m",
+      "runtimeMinutes": 119,
+      "genre": "Sci-fi comedy",
+      "year": null,
+      "week": null,
+      "poster": "https://www.cinemaclock.com/images/posters/140x210/42/star-trek-iv-the-voyage-home-1986-poster.jpg",
+      "synopsis": null,
+      "releaseDate": null,
+      "releaseDateSource": "unknown",
+      "daysSinceRelease": null,
+      "isSecondRun": false,
+      "isClassic": false,
+      "theaters": [
+        {
+          "name": "AMC Vancouver Mall 23",
+          "address": "8700 NE Vancouver Mall Dr., Vancouver, WA 98662",
+          "slug": "amc-vancouver-mall-23",
+          "times": [
+            "18:30"
+          ]
+        },
+        {
+          "name": "Century 16 Eastport Plaza",
+          "address": "4040 SE 82 Ave., Portland, OR 97266",
+          "slug": "century-16-eastport-plaza",
+          "times": [
+            "22:05"
+          ]
+        },
+        {
+          "name": "Century Clackamas Town Center & XD",
+          "address": "12000 SE 82nd Ave., Portland, OR 97086",
+          "slug": "century-clackamas-town-center-xd",
+          "times": [
+            "22:05"
+          ]
+        },
+        {
+          "name": "Regal Bridgeport Village & IMAX",
+          "address": "7329 S.W. Bridgeport Road, Tigard, OR 97224",
+          "slug": "regal-bridgeport-village-imax",
+          "times": [
+            "20:55"
+          ]
+        },
+        {
+          "name": "Regal Cascade IMAX & RPX",
+          "address": "1101 S.E. 160th Ave., Vancouver, WA 98683",
+          "slug": "regal-cascade-imax-rpx",
+          "times": [
+            "20:55"
+          ]
+        },
+        {
+          "name": "Regal Cinema 99",
+          "address": "9010 N.E. Hwy 99, Vancouver, WA 98665",
+          "slug": "regal-cinema-99",
+          "times": [
+            "19:15"
+          ]
+        },
+        {
+          "name": "Regal City Center",
+          "address": "801 C Street, Vancouver, WA 98660",
+          "slug": "regal-city-center",
+          "times": [
+            "20:30"
+          ]
+        },
+        {
+          "name": "Regal Evergreen Parkway & RPX",
+          "address": "2625 N.W. 188th, Hillsboro, OR 97124",
+          "slug": "regal-evergreen-parkway-rpx",
+          "times": [
+            "20:55"
+          ]
+        },
+        {
+          "name": "Regal Fox Tower",
+          "address": "846 S.W. Park Ave., Portland, OR 97205",
+          "slug": "regal-fox-tower",
+          "times": [
+            "18:35"
+          ]
+        },
+        {
+          "name": "Regal Lloyd Center & IMAX",
+          "address": "1510 N.E. Multnomah St., Portland, OR 97232",
+          "slug": "regal-lloyd-center-imax",
+          "times": [
+            "20:55"
+          ]
+        },
+        {
+          "name": "Regal Movies On TV",
+          "address": "2929 S.W. 234th Ave., Hillsboro, OR 97123",
+          "slug": "regal-movies-on-tv",
+          "times": [
+            "20:55"
+          ]
+        },
+        {
+          "name": "Regal Stark Street",
+          "address": "2929 N.E. Kane Dr., Gresham, OR 97030",
+          "slug": "regal-stark-street",
+          "times": [
+            "20:55"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Star Trek: The Motion Picture",
+      "slug": "star-trek-the-motion-picture-1979",
+      "rating": "PG",
+      "runtime": "2h 12m",
+      "runtimeMinutes": 132,
+      "genre": "Science-fiction",
+      "year": 1979,
+      "week": null,
+      "poster": "https://www.cinemaclock.com/images/posters/140x210/96/star-trek-the-motion-picture-1979-us-poster.jpg",
+      "synopsis": null,
+      "releaseDate": "1979-07-01",
+      "releaseDateSource": "year-only",
+      "daysSinceRelease": 17237,
+      "isSecondRun": true,
+      "isClassic": true,
+      "theaters": [
+        {
+          "name": "Regal Bridgeport Village & IMAX",
+          "address": "7329 S.W. Bridgeport Road, Tigard, OR 97224",
+          "slug": "regal-bridgeport-village-imax",
+          "times": [
+            "23:00"
+          ]
+        },
+        {
+          "name": "Regal Cascade IMAX & RPX",
+          "address": "1101 S.E. 160th Ave., Vancouver, WA 98683",
+          "slug": "regal-cascade-imax-rpx",
+          "times": [
+            "23:00"
+          ]
+        },
+        {
+          "name": "Regal Cinema 99",
+          "address": "9010 N.E. Hwy 99, Vancouver, WA 98665",
+          "slug": "regal-cinema-99",
+          "times": [
+            "12:45"
+          ]
+        },
+        {
+          "name": "Regal City Center",
+          "address": "801 C Street, Vancouver, WA 98660",
+          "slug": "regal-city-center",
+          "times": [
+            "23:35"
+          ]
+        },
+        {
+          "name": "Regal Evergreen Parkway & RPX",
+          "address": "2625 N.W. 188th, Hillsboro, OR 97124",
+          "slug": "regal-evergreen-parkway-rpx",
+          "times": [
+            "23:00"
+          ]
+        },
+        {
+          "name": "Regal Fox Tower",
+          "address": "846 S.W. Park Ave., Portland, OR 97205",
+          "slug": "regal-fox-tower",
+          "times": [
+            "13:00"
+          ]
+        },
+        {
+          "name": "Regal Lloyd Center & IMAX",
+          "address": "1510 N.E. Multnomah St., Portland, OR 97232",
+          "slug": "regal-lloyd-center-imax",
+          "times": [
+            "23:00"
+          ]
+        },
+        {
+          "name": "Regal Movies On TV",
+          "address": "2929 S.W. 234th Ave., Hillsboro, OR 97123",
+          "slug": "regal-movies-on-tv",
+          "times": [
+            "23:00"
+          ]
+        },
+        {
+          "name": "Regal Stark Street",
+          "address": "2929 N.E. Kane Dr., Gresham, OR 97030",
+          "slug": "regal-stark-street",
+          "times": [
+            "23:00"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Steel Magnolias",
+      "slug": "steel-magnolias-1989",
+      "rating": "PG",
+      "runtime": "1h 57m",
+      "runtimeMinutes": 117,
+      "genre": "Romantic drama",
+      "year": 1989,
+      "week": null,
+      "poster": "https://www.cinemaclock.com/images/posters/140x210/12/steel-magnolias-1989-us-poster.jpg",
+      "synopsis": null,
+      "releaseDate": "1989-07-01",
+      "releaseDateSource": "year-only",
+      "daysSinceRelease": 13584,
+      "isSecondRun": true,
+      "isClassic": true,
+      "theaters": [
+        {
+          "name": "Regal Bridgeport Village & IMAX",
+          "address": "7329 S.W. Bridgeport Road, Tigard, OR 97224",
+          "slug": "regal-bridgeport-village-imax",
+          "times": [
+            "15:00"
+          ]
+        },
+        {
+          "name": "Regal Cascade IMAX & RPX",
+          "address": "1101 S.E. 160th Ave., Vancouver, WA 98683",
+          "slug": "regal-cascade-imax-rpx",
+          "times": [
+            "12:15"
+          ]
+        },
+        {
+          "name": "Regal City Center",
+          "address": "801 C Street, Vancouver, WA 98660",
+          "slug": "regal-city-center",
+          "times": [
+            "23:30"
+          ]
+        },
+        {
+          "name": "Regal Evergreen Parkway & RPX",
+          "address": "2625 N.W. 188th, Hillsboro, OR 97124",
+          "slug": "regal-evergreen-parkway-rpx",
+          "times": [
+            "13:00"
+          ]
+        },
+        {
+          "name": "Regal Fox Tower",
+          "address": "846 S.W. Park Ave., Portland, OR 97205",
+          "slug": "regal-fox-tower",
+          "times": [
+            "13:45"
+          ]
+        },
+        {
+          "name": "Regal Movies On TV",
+          "address": "2929 S.W. 234th Ave., Hillsboro, OR 97123",
+          "slug": "regal-movies-on-tv",
+          "times": [
+            "12:35"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The Changeling",
+      "slug": "the-changeling-1980",
+      "rating": "R",
+      "runtime": "1h 47m",
+      "runtimeMinutes": 107,
+      "genre": "Horror",
+      "year": 1980,
+      "week": null,
+      "poster": "https://www.cinemaclock.com/images/posters/140x210/73/the-changeling-1980-i-movie-poster.jpg",
+      "synopsis": null,
+      "releaseDate": "1980-07-01",
+      "releaseDateSource": "year-only",
+      "daysSinceRelease": 16871,
+      "isSecondRun": true,
+      "isClassic": true,
+      "theaters": [
+        {
+          "name": "Century 16 Eastport Plaza",
+          "address": "4040 SE 82 Ave., Portland, OR 97266",
+          "slug": "century-16-eastport-plaza",
+          "times": [
+            "10:30"
+          ]
+        },
+        {
+          "name": "Century Clackamas Town Center & XD",
+          "address": "12000 SE 82nd Ave., Portland, OR 97086",
+          "slug": "century-clackamas-town-center-xd",
+          "times": [
+            "10:30"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The Deadliest Mansion",
+      "slug": "the-deadliest-mansion-2026",
+      "rating": null,
+      "runtime": "1h 34m",
+      "runtimeMinutes": 94,
+      "genre": "Horror",
+      "year": null,
+      "week": 1,
+      "poster": "https://www.cinemaclock.com/images/posters/140x210/82/lau-chu-hoa-2026-orig-poster.jpg",
+      "synopsis": null,
+      "releaseDate": "2026-09-08",
+      "releaseDateSource": "week-estimate",
+      "daysSinceRelease": 1,
+      "isSecondRun": false,
+      "isClassic": false,
+      "theaters": [
+        {
+          "name": "Century 16 Eastport Plaza",
+          "address": "4040 SE 82 Ave., Portland, OR 97266",
+          "slug": "century-16-eastport-plaza",
+          "times": [
+            "22:30"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The Dog Stars",
+      "slug": "the-dog-stars-2026",
+      "rating": "R",
+      "runtime": "1h 58m",
+      "runtimeMinutes": 118,
+      "genre": "Horror/thriller",
+      "year": null,
+      "week": 2,
+      "poster": "https://www.cinemaclock.com/images/posters/140x210/78/the-dog-stars-2026-orig-poster.jpg",
+      "synopsis": null,
+      "releaseDate": "2026-09-01",
+      "releaseDateSource": "week-estimate",
+      "daysSinceRelease": 8,
+      "isSecondRun": false,
+      "isClassic": false,
+      "theaters": [
+        {
+          "name": "AMC Classic Mill Plain 8",
+          "address": "11700 SE 7th St., Vancouver, WA 98683",
+          "slug": "amc-classic-mill-plain-8",
+          "times": [
+            "19:10"
+          ]
+        },
+        {
+          "name": "AMC Dine-In Progress Ridge 13",
+          "address": "12345 SW Horizon Blvd, Beaverton, OR 97007",
+          "slug": "amc-dine-in-progress-ridge-13",
+          "times": [
+            "16:15",
+            "19:15"
+          ]
+        },
+        {
+          "name": "AMC Vancouver Mall 23",
+          "address": "8700 NE Vancouver Mall Dr., Vancouver, WA 98662",
+          "slug": "amc-vancouver-mall-23",
+          "times": [
+            "16:00",
+            "20:45"
+          ]
+        },
+        {
+          "name": "Bagdad Theater & Pub",
+          "address": "3702 SE Hawthorne Blvd, Portland, OR 97214",
+          "slug": "bagdad-theater-pub",
+          "times": [
+            "12:30",
+            "15:30",
+            "19:00"
+          ]
+        },
+        {
+          "name": "Canby Cinema 8",
+          "address": "252 NE 2nd Avenue, Canby, OR 97013",
+          "slug": "canby-cinema-8",
+          "times": [
+            "16:30",
+            "19:00"
+          ]
+        },
+        {
+          "name": "Century 16 Cedar Hills",
+          "address": "3200 SW Hocken, Beaverton, OR 97005",
+          "slug": "century-16-cedar-hills",
+          "times": [
+            "11:10",
+            "14:00",
+            "16:50",
+            "19:40",
+            "22:30"
+          ]
+        },
+        {
+          "name": "Century 16 Eastport Plaza",
+          "address": "4040 SE 82 Ave., Portland, OR 97266",
+          "slug": "century-16-eastport-plaza",
+          "times": [
+            "14:05",
+            "17:00",
+            "19:55",
+            "22:50"
+          ]
+        },
+        {
+          "name": "Century Clackamas Town Center & XD",
+          "address": "12000 SE 82nd Ave., Portland, OR 97086",
+          "slug": "century-clackamas-town-center-xd",
+          "times": [
+            "10:55",
+            "13:50",
+            "16:45",
+            "19:40",
+            "22:35"
+          ]
+        },
+        {
+          "name": "Cornelius 9 Cinemas",
+          "address": "200 N. 26th Ave., Cornelius, OR 97113",
+          "slug": "cornelius-9-cinemas",
+          "times": [
+            "13:45",
+            "16:30",
+            "19:15",
+            "22:00"
+          ]
+        },
+        {
+          "name": "Edgefield Power Station Theater",
+          "address": "2126 S.W. Halsey St., Troutdale, OR 97060",
+          "slug": "edgefield-power-station-theater",
+          "times": [
+            "12:00",
+            "15:30",
+            "19:00"
+          ]
+        },
+        {
+          "name": "Grand Lodge Theater",
+          "address": "3505 Pacific Ave., Forest Grove, OR 97116",
+          "slug": "grand-lodge-theater",
+          "times": [
+            "15:30",
+            "19:00"
+          ]
+        },
+        {
+          "name": "Laurelhurst Theater",
+          "address": "2735 East Burnside St., Portland, OR 97214",
+          "slug": "laurelhurst-theater",
+          "times": [
+            "15:30",
+            "18:15"
+          ]
+        },
+        {
+          "name": "Liberty Theatre Camas",
+          "address": "315 NE 4th Ave., Camas, WA 98607",
+          "slug": "liberty-theatre-camas",
+          "times": [
+            "13:30",
+            "15:45",
+            "19:25"
+          ]
+        },
+        {
+          "name": "Oak Grove 8 Cinemas",
+          "address": "16100 SE McLoughlin Blvd, Milwaukie, OR 97267",
+          "slug": "oak-grove-8-cinemas",
+          "times": [
+            "16:20",
+            "19:00"
+          ]
+        },
+        {
+          "name": "OMSI Empirical Theater",
+          "address": "1945 SE Water Ave., Portland, OR 97214",
+          "slug": "omsi-empirical-theater",
+          "times": [
+            "17:00",
+            "19:15"
+          ]
+        },
+        {
+          "name": "Regal Bridgeport Village & IMAX",
+          "address": "7329 S.W. Bridgeport Road, Tigard, OR 97224",
+          "slug": "regal-bridgeport-village-imax",
+          "times": [
+            "14:55",
+            "17:55",
+            "20:55",
+            "23:55"
+          ]
+        },
+        {
+          "name": "Regal Cascade IMAX & RPX",
+          "address": "1101 S.E. 160th Ave., Vancouver, WA 98683",
+          "slug": "regal-cascade-imax-rpx",
+          "times": [
+            "12:25",
+            "15:15",
+            "18:05",
+            "20:50"
+          ]
+        },
+        {
+          "name": "Regal Cinema 99",
+          "address": "9010 N.E. Hwy 99, Vancouver, WA 98665",
+          "slug": "regal-cinema-99",
+          "times": [
+            "16:45"
+          ]
+        },
+        {
+          "name": "Regal City Center",
+          "address": "801 C Street, Vancouver, WA 98660",
+          "slug": "regal-city-center",
+          "times": [
+            "13:25",
+            "16:10"
+          ]
+        },
+        {
+          "name": "Regal Evergreen Parkway & RPX",
+          "address": "2625 N.W. 188th, Hillsboro, OR 97124",
+          "slug": "regal-evergreen-parkway-rpx",
+          "times": [
+            "14:40",
+            "17:50",
+            "20:50",
+            "23:30"
+          ]
+        },
+        {
+          "name": "Regal Fox Tower",
+          "address": "846 S.W. Park Ave., Portland, OR 97205",
+          "slug": "regal-fox-tower",
+          "times": [
+            "19:00"
+          ]
+        },
+        {
+          "name": "Regal Hilltop Cinema",
+          "address": "325 Beavercreek Rd, Oregon City, OR 97045",
+          "slug": "regal-hilltop-cinema",
+          "times": [
+            "13:00",
+            "16:00",
+            "19:00",
+            "21:30"
+          ]
+        },
+        {
+          "name": "Regal Lloyd Center & IMAX",
+          "address": "1510 N.E. Multnomah St., Portland, OR 97232",
+          "slug": "regal-lloyd-center-imax",
+          "times": [
+            "12:20",
+            "15:30"
+          ]
+        },
+        {
+          "name": "Regal Movies On TV",
+          "address": "2929 S.W. 234th Ave., Hillsboro, OR 97123",
+          "slug": "regal-movies-on-tv",
+          "times": [
+            "12:00",
+            "15:00",
+            "18:00",
+            "21:00"
+          ]
+        },
+        {
+          "name": "Regal Pioneer Place",
+          "address": "340 S.W. Morrison, Portland, OR 97204",
+          "slug": "regal-pioneer-place",
+          "times": [
+            "14:05",
+            "17:00",
+            "19:45"
+          ]
+        },
+        {
+          "name": "Regal Stark Street",
+          "address": "2929 N.E. Kane Dr., Gresham, OR 97030",
+          "slug": "regal-stark-street",
+          "times": [
+            "15:40",
+            "18:40"
+          ]
+        },
+        {
+          "name": "Scappoose Cinema",
+          "address": "33520 SW Edward Lane, Scappoose, OR 97056",
+          "slug": "scappoose-cinema",
+          "times": [
+            "16:50",
+            "19:20"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The End of Oak Street",
+      "slug": "the-end-of-oak-street-2026",
+      "rating": "G",
+      "runtime": "1h 50m",
+      "runtimeMinutes": 110,
+      "genre": "Sci-fi thriller",
+      "year": null,
+      "week": 4,
+      "poster": "https://www.cinemaclock.com/images/posters/140x210/12/the-end-of-oak-street-2026-orig-poster.jpg",
+      "synopsis": null,
+      "releaseDate": "2026-08-18",
+      "releaseDateSource": "week-estimate",
+      "daysSinceRelease": 22,
+      "isSecondRun": false,
+      "isClassic": false,
+      "theaters": [
+        {
+          "name": "AMC Dine-In Progress Ridge 13",
+          "address": "12345 SW Horizon Blvd, Beaverton, OR 97007",
+          "slug": "amc-dine-in-progress-ridge-13",
+          "times": [
+            "15:00",
+            "17:45",
+            "20:15"
+          ]
+        },
+        {
+          "name": "AMC Vancouver Mall 23",
+          "address": "8700 NE Vancouver Mall Dr., Vancouver, WA 98662",
+          "slug": "amc-vancouver-mall-23",
+          "times": [
+            "19:15"
+          ]
+        },
+        {
+          "name": "Canby Cinema 8",
+          "address": "252 NE 2nd Avenue, Canby, OR 97013",
+          "slug": "canby-cinema-8",
+          "times": [
+            "17:10"
+          ]
+        },
+        {
+          "name": "Century 16 Cedar Hills",
+          "address": "3200 SW Hocken, Beaverton, OR 97005",
+          "slug": "century-16-cedar-hills",
+          "times": [
+            "19:40",
+            "22:15"
+          ]
+        },
+        {
+          "name": "Century 16 Eastport Plaza",
+          "address": "4040 SE 82 Ave., Portland, OR 97266",
+          "slug": "century-16-eastport-plaza",
+          "times": [
+            "17:45",
+            "20:20",
+            "22:55"
+          ]
+        },
+        {
+          "name": "Century Clackamas Town Center & XD",
+          "address": "12000 SE 82nd Ave., Portland, OR 97086",
+          "slug": "century-clackamas-town-center-xd",
+          "times": [
+            "21:45"
+          ]
+        },
+        {
+          "name": "Cornelius 9 Cinemas",
+          "address": "200 N. 26th Ave., Cornelius, OR 97113",
+          "slug": "cornelius-9-cinemas",
+          "times": [
+            "14:35",
+            "17:00",
+            "19:25",
+            "21:50"
+          ]
+        },
+        {
+          "name": "Joy Cinema",
+          "address": "11959 SW Pacific Hwy, Tigard, OR 97223",
+          "slug": "joy-cinema",
+          "times": [
+            "19:20"
+          ]
+        },
+        {
+          "name": "Oak Grove 8 Cinemas",
+          "address": "16100 SE McLoughlin Blvd, Milwaukie, OR 97267",
+          "slug": "oak-grove-8-cinemas",
+          "times": [
+            "17:00",
+            "19:20"
+          ]
+        },
+        {
+          "name": "Regal Bridgeport Village & IMAX",
+          "address": "7329 S.W. Bridgeport Road, Tigard, OR 97224",
+          "slug": "regal-bridgeport-village-imax",
+          "times": [
+            "13:10",
+            "15:50",
+            "18:30",
+            "21:10"
+          ]
+        },
+        {
+          "name": "Regal Cascade IMAX & RPX",
+          "address": "1101 S.E. 160th Ave., Vancouver, WA 98683",
+          "slug": "regal-cascade-imax-rpx",
+          "times": [
+            "15:25"
+          ]
+        },
+        {
+          "name": "Regal Evergreen Parkway & RPX",
+          "address": "2625 N.W. 188th, Hillsboro, OR 97124",
+          "slug": "regal-evergreen-parkway-rpx",
+          "times": [
+            "17:25",
+            "23:25"
+          ]
+        },
+        {
+          "name": "Regal Lloyd Center & IMAX",
+          "address": "1510 N.E. Multnomah St., Portland, OR 97232",
+          "slug": "regal-lloyd-center-imax",
+          "times": [
+            "18:50"
+          ]
+        },
+        {
+          "name": "Regal Stark Street",
+          "address": "2929 N.E. Kane Dr., Gresham, OR 97030",
+          "slug": "regal-stark-street",
+          "times": [
+            "13:00"
+          ]
+        },
+        {
+          "name": "Scappoose Cinema",
+          "address": "33520 SW Edward Lane, Scappoose, OR 97056",
+          "slug": "scappoose-cinema",
+          "times": [
+            "16:50"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The Invite",
+      "slug": "the-invite-2026",
+      "rating": "R",
+      "runtime": "1h 47m",
+      "runtimeMinutes": 107,
+      "genre": "Romantic drama",
+      "year": null,
+      "week": 9,
+      "poster": "https://www.cinemaclock.com/images/posters/140x210/85/the-invite-2026-orig-poster.jpg",
+      "synopsis": null,
+      "releaseDate": "2026-07-14",
+      "releaseDateSource": "week-estimate",
+      "daysSinceRelease": 57,
+      "isSecondRun": true,
+      "isClassic": false,
+      "theaters": [
+        {
+          "name": "Cinema 21 Theatre",
+          "address": "616 NW 21st Ave., Portland, OR 97209",
+          "slug": "cinema-21-theatre",
+          "times": [
+            "16:00",
+            "18:45"
+          ]
+        },
+        {
+          "name": "Kennedy School Theater",
+          "address": "5736 N.E. 33rd Ave., Portland, OR 97211",
+          "slug": "kennedy-school-theater",
+          "times": [
+            "19:00"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The Magic Faraway Tree",
+      "slug": "the-magic-faraway-tree-2026",
+      "rating": "PG",
+      "runtime": "1h 50m",
+      "runtimeMinutes": 110,
+      "genre": "Fantasy adventure",
+      "year": null,
+      "week": 3,
+      "poster": "https://www.cinemaclock.com/images/posters/140x210/71/the-magic-faraway-tree-2026-us-poster.jpg",
+      "synopsis": null,
+      "releaseDate": "2026-08-25",
+      "releaseDateSource": "week-estimate",
+      "daysSinceRelease": 15,
+      "isSecondRun": false,
+      "isClassic": false,
+      "theaters": [
+        {
+          "name": "Century Clackamas Town Center & XD",
+          "address": "12000 SE 82nd Ave., Portland, OR 97086",
+          "slug": "century-clackamas-town-center-xd",
+          "times": [
+            "10:40",
+            "13:30",
+            "16:20",
+            "19:10",
+            "22:00"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The Odyssey",
+      "slug": "the-odyssey-2026",
+      "rating": "R",
+      "runtime": "2h 52m",
+      "runtimeMinutes": 172,
+      "genre": "Fantasy action adventure",
+      "year": null,
+      "week": 8,
+      "poster": "https://www.cinemaclock.com/images/posters/140x210/47/the-odyssey-2026-us-poster.jpg",
+      "synopsis": null,
+      "releaseDate": "2026-07-21",
+      "releaseDateSource": "week-estimate",
+      "daysSinceRelease": 50,
+      "isSecondRun": true,
+      "isClassic": false,
+      "theaters": [
+        {
+          "name": "AMC Classic Mill Plain 8",
+          "address": "11700 SE 7th St., Vancouver, WA 98683",
+          "slug": "amc-classic-mill-plain-8",
+          "times": [
+            "15:30",
+            "19:00"
+          ]
+        },
+        {
+          "name": "AMC Dine-In Progress Ridge 13",
+          "address": "12345 SW Horizon Blvd, Beaverton, OR 97007",
+          "slug": "amc-dine-in-progress-ridge-13",
+          "times": [
+            "15:00",
+            "19:00"
+          ]
+        },
+        {
+          "name": "AMC Vancouver Mall 23",
+          "address": "8700 NE Vancouver Mall Dr., Vancouver, WA 98662",
+          "slug": "amc-vancouver-mall-23",
+          "times": [
+            "14:00",
+            "18:00"
+          ]
+        },
+        {
+          "name": "Canby Cinema 8",
+          "address": "252 NE 2nd Avenue, Canby, OR 97013",
+          "slug": "canby-cinema-8",
+          "times": [
+            "15:25",
+            "18:50"
+          ]
+        },
+        {
+          "name": "Century 16 Cedar Hills",
+          "address": "3200 SW Hocken, Beaverton, OR 97005",
+          "slug": "century-16-cedar-hills",
+          "times": [
+            "14:15",
+            "18:00",
+            "21:45"
+          ]
+        },
+        {
+          "name": "Century 16 Eastport Plaza",
+          "address": "4040 SE 82 Ave., Portland, OR 97266",
+          "slug": "century-16-eastport-plaza",
+          "times": [
+            "15:00",
+            "18:50",
+            "22:10"
+          ]
+        },
+        {
+          "name": "Century Clackamas Town Center & XD",
+          "address": "12000 SE 82nd Ave., Portland, OR 97086",
+          "slug": "century-clackamas-town-center-xd",
+          "times": [
+            "12:35",
+            "16:25",
+            "17:45",
+            "20:15",
+            "21:35"
+          ]
+        },
+        {
+          "name": "Cornelius 9 Cinemas",
+          "address": "200 N. 26th Ave., Cornelius, OR 97113",
+          "slug": "cornelius-9-cinemas",
+          "times": [
+            "15:45",
+            "19:20"
+          ]
+        },
+        {
+          "name": "Living Room Theaters Portland",
+          "address": "341 SW 10th Ave, Portland, OR 97205",
+          "slug": "living-room-theaters-portland",
+          "times": [
+            "12:00",
+            "15:30",
+            "18:15"
+          ]
+        },
+        {
+          "name": "Regal Bridgeport Village & IMAX",
+          "address": "7329 S.W. Bridgeport Road, Tigard, OR 97224",
+          "slug": "regal-bridgeport-village-imax",
+          "times": [
+            "12:00",
+            "14:35",
+            "15:25",
+            "18:50",
+            "22:00",
+            "22:15"
+          ]
+        },
+        {
+          "name": "Regal Cascade IMAX & RPX",
+          "address": "1101 S.E. 160th Ave., Vancouver, WA 98683",
+          "slug": "regal-cascade-imax-rpx",
+          "times": [
+            "12:05",
+            "16:00",
+            "18:25",
+            "19:45",
+            "23:45"
+          ]
+        },
+        {
+          "name": "Regal City Center",
+          "address": "801 C Street, Vancouver, WA 98660",
+          "slug": "regal-city-center",
+          "times": [
+            "12:10",
+            "15:45",
+            "19:30"
+          ]
+        },
+        {
+          "name": "Regal Evergreen Parkway & RPX",
+          "address": "2625 N.W. 188th, Hillsboro, OR 97124",
+          "slug": "regal-evergreen-parkway-rpx",
+          "times": [
+            "20:20",
+            "23:40"
+          ]
+        },
+        {
+          "name": "Regal Hilltop Cinema",
+          "address": "325 Beavercreek Rd, Oregon City, OR 97045",
+          "slug": "regal-hilltop-cinema",
+          "times": [
+            "12:45",
+            "16:45",
+            "20:45"
+          ]
+        },
+        {
+          "name": "Regal Lloyd Center & IMAX",
+          "address": "1510 N.E. Multnomah St., Portland, OR 97232",
+          "slug": "regal-lloyd-center-imax",
+          "times": [
+            "15:40",
+            "19:50",
+            "23:45"
+          ]
+        },
+        {
+          "name": "Regal Movies On TV",
+          "address": "2929 S.W. 234th Ave., Hillsboro, OR 97123",
+          "slug": "regal-movies-on-tv",
+          "times": [
+            "15:35",
+            "19:30"
+          ]
+        },
+        {
+          "name": "Regal Pioneer Place",
+          "address": "340 S.W. Morrison, Portland, OR 97204",
+          "slug": "regal-pioneer-place",
+          "times": [
+            "15:00",
+            "19:10"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The Salt Path",
+      "slug": "the-salt-path-2024",
+      "rating": "PG",
+      "runtime": "1h 55m",
+      "runtimeMinutes": 115,
+      "genre": "Drama",
+      "year": null,
+      "week": 1,
+      "poster": "https://www.cinemaclock.com/images/posters/140x210/17/the-salt-path-2024-orig-poster.jpg",
+      "synopsis": null,
+      "releaseDate": "2026-09-08",
+      "releaseDateSource": "week-estimate",
+      "daysSinceRelease": 1,
+      "isSecondRun": false,
+      "isClassic": false,
+      "theaters": [
+        {
+          "name": "AMC Vancouver Mall 23",
+          "address": "8700 NE Vancouver Mall Dr., Vancouver, WA 98662",
+          "slug": "amc-vancouver-mall-23",
+          "times": [
+            "16:15"
+          ]
+        },
+        {
+          "name": "Living Room Theaters Portland",
+          "address": "341 SW 10th Ave, Portland, OR 97205",
+          "slug": "living-room-theaters-portland",
+          "times": [
+            "12:20",
+            "16:25",
+            "18:45"
+          ]
+        },
+        {
+          "name": "Regal Bridgeport Village & IMAX",
+          "address": "7329 S.W. Bridgeport Road, Tigard, OR 97224",
+          "slug": "regal-bridgeport-village-imax",
+          "times": [
+            "16:30",
+            "19:25",
+            "22:20"
+          ]
+        },
+        {
+          "name": "Regal Cascade IMAX & RPX",
+          "address": "1101 S.E. 160th Ave., Vancouver, WA 98683",
+          "slug": "regal-cascade-imax-rpx",
+          "times": [
+            "15:25",
+            "17:55",
+            "20:50"
+          ]
+        },
+        {
+          "name": "Regal Movies On TV",
+          "address": "2929 S.W. 234th Ave., Hillsboro, OR 97123",
+          "slug": "regal-movies-on-tv",
+          "times": [
+            "18:00",
+            "21:00"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The Sun Never Sets",
+      "slug": "the-sun-never-sets-2026",
+      "rating": "R",
+      "runtime": "1h 42m",
+      "runtimeMinutes": 102,
+      "genre": "Romantic drama",
+      "year": null,
+      "week": 1,
+      "poster": "https://www.cinemaclock.com/images/posters/140x210/87/the-sun-never-sets-2026-orig-poster.jpg",
+      "synopsis": null,
+      "releaseDate": "2026-09-08",
+      "releaseDateSource": "week-estimate",
+      "daysSinceRelease": 1,
+      "isSecondRun": false,
+      "isClassic": false,
+      "theaters": [
+        {
+          "name": "AMC Dine-In Progress Ridge 13",
+          "address": "12345 SW Horizon Blvd, Beaverton, OR 97007",
+          "slug": "amc-dine-in-progress-ridge-13",
+          "times": [
+            "15:45",
+            "19:00"
+          ]
+        },
+        {
+          "name": "Regal Bridgeport Village & IMAX",
+          "address": "7329 S.W. Bridgeport Road, Tigard, OR 97224",
+          "slug": "regal-bridgeport-village-imax",
+          "times": [
+            "19:50"
+          ]
+        },
+        {
+          "name": "Regal Cascade IMAX & RPX",
+          "address": "1101 S.E. 160th Ave., Vancouver, WA 98683",
+          "slug": "regal-cascade-imax-rpx",
+          "times": [
+            "12:35",
+            "17:35",
+            "20:10"
+          ]
+        },
+        {
+          "name": "Regal Fox Tower",
+          "address": "846 S.W. Park Ave., Portland, OR 97205",
+          "slug": "regal-fox-tower",
+          "times": [
+            "17:45",
+            "20:15"
+          ]
+        },
+        {
+          "name": "Regal Movies On TV",
+          "address": "2929 S.W. 234th Ave., Hillsboro, OR 97123",
+          "slug": "regal-movies-on-tv",
+          "times": [
+            "16:55",
+            "19:40"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "To Die For",
+      "slug": "to-die-for-1995",
+      "rating": null,
+      "runtime": "1h 46m",
+      "runtimeMinutes": 106,
+      "genre": "Comedy-drama",
+      "year": 1995,
+      "week": null,
+      "poster": "https://www.cinemaclock.com/images/posters/140x210/39/to-die-for-1995-us-poster.jpg",
+      "synopsis": null,
+      "releaseDate": "1995-07-01",
+      "releaseDateSource": "year-only",
+      "daysSinceRelease": 11393,
+      "isSecondRun": true,
+      "isClassic": true,
+      "theaters": [
+        {
+          "name": "Academy Theater",
+          "address": "7818 SE Stark St., Portland, OR 97215",
+          "slug": "academy-theater",
+          "times": [
+            "19:30"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Tony",
+      "slug": "tony-2026",
+      "rating": "R",
+      "runtime": "1h 46m",
+      "runtimeMinutes": 106,
+      "genre": "Comedy-drama",
+      "year": null,
+      "week": 3,
+      "poster": "https://www.cinemaclock.com/images/posters/140x210/23/tony-2026-orig-poster.jpg",
+      "synopsis": null,
+      "releaseDate": "2026-08-25",
+      "releaseDateSource": "week-estimate",
+      "daysSinceRelease": 15,
+      "isSecondRun": false,
+      "isClassic": false,
+      "theaters": [
+        {
+          "name": "Century 16 Cedar Hills",
+          "address": "3200 SW Hocken, Beaverton, OR 97005",
+          "slug": "century-16-cedar-hills",
+          "times": [
+            "11:50"
+          ]
+        },
+        {
+          "name": "Cinema 21 Theatre",
+          "address": "616 NW 21st Ave., Portland, OR 97209",
+          "slug": "cinema-21-theatre",
+          "times": [
+            "16:15",
+            "19:00"
+          ]
+        },
+        {
+          "name": "Laurelhurst Theater",
+          "address": "2735 East Burnside St., Portland, OR 97214",
+          "slug": "laurelhurst-theater",
+          "times": [
+            "15:45",
+            "18:30"
+          ]
+        },
+        {
+          "name": "Regal City Center",
+          "address": "801 C Street, Vancouver, WA 98660",
+          "slug": "regal-city-center",
+          "times": [
+            "15:20",
+            "17:55"
+          ]
+        },
+        {
+          "name": "Regal Fox Tower",
+          "address": "846 S.W. Park Ave., Portland, OR 97205",
+          "slug": "regal-fox-tower",
+          "times": [
+            "13:15",
+            "15:45"
+          ]
+        },
+        {
+          "name": "Regal Movies On TV",
+          "address": "2929 S.W. 234th Ave., Hillsboro, OR 97123",
+          "slug": "regal-movies-on-tv",
+          "times": [
+            "19:20"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Toy Story 5",
+      "slug": "toy-story-5-2026",
+      "rating": "PG",
+      "runtime": "1h 42m",
+      "runtimeMinutes": 102,
+      "genre": "Animation",
+      "year": null,
+      "week": 12,
+      "poster": "https://www.cinemaclock.com/images/posters/140x210/52/toy-story-5-2026-orig-poster.jpg",
+      "synopsis": null,
+      "releaseDate": "2026-06-23",
+      "releaseDateSource": "week-estimate",
+      "daysSinceRelease": 78,
+      "isSecondRun": true,
+      "isClassic": false,
+      "theaters": [
+        {
+          "name": "AMC Vancouver Mall 23",
+          "address": "8700 NE Vancouver Mall Dr., Vancouver, WA 98662",
+          "slug": "amc-vancouver-mall-23",
+          "times": [
+            "15:45",
+            "20:00"
+          ]
+        },
+        {
+          "name": "Century 16 Cedar Hills",
+          "address": "3200 SW Hocken, Beaverton, OR 97005",
+          "slug": "century-16-cedar-hills",
+          "times": [
+            "12:50",
+            "15:25"
+          ]
+        },
+        {
+          "name": "Century 16 Eastport Plaza",
+          "address": "4040 SE 82 Ave., Portland, OR 97266",
+          "slug": "century-16-eastport-plaza",
+          "times": [
+            "13:35"
+          ]
+        },
+        {
+          "name": "Century Clackamas Town Center & XD",
+          "address": "12000 SE 82nd Ave., Portland, OR 97086",
+          "slug": "century-clackamas-town-center-xd",
+          "times": [
+            "10:35",
+            "13:15",
+            "18:35"
+          ]
+        },
+        {
+          "name": "Regal Bridgeport Village & IMAX",
+          "address": "7329 S.W. Bridgeport Road, Tigard, OR 97224",
+          "slug": "regal-bridgeport-village-imax",
+          "times": [
+            "13:55",
+            "23:15"
+          ]
+        },
+        {
+          "name": "Regal Cascade IMAX & RPX",
+          "address": "1101 S.E. 160th Ave., Vancouver, WA 98683",
+          "slug": "regal-cascade-imax-rpx",
+          "times": [
+            "14:30",
+            "23:50"
+          ]
+        },
+        {
+          "name": "Regal City Center",
+          "address": "801 C Street, Vancouver, WA 98660",
+          "slug": "regal-city-center",
+          "times": [
+            "12:30",
+            "14:55"
+          ]
+        },
+        {
+          "name": "Regal Evergreen Parkway & RPX",
+          "address": "2625 N.W. 188th, Hillsboro, OR 97124",
+          "slug": "regal-evergreen-parkway-rpx",
+          "times": [
+            "23:00"
+          ]
+        },
+        {
+          "name": "Regal Movies On TV",
+          "address": "2929 S.W. 234th Ave., Hillsboro, OR 97123",
+          "slug": "regal-movies-on-tv",
+          "times": [
+            "14:25",
+            "23:40"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Virginia Woolf's Night & Day",
+      "slug": "virginia-woolf-s-night-and-day-2026",
+      "rating": null,
+      "runtime": null,
+      "runtimeMinutes": null,
+      "genre": "Romantic drama",
+      "year": null,
+      "week": 1,
+      "poster": "https://www.cinemaclock.com/images/posters/140x210/88/virginia-woolf-s-night-and-day-2026-us-poster.jpg",
+      "synopsis": null,
+      "releaseDate": "2026-09-08",
+      "releaseDateSource": "week-estimate",
+      "daysSinceRelease": 1,
+      "isSecondRun": false,
+      "isClassic": false,
+      "theaters": [
+        {
+          "name": "Regal Movies On TV",
+          "address": "2929 S.W. 234th Ave., Hillsboro, OR 97123",
+          "slug": "regal-movies-on-tv",
+          "times": [
+            "12:45",
+            "15:25"
+          ]
+        }
+      ]
+    }
+  ]
+}

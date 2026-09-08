@@ -11,7 +11,10 @@ JSON file produced by a small scraper; no server framework required.
   plain server-rendered HTML (no login/API key needed), and `robots.txt` only
   disallows `/aw/*`, which this scraper never touches. It writes the result
   to `data/movies.json`.
-- For each movie, the scraper tries to look up the real US theatrical release
+- Each movie's own `/movies/<slug>` details page on CinemaClock also has a
+  synopsis, director, cast, and a large poster — all plain HTML, so this
+  works with zero API keys.
+- Separately, the scraper tries to look up the real US theatrical release
   date from [TMDB](https://www.themoviedb.org/) (needs your own free API key,
   see below). A movie still playing **45+ days** after that release date
   (configurable) is flagged `isSecondRun: true` — this is how the "Second
@@ -27,9 +30,9 @@ JSON file produced by a small scraper; no server framework required.
   tabs below them:
   - **Movies tab** (default): alphabetical movie list. Clicking a title
     navigates to a movie subpage (poster image, rating/runtime/genre,
-    release date, synopsis, cast/director if TMDB is enabled, and
-    theaters/showtimes) at the URL `#/movie/<slug>` — shareable/bookmarkable,
-    and the browser back button returns to the list.
+    release date, director, cast, synopsis, and theaters/showtimes) at the
+    URL `#/movie/<slug>` — shareable/bookmarkable, and the browser back
+    button returns to the list.
   - **Theatres tab**: alphabetical theater list instead — click a theater to
     expand every movie playing there today with its showtimes, inline. This
     is built client-side by inverting the same `data/movies.json`, so it

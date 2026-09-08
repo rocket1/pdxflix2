@@ -8,7 +8,11 @@
  * robots.txt for cinemaclock.com only disallows /aw/*, which this script
  * never touches.
  *
- * For each movie it also tries to look up the real theatrical release date
+ * Each movie's own /movies/<slug> details page (also on cinemaclock.com)
+ * supplies a synopsis, director, cast, and a large poster image -- all free,
+ * no key required.
+ *
+ * Separately, the script tries to look up the real theatrical release date
  * from TMDB (https://www.themoviedb.org/) so the frontend can flag movies
  * playing well past their first-run window as "second run". TMDB is free
  * but requires your own API key (see README.md) -- if you don't set one,
@@ -174,6 +178,29 @@ function parseMovieTimes(html) {
     .sort((a, b) => a.name.localeCompare(b.name));
 }
 
+/**
+ * Parse a movie's /movies/<slug> details page for synopsis, director, cast,
+ * and a large poster -- all present in plain HTML on CinemaClock itself, so
+ * this works with zero API keys. TMDB (if configured) can still override
+ * any of these with richer data.
+ */
+function parseMovieDetails(html) {
+  const $ = cheerio.load(html);
+
+  const synopsis = $('#synopsis').text().replace(/\s+/g, ' ').trim() || null;
+  const director = $('[itemprop="director"] [itemprop="name"]').first().text().trim() || null;
+  const cast = $('[itemprop="actor"] [itemprop="name"]')
+    .map((_, el) => $(el).text().trim())
+    .get()
+    .filter(Boolean)
+    .slice(0, 6);
+
+  const posterSrc = $('#mainposter img').attr('src') || '';
+  const poster = posterSrc ? (posterSrc.startsWith('http') ? posterSrc : BASE + posterSrc) : null;
+
+  return { synopsis, director, cast, poster };
+}
+
 async function fetchTmdbInfo(title, year) {
   if (!TMDB_API_KEY) return null;
   const params = new URLSearchParams({
@@ -249,6 +276,15 @@ async function main() {
     // (e.g. future releases, or festival one-offs already ended).
     if (movie.theaters.length === 0) continue;
 
+    let details = null;
+    try {
+      const detailsHtml = await fetchHtml(`${BASE}/movies/${movie.slug}`);
+      details = parseMovieDetails(detailsHtml);
+    } catch (err) {
+      console.warn(`[pdxflix2] Failed to fetch details for ${movie.title}: ${err.message}`);
+    }
+    await sleep(REQUEST_DELAY_MS);
+
     const tmdb = await fetchTmdbInfo(movie.title, movie.year);
     if (TMDB_API_KEY) await sleep(120);
 
@@ -279,8 +315,10 @@ async function main() {
       genre: movie.genre || null,
       year: movie.year,
       week: movie.week,
-      poster: (tmdb && tmdb.posterPath) || movie.poster || null,
-      synopsis: (tmdb && tmdb.overview) || null,
+      poster: (tmdb && tmdb.posterPath) || (details && details.poster) || movie.poster || null,
+      synopsis: (tmdb && tmdb.overview) || (details && details.synopsis) || null,
+      cast: (details && details.cast) || [],
+      director: (details && details.director) || null,
       releaseDate,
       releaseDateSource,
       daysSinceRelease,

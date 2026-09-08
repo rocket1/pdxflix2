@@ -360,7 +360,14 @@ footer {
 }
 
 .movie-page-poster {
-  flex: 0 0 200px;
+  /* flex-basis: auto (not a pixel value) so this sizes by width in row
+     layout and by content height in the mobile column layout below --
+     a pixel flex-basis gets reinterpreted as a height once the container
+     switches to flex-direction: column, which was leaving a large blank
+     gap under the poster on narrow screens. */
+  flex: 0 1 auto;
+  width: 200px;
+  max-width: 100%;
 }
 
 .poster-img {
@@ -382,7 +389,7 @@ footer {
 }
 
 .movie-page-info {
-  flex: 1 1 280px;
+  flex: 1 1 auto;
   min-width: 0;
 }
 
@@ -429,7 +436,7 @@ footer {
     flex-direction: column;
   }
   .movie-page-poster {
-    flex: 0 0 auto;
-    max-width: 160px;
+    width: 160px;
+    max-width: 60%;
   }
 }

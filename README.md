@@ -49,7 +49,14 @@ JSON file produced by a small scraper; no server framework required.
     image — read client-side with `FileReader`, never uploaded anywhere) →
     preview how it'd look → a demo payment step (fake card fields, no real
     processor, nothing is ever sent over the network) → a confirmation
-    screen with a fake order number. It's a UI demo only.
+    screen with a fake order number and a **stats page link**
+    (`#/stats/<token>`). It's a UI demo only.
+  - The stats page lists every ad "purchased" from this browser (one row
+    each, like the Theatres tab's expandable rows) — expanding a row shows
+    mock impressions, click-throughs, and CTR. There's no backend: purchased
+    ads and a per-browser "advertiser token" are saved to `localStorage`, and
+    the mock stats are generated once at purchase time and stored alongside
+    the ad, so they stay the same on repeat visits instead of re-rolling.
 
 ## Usage
 

@@ -4,6 +4,7 @@
   --purple-bg: #3b2158;
   --pink-bg: #f6a9d0;
   --gold-bg: #f7cf5e;
+  --teal-bg: #7bd9d4;
   --green-accent: #33cc66;
   --blue: #1ea7e8;
   --dark: #1a1a1a;
@@ -43,6 +44,9 @@ body[data-page="detail"] {
 }
 body[data-page="advertise"] {
   --page-bg: var(--gold-bg);
+}
+body[data-page="stats"] {
+  --page-bg: var(--teal-bg);
 }
 
 header#topbar {
@@ -725,6 +729,58 @@ footer {
 }
 .ad-confirm .ad-actions {
   justify-content: center;
+}
+
+.ad-stats-link-box {
+  background: var(--row-stripe);
+  border-radius: 8px;
+  padding: 12px 14px;
+  margin: 0 0 20px;
+  text-align: left;
+}
+.ad-stats-link-label {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--muted);
+  margin: 0 0 4px;
+}
+.ad-stats-link {
+  font-size: 13px;
+  color: var(--pink);
+  word-break: break-all;
+  text-decoration: none;
+}
+.ad-stats-link:hover {
+  text-decoration: underline;
+}
+
+/* ---- Ad stats page ---- */
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin: 0 0 18px;
+}
+.stat-tile {
+  background: var(--row-stripe);
+  border-radius: 8px;
+  padding: 14px 8px;
+  text-align: center;
+}
+.stat-value {
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--pink);
+  line-height: 1.2;
+}
+.stat-label {
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  color: var(--muted);
+  margin-top: 4px;
 }
 
 @media (max-width: 560px) {

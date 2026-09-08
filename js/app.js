@@ -5,6 +5,7 @@
     view: 'movies', // 'movies' | 'theatres'
     query: '',
     openTheatre: null,
+    openAdId: null,
     meta: null,
   };
 
@@ -25,9 +26,48 @@
   };
   const AD_PRICE = '$99.00';
 
+  // Purchased ads persist to localStorage so the stats-page link shown at
+  // checkout keeps working after a reload. There's no real backend/account
+  // system here -- one "advertiser token" per browser stands in for one.
+  const ADVERTISER_TOKEN_KEY = 'pdxflix_advertiser_token';
+  const ADS_KEY = 'pdxflix_ads';
+
+  function getAdvertiserToken() {
+    try {
+      let token = localStorage.getItem(ADVERTISER_TOKEN_KEY);
+      if (!token) {
+        token = Math.random().toString(36).slice(2, 10);
+        localStorage.setItem(ADVERTISER_TOKEN_KEY, token);
+      }
+      return token;
+    } catch {
+      return 'demo';
+    }
+  }
+
+  function loadAds() {
+    try {
+      return JSON.parse(localStorage.getItem(ADS_KEY) || '[]');
+    } catch {
+      return [];
+    }
+  }
+
+  function saveAd(ad) {
+    try {
+      const ads = loadAds();
+      ads.push(ad);
+      localStorage.setItem(ADS_KEY, JSON.stringify(ads));
+    } catch {
+      // Storage unavailable (private browsing, etc.) -- non-critical for a
+      // demo flow, the stats link just won't have anything behind it.
+    }
+  }
+
   const listViewEl = document.getElementById('listView');
   const detailPageEl = document.getElementById('movieDetailPage');
   const advertisePageEl = document.getElementById('advertisePage');
+  const statsPageEl = document.getElementById('statsPage');
   const listEl = document.getElementById('movieList');
   const metaEl = document.getElementById('metaLine');
   const searchEl = document.getElementById('searchInput');
@@ -138,6 +178,8 @@
 
   function parseRoute() {
     if (location.hash === '#/advertise') return { type: 'advertise' };
+    const statsMatch = location.hash.match(/^#\/stats\/(.+)$/);
+    if (statsMatch) return { type: 'stats', token: decodeURIComponent(statsMatch[1]) };
     const match = location.hash.match(/^#\/movie\/(.+)$/);
     if (match) return { type: 'movie', slug: decodeURIComponent(match[1]) };
     return { type: 'list' };
@@ -153,9 +195,21 @@
     if (route.type === 'advertise') {
       listViewEl.hidden = true;
       detailPageEl.hidden = true;
+      statsPageEl.hidden = true;
       advertisePageEl.hidden = false;
       applyBodyBackground('advertise');
       renderAdvertisePage();
+      window.scrollTo(0, 0);
+      return;
+    }
+
+    if (route.type === 'stats') {
+      listViewEl.hidden = true;
+      detailPageEl.hidden = true;
+      advertisePageEl.hidden = true;
+      statsPageEl.hidden = false;
+      applyBodyBackground('stats');
+      renderStatsPage(route.token);
       window.scrollTo(0, 0);
       return;
     }
@@ -165,6 +219,7 @@
       if (movie) {
         listViewEl.hidden = true;
         advertisePageEl.hidden = true;
+        statsPageEl.hidden = true;
         detailPageEl.hidden = false;
         applyBodyBackground('detail');
         detailPageEl.innerHTML = renderMovieSubpage(movie, portlandNowMinutes());
@@ -180,6 +235,7 @@
     listViewEl.hidden = false;
     detailPageEl.hidden = true;
     advertisePageEl.hidden = true;
+    statsPageEl.hidden = true;
     applyBodyBackground(state.view);
     renderList();
   }
@@ -458,14 +514,22 @@
   }
 
   function renderAdStep4() {
+    const statsHref = `#/stats/${encodeURIComponent(adState.token || '')}`;
+    const statsUrl = `${location.origin}${location.pathname}${statsHref}`;
+
     return `
       <div class="content-card ad-card ad-confirm">
         <div class="ad-confirm-icon">&#9989;</div>
         <h2>You're all set!</h2>
         <p>Your ad "<strong>${escapeHtml(adState.headline)}</strong>" is scheduled to run.<br>(Demo only — no charge was made.)</p>
         <p class="ad-order-id">Order #DEMO-${escapeHtml(adState.orderId || '')}</p>
+        <div class="ad-stats-link-box">
+          <div class="ad-stats-link-label">Track impressions &amp; click-throughs here:</div>
+          <a href="${escapeAttr(statsHref)}" class="ad-stats-link">${escapeHtml(statsUrl)}</a>
+        </div>
         <div class="ad-actions">
           <button type="button" class="btn-secondary" id="adCreateAnother">Create another ad</button>
+          <a href="${escapeAttr(statsHref)}" class="btn-primary">View my stats &rarr;</a>
         </div>
       </div>
     `;
@@ -536,6 +600,24 @@
           }
         }
         adState.orderId = Math.random().toString(36).slice(2, 8).toUpperCase();
+        adState.token = getAdvertiserToken();
+
+        // Mock performance numbers, generated once at "purchase" time and
+        // persisted -- so the stats page shows the same figures on repeat
+        // visits instead of re-rolling them every time.
+        const impressions = 1200 + Math.floor(Math.random() * 7400);
+        const ctr = 0.01 + Math.random() * 0.04;
+        const clicks = Math.max(1, Math.round(impressions * ctr));
+        saveAd({
+          id: adState.orderId,
+          token: adState.token,
+          headline: adState.headline,
+          description: adState.description,
+          imageDataUrl: adState.imageDataUrl,
+          purchasedAt: new Date().toISOString(),
+          stats: { impressions, clicks },
+        });
+
         adState.step = 4;
         renderAdvertisePage();
       });
@@ -553,6 +635,97 @@
         renderAdvertisePage();
       });
     }
+  }
+
+  // ---- Ad stats page ----
+
+  function renderStatsPage(token) {
+    const ads = loadAds()
+      .filter((ad) => ad.token === token)
+      .sort((a, b) => new Date(b.purchasedAt) - new Date(a.purchasedAt));
+
+    statsPageEl.innerHTML = `
+      <a href="#" class="back-link" id="statsBack">&larr; Back to PDXFlix</a>
+      <div class="ad-page">
+        <h1>Your Ad Performance</h1>
+        <p class="ad-intro">Impressions and click-throughs for ads purchased with this link. Bookmark this page to check back anytime.</p>
+        <div class="content-card">
+          <div class="movie-list">
+            ${ads.length ? statsRowsHtml(ads) : '<div class="no-results">No ads found for this link.</div>'}
+          </div>
+        </div>
+      </div>
+    `;
+
+    statsPageEl.querySelector('#statsBack').addEventListener('click', (evt) => {
+      evt.preventDefault();
+      location.hash = '';
+    });
+
+    statsPageEl.querySelectorAll('[data-toggle-ad]').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const id = btn.getAttribute('data-toggle-ad');
+        state.openAdId = state.openAdId === id ? null : id;
+        renderStatsPage(token);
+      });
+    });
+  }
+
+  function statsRowsHtml(ads) {
+    return ads
+      .map((ad) => {
+        const isOpen = ad.id === state.openAdId;
+        const purchased = new Date(ad.purchasedAt).toLocaleDateString('en-US', {
+          month: 'short',
+          day: 'numeric',
+          year: 'numeric',
+        });
+
+        return `
+        <div class="movie-row${isOpen ? ' open' : ''}">
+          <button class="movie-row-header" data-toggle-ad="${escapeAttr(ad.id)}">
+            <span class="title-wrap-outer">
+              <span class="title-wrap"><span>${escapeHtml(ad.headline || 'Untitled ad')}</span></span>
+              <span class="row-subtitle">Purchased ${purchased} &nbsp;·&nbsp; ${ad.stats.impressions.toLocaleString()} impressions</span>
+            </span>
+            <span class="chevron">&#9656;</span>
+          </button>
+          <div class="movie-detail">
+            ${isOpen ? renderAdStatsDetail(ad) : ''}
+          </div>
+        </div>`;
+      })
+      .join('');
+  }
+
+  function renderAdStatsDetail(ad) {
+    const ctr = ad.stats.impressions > 0 ? ((ad.stats.clicks / ad.stats.impressions) * 100).toFixed(2) : '0.00';
+    const imageInner = ad.imageDataUrl ? `<img src="${ad.imageDataUrl}" alt="Ad image" />` : '&#127916;';
+
+    return `
+      <div class="stats-grid">
+        <div class="stat-tile">
+          <div class="stat-value">${ad.stats.impressions.toLocaleString()}</div>
+          <div class="stat-label">Impressions</div>
+        </div>
+        <div class="stat-tile">
+          <div class="stat-value">${ad.stats.clicks.toLocaleString()}</div>
+          <div class="stat-label">Click-throughs</div>
+        </div>
+        <div class="stat-tile">
+          <div class="stat-value">${ctr}%</div>
+          <div class="stat-label">Click-through rate</div>
+        </div>
+      </div>
+      <div class="ad-preview-mock">
+        <div class="ad-preview-image">${imageInner}</div>
+        <div class="ad-preview-text">
+          <div class="ad-preview-headline">${escapeHtml(ad.headline || 'Untitled ad')}</div>
+          <div class="ad-preview-body">${escapeHtml(ad.description || '')}</div>
+          <span class="ad-preview-tag">Sponsored</span>
+        </div>
+      </div>
+    `;
   }
 
   function escapeHtml(str) {

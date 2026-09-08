@@ -3,6 +3,7 @@
   --green-bg: #86e8a8;
   --purple-bg: #3b2158;
   --pink-bg: #f6a9d0;
+  --gold-bg: #f7cf5e;
   --green-accent: #33cc66;
   --blue: #1ea7e8;
   --dark: #1a1a1a;
@@ -40,6 +41,9 @@ body[data-page="theatres"] {
 body[data-page="detail"] {
   --page-bg: var(--pink-bg);
 }
+body[data-page="advertise"] {
+  --page-bg: var(--gold-bg);
+}
 
 header#topbar {
   background: var(--dark);
@@ -65,6 +69,23 @@ header#topbar {
 .logo .flix {
   color: var(--green-accent);
   font-style: italic;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.advertise-link {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  white-space: nowrap;
+}
+.advertise-link:hover {
+  color: var(--white);
+  text-decoration: underline;
 }
 
 .ticket-icon {
@@ -490,6 +511,222 @@ footer {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
 }
 
+/* ---- Advertise-with-us mock flow ---- */
+
+.ad-page {
+  max-width: 560px;
+  margin: 0 auto;
+}
+
+.ad-page h1 {
+  font-size: 24px;
+  margin: 0 0 6px;
+}
+
+.ad-intro {
+  color: rgba(0, 0, 0, 0.65);
+  font-size: 14px;
+  margin: 0 0 18px;
+}
+
+.ad-steps {
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.5);
+  margin: 0 0 10px;
+}
+
+.ad-card {
+  padding: 20px;
+}
+
+.ad-field {
+  display: block;
+  margin: 0 0 16px;
+}
+.ad-field span {
+  display: block;
+  font-size: 13px;
+  font-weight: 700;
+  margin: 0 0 6px;
+}
+.ad-field input,
+.ad-field textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 15px;
+  font-family: inherit;
+  resize: vertical;
+}
+
+.ad-field-row {
+  display: flex;
+  gap: 14px;
+}
+.ad-field-row .ad-field {
+  flex: 1;
+}
+
+.ad-image-preview {
+  width: 100%;
+  max-width: 260px;
+  aspect-ratio: 16 / 9;
+  background: #f2f2f2;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin: 0 0 18px;
+}
+.ad-image-preview img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.ad-image-placeholder {
+  font-size: 12px;
+  color: #999;
+}
+
+.ad-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 6px;
+}
+
+.btn-primary,
+.btn-secondary {
+  border: none;
+  border-radius: 8px;
+  padding: 12px 18px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: inherit;
+  text-decoration: none;
+  display: inline-block;
+}
+.btn-primary {
+  background: var(--pink);
+  color: var(--white);
+  margin-left: auto;
+}
+.btn-primary:hover {
+  background: #d0135f;
+}
+.btn-secondary {
+  background: #eee;
+  color: var(--text);
+}
+.btn-secondary:hover {
+  background: #e2e2e2;
+}
+
+.ad-preview-label {
+  font-size: 13px;
+  color: var(--muted);
+  margin: 0 0 12px;
+}
+
+.ad-preview-mock {
+  display: flex;
+  gap: 14px;
+  background: var(--row-stripe);
+  border-radius: 10px;
+  padding: 14px;
+  margin: 0 0 18px;
+  align-items: center;
+}
+.ad-preview-image {
+  flex: 0 0 96px;
+  width: 96px;
+  height: 72px;
+  border-radius: 6px;
+  background: #e3e3e3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  font-size: 24px;
+}
+.ad-preview-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.ad-preview-text {
+  min-width: 0;
+}
+.ad-preview-headline {
+  font-weight: 700;
+  font-size: 16px;
+  margin: 0 0 4px;
+  overflow-wrap: break-word;
+}
+.ad-preview-body {
+  font-size: 13px;
+  color: #555;
+  margin: 0 0 6px;
+  overflow-wrap: break-word;
+}
+.ad-preview-tag {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  color: var(--muted);
+  background: #e8e8e8;
+  padding: 2px 6px;
+  border-radius: 10px;
+}
+
+.ad-plan {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--row-stripe);
+  border-radius: 8px;
+  padding: 12px 14px;
+  font-weight: 700;
+  margin: 0 0 14px;
+}
+.ad-price {
+  color: var(--pink);
+}
+
+.ad-demo-note {
+  font-size: 12px;
+  color: var(--muted);
+  background: #fff8e6;
+  border: 1px solid #f2e3ad;
+  border-radius: 8px;
+  padding: 8px 10px;
+  margin: 0 0 16px;
+}
+
+.ad-confirm {
+  text-align: center;
+}
+.ad-confirm-icon {
+  font-size: 40px;
+  margin: 0 0 10px;
+}
+.ad-order-id {
+  font-size: 12px;
+  color: var(--muted);
+  margin: 4px 0 20px;
+}
+.ad-confirm .ad-actions {
+  justify-content: center;
+}
+
 @media (max-width: 560px) {
   .movie-row-header {
     font-size: 16px;
@@ -504,5 +741,13 @@ footer {
   .movie-page-poster {
     width: 160px;
     max-width: 60%;
+  }
+  .ad-field-row {
+    flex-direction: column;
+    gap: 0;
+  }
+  .ad-preview-mock {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }

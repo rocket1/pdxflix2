@@ -44,6 +44,12 @@ JSON file produced by a small scraper; no server framework required.
     `css/style.css`) so it's obvious at a glance which one you're in.
   - The subpage's poster is pre-sized to its final aspect ratio and shows a
     small spinner while the image loads, so the layout doesn't jump.
+  - A small **"Advertise with us"** link in the top-right corner (`#/advertise`)
+    opens a fully mocked ad flow: create an ad (headline, body text, and an
+    image — read client-side with `FileReader`, never uploaded anywhere) →
+    preview how it'd look → a demo payment step (fake card fields, no real
+    processor, nothing is ever sent over the network) → a confirmation
+    screen with a fake order number. It's a UI demo only.
 
 ## Usage
 

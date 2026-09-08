@@ -1,6 +1,8 @@
 :root {
   --pink: #ec1a72;
   --green-bg: #86e8a8;
+  --purple-bg: #3b2158;
+  --pink-bg: #f6a9d0;
   --green-accent: #33cc66;
   --blue: #1ea7e8;
   --dark: #1a1a1a;
@@ -8,6 +10,8 @@
   --muted: #8a8a8a;
   --row-stripe: #f7f7f7;
   --white: #ffffff;
+  --page-bg: var(--green-bg);
+  --page-fg: rgba(0, 0, 0, 0.55);
 }
 
 * {
@@ -17,8 +21,24 @@
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-  background: var(--green-bg);
+  background: var(--page-bg);
   color: var(--text);
+  transition: background-color 0.2s ease;
+}
+
+/* Each tab / the movie detail subpage gets its own page background, set via
+   a data attribute on <body> from js/app.js. Dark backgrounds also swap the
+   meta-line/footer text (--page-fg) so it stays readable without a white
+   box behind it. */
+body[data-page="movies"] {
+  --page-bg: var(--green-bg);
+}
+body[data-page="theatres"] {
+  --page-bg: var(--purple-bg);
+  --page-fg: rgba(255, 255, 255, 0.75);
+}
+body[data-page="detail"] {
+  --page-bg: var(--pink-bg);
 }
 
 header#topbar {
@@ -107,7 +127,7 @@ main {
 
 .meta-line {
   font-size: 12px;
-  color: rgba(0, 0, 0, 0.55);
+  color: var(--page-fg);
   padding: 0 4px 12px;
 }
 .meta-line a {
@@ -156,7 +176,7 @@ main {
 }
 
 .movie-row {
-  border-bottom: 3px solid var(--green-bg);
+  border-bottom: 3px solid var(--page-bg);
 }
 .movie-row:last-child {
   border-bottom: none;
@@ -331,7 +351,7 @@ main {
 footer {
   text-align: center;
   font-size: 12px;
-  color: rgba(0, 0, 0, 0.55);
+  color: var(--page-fg);
   padding: 24px 10px 10px;
 }
 
@@ -370,11 +390,57 @@ footer {
   max-width: 100%;
 }
 
-.poster-img {
+/* Poster frame is pre-sized to the final 2:3 poster aspect ratio so the
+   layout doesn't jump once the image loads; a small spinner shows while it
+   loads and fades out in favor of the image (or the film-emoji fallback on
+   error / when there's no poster URL at all). */
+.poster-frame {
+  position: relative;
   width: 100%;
-  display: block;
+  aspect-ratio: 2 / 3;
+  background: #eee;
   border-radius: 8px;
+  overflow: hidden;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.poster-frame .poster-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+.poster-frame.loaded .poster-img {
+  opacity: 1;
+}
+.poster-frame.errored .poster-img {
+  display: none;
+}
+
+.poster-spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 22px;
+  height: 22px;
+  margin: -11px 0 0 -11px;
+  border: 2px solid rgba(0, 0, 0, 0.12);
+  border-top-color: rgba(0, 0, 0, 0.4);
+  border-radius: 50%;
+  animation: pdx-spin 0.7s linear infinite;
+}
+.poster-frame.loaded .poster-spinner,
+.poster-frame.errored .poster-spinner {
+  display: none;
+}
+
+@keyframes pdx-spin {
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .poster-placeholder {

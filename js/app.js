@@ -99,6 +99,12 @@
       .sort((a, b) => a.name.localeCompare(b.name));
   }
 
+  // Swaps the page background (green/purple/pink) via a data attribute on
+  // <body>; see the body[data-page="..."] rules in css/style.css.
+  function applyBodyBackground(page) {
+    document.body.dataset.page = page;
+  }
+
   function renderMeta() {
     if (!state.meta) return;
     const generated = new Date(state.meta.generatedAt);
@@ -129,6 +135,7 @@
       if (movie) {
         listViewEl.hidden = true;
         detailPageEl.hidden = false;
+        applyBodyBackground('detail');
         detailPageEl.innerHTML = renderMovieSubpage(movie, portlandNowMinutes());
         detailPageEl.querySelector('#backLink').addEventListener('click', (evt) => {
           evt.preventDefault();
@@ -140,6 +147,7 @@
     }
     listViewEl.hidden = false;
     detailPageEl.hidden = true;
+    applyBodyBackground(state.view);
     renderList();
   }
 
@@ -272,8 +280,16 @@
     if (movie.isSecondRun) badges.push('<span class="badge second-run">Second Run</span>');
     if (movie.isClassic) badges.push('<span class="badge classic">Classic</span>');
 
+    // The frame is pre-sized (2:3 aspect ratio) so there's no layout jump;
+    // the spinner shows until the image's onload/onerror fires.
     const posterHtml = movie.poster
-      ? `<img class="poster-img" src="${escapeAttr(movie.poster)}" alt="${escapeAttr(movie.title)} poster" />`
+      ? `<div class="poster-frame">
+          <img class="poster-img" src="${escapeAttr(movie.poster)}" alt="${escapeAttr(movie.title)} poster"
+               loading="lazy"
+               onload="this.parentElement.classList.add('loaded')"
+               onerror="this.parentElement.classList.add('errored')" />
+          <div class="poster-spinner" aria-hidden="true"></div>
+        </div>`
       : `<div class="poster-placeholder" aria-hidden="true">&#127916;</div>`;
 
     const creditParts = [];
@@ -324,6 +340,7 @@
       tabButtons.forEach((b) => b.classList.remove('active'));
       btn.classList.add('active');
       state.view = btn.getAttribute('data-view');
+      applyBodyBackground(state.view);
       renderList();
     });
   });

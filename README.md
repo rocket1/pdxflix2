@@ -38,6 +38,12 @@ JSON file produced by a small scraper; no server framework required.
     is built client-side by inverting the same `data/movies.json`, so it
     stays in sync automatically; clicking a movie inside a theater opens
     that movie's subpage.
+  - Each of the three (Movies tab / Theatres tab / a movie's subpage) has its
+    own page background — green, dark purple, and pink — set via a
+    `data-page` attribute on `<body>` (see `body[data-page="..."]` in
+    `css/style.css`) so it's obvious at a glance which one you're in.
+  - The subpage's poster is pre-sized to its final aspect ratio and shows a
+    small spinner while the image loads, so the layout doesn't jump.
 
 ## Usage
 

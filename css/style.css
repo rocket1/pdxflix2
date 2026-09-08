@@ -149,11 +149,28 @@ main {
   background: #fafafa;
 }
 
+.title-wrap-outer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3px;
+  flex: 1;
+  min-width: 0;
+  text-align: left;
+}
+
 .title-wrap {
   display: flex;
   align-items: center;
   gap: 10px;
   flex-wrap: wrap;
+}
+
+.row-subtitle {
+  display: block;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--muted);
 }
 
 .badge {
@@ -227,6 +244,10 @@ main {
   font-weight: 700;
   font-size: 15px;
   flex: 1 1 220px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px 8px;
 }
 .theater-name a {
   color: inherit;
@@ -234,6 +255,11 @@ main {
 }
 .theater-name a:hover {
   text-decoration: underline;
+}
+.theater-name .row-subtitle {
+  flex-basis: 100%;
+  color: var(--muted);
+  font-weight: 500;
 }
 
 .times {

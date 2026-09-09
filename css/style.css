@@ -61,6 +61,19 @@ header#topbar {
   z-index: 10;
 }
 
+.logo-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.film-icon {
+  width: 28px;
+  height: 28px;
+  color: var(--pink);
+  flex-shrink: 0;
+}
+
 .logo {
   font-size: 26px;
   font-weight: 800;
@@ -90,13 +103,6 @@ header#topbar {
 .advertise-link:hover {
   color: var(--white);
   text-decoration: underline;
-}
-
-.ticket-icon {
-  width: 26px;
-  height: 26px;
-  fill: var(--white);
-  opacity: 0.9;
 }
 
 main {
@@ -381,10 +387,15 @@ footer {
 }
 
 .back-link {
+  position: sticky;
+  top: var(--header-height, 64px);
+  z-index: 5;
   display: inline-flex;
   align-items: center;
   gap: 6px;
   margin: 0 0 14px;
+  padding: 10px 0;
+  background: var(--page-bg);
   color: var(--text);
   font-weight: 700;
   font-size: 14px;

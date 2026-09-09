@@ -189,34 +189,48 @@
     location.hash = '#/movie/' + encodeURIComponent(slug);
   }
 
+  // Remembers how far down the Movies/Theatres list was scrolled, so
+  // returning to it (back link, browser back) lands in the same spot
+  // instead of snapping to the top.
+  let savedListScrollY = 0;
+
   function renderRoute() {
     const route = parseRoute();
+    const leavingList = !listViewEl.hidden;
+    if (leavingList && route.type !== 'list') {
+      savedListScrollY = window.scrollY;
+    }
 
+    // Scroll to the top before swapping which page is visible/hidden and
+    // before touching innerHTML, not after: doing it after lets a tall list
+    // and a much shorter detail page both exist mid-reflow for a frame,
+    // which is what made the sticky header visibly flash/jump on navigation.
     if (route.type === 'advertise') {
+      window.scrollTo(0, 0);
       listViewEl.hidden = true;
       detailPageEl.hidden = true;
       statsPageEl.hidden = true;
       advertisePageEl.hidden = false;
       applyBodyBackground('advertise');
       renderAdvertisePage();
-      window.scrollTo(0, 0);
       return;
     }
 
     if (route.type === 'stats') {
+      window.scrollTo(0, 0);
       listViewEl.hidden = true;
       detailPageEl.hidden = true;
       advertisePageEl.hidden = true;
       statsPageEl.hidden = false;
       applyBodyBackground('stats');
       renderStatsPage(route.token);
-      window.scrollTo(0, 0);
       return;
     }
 
     if (route.type === 'movie') {
       const movie = state.movies.find((m) => m.slug === route.slug);
       if (movie) {
+        window.scrollTo(0, 0);
         listViewEl.hidden = true;
         advertisePageEl.hidden = true;
         statsPageEl.hidden = true;
@@ -227,7 +241,6 @@
           evt.preventDefault();
           location.hash = '';
         });
-        window.scrollTo(0, 0);
         return;
       }
     }
@@ -238,6 +251,7 @@
     statsPageEl.hidden = true;
     applyBodyBackground(state.view);
     renderList();
+    window.scrollTo(0, savedListScrollY);
   }
 
   // ---- List view (Movies / Theatres tabs) ----
@@ -761,6 +775,18 @@
     state.query = searchEl.value.trim().toLowerCase();
     renderList();
   });
+
+  // Keeps --header-height in sync with the real rendered header, so the
+  // sticky "back" link (top: var(--header-height)) sits right below it
+  // instead of guessing a fixed pixel value.
+  function updateHeaderHeightVar() {
+    const header = document.getElementById('topbar');
+    if (header) {
+      document.documentElement.style.setProperty('--header-height', header.offsetHeight + 'px');
+    }
+  }
+  updateHeaderHeightVar();
+  window.addEventListener('resize', updateHeaderHeightVar);
 
   window.addEventListener('hashchange', renderRoute);
 

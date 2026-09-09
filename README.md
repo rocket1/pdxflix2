@@ -57,6 +57,14 @@ JSON file produced by a small scraper; no server framework required.
     ads and a per-browser "advertiser token" are saved to `localStorage`, and
     the mock stats are generated once at purchase time and stored alongside
     the ad, so they stay the same on repeat visits instead of re-rolling.
+  - Navigation polish: leaving the list scrolled down and later returning to
+    it (back link, browser back) restores that scroll position instead of
+    resetting to the top; opening a movie/advertise/stats page scrolls to
+    top *before* swapping which page is visible, which is what stops the
+    sticky header from visibly flashing/jumping when the page's content
+    height changes; and the "← Back" link on those pages is itself sticky
+    just below the header (`--header-height`, kept in sync with the real
+    header via JS) so it's reachable without scrolling back up.
 
 ## Usage
 

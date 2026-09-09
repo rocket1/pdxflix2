@@ -61,17 +61,25 @@ header#topbar {
   z-index: 10;
 }
 
-.logo-group {
+.header-left {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 14px;
 }
 
-.film-icon {
-  width: 28px;
-  height: 28px;
-  color: var(--pink);
-  flex-shrink: 0;
+.header-back {
+  background: none;
+  border: none;
+  color: var(--white);
+  font-size: 20px;
+  line-height: 1;
+  padding: 4px 2px;
+  margin: 0;
+  cursor: pointer;
+  font-family: inherit;
+}
+.header-back:hover {
+  opacity: 0.75;
 }
 
 .logo {
@@ -384,25 +392,6 @@ footer {
   font-size: 12px;
   color: var(--page-fg);
   padding: 24px 10px 10px;
-}
-
-.back-link {
-  position: sticky;
-  top: var(--header-height, 64px);
-  z-index: 5;
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  margin: 0 0 14px;
-  padding: 10px 0;
-  background: var(--page-bg);
-  color: var(--text);
-  font-weight: 700;
-  font-size: 14px;
-  text-decoration: none;
-}
-.back-link:hover {
-  text-decoration: underline;
 }
 
 .movie-page {

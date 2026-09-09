@@ -6,6 +6,7 @@
     query: '',
     openTheatre: null,
     openAdId: null,
+    listScrollY: 0,
     meta: null,
   };
 
@@ -68,6 +69,7 @@
   const detailPageEl = document.getElementById('movieDetailPage');
   const advertisePageEl = document.getElementById('advertisePage');
   const statsPageEl = document.getElementById('statsPage');
+  const headerBackBtn = document.getElementById('headerBack');
   const listEl = document.getElementById('movieList');
   const metaEl = document.getElementById('metaLine');
   const searchEl = document.getElementById('searchInput');
@@ -189,28 +191,35 @@
     location.hash = '#/movie/' + encodeURIComponent(slug);
   }
 
-  // Remembers how far down the Movies/Theatres list was scrolled, so
-  // returning to it (back link, browser back) lands in the same spot
-  // instead of snapping to the top.
-  let savedListScrollY = 0;
+  // Single back control lives in the header (see #headerBack in index.html)
+  // instead of a repeated link inside each subpage; it always just clears
+  // the hash, which routes back to whichever list tab was active.
+  function goBack() {
+    location.hash = '';
+  }
 
   function renderRoute() {
-    const route = parseRoute();
-    const leavingList = !listViewEl.hidden;
-    if (leavingList && route.type !== 'list') {
-      savedListScrollY = window.scrollY;
+    // Remember where the list was scrolled to before leaving it, so
+    // returning to it (via the header back button) restores that position
+    // instead of snapping to the top.
+    if (!listViewEl.hidden) {
+      state.listScrollY = window.scrollY;
     }
 
-    // Scroll to the top before swapping which page is visible/hidden and
-    // before touching innerHTML, not after: doing it after lets a tall list
-    // and a much shorter detail page both exist mid-reflow for a frame,
-    // which is what made the sticky header visibly flash/jump on navigation.
+    const route = parseRoute();
+
     if (route.type === 'advertise') {
+      // Scroll to the top *before* swapping content, while the (usually
+      // taller) list is still in the DOM -- doing it after would let the
+      // browser's own scroll-clamping (triggered by the sudden height
+      // change) fight with this call and produce a visible double-jump/
+      // flash around the sticky header.
       window.scrollTo(0, 0);
       listViewEl.hidden = true;
       detailPageEl.hidden = true;
       statsPageEl.hidden = true;
       advertisePageEl.hidden = false;
+      headerBackBtn.hidden = false;
       applyBodyBackground('advertise');
       renderAdvertisePage();
       return;
@@ -222,6 +231,7 @@
       detailPageEl.hidden = true;
       advertisePageEl.hidden = true;
       statsPageEl.hidden = false;
+      headerBackBtn.hidden = false;
       applyBodyBackground('stats');
       renderStatsPage(route.token);
       return;
@@ -235,12 +245,9 @@
         advertisePageEl.hidden = true;
         statsPageEl.hidden = true;
         detailPageEl.hidden = false;
+        headerBackBtn.hidden = false;
         applyBodyBackground('detail');
         detailPageEl.innerHTML = renderMovieSubpage(movie, portlandNowMinutes());
-        detailPageEl.querySelector('#backLink').addEventListener('click', (evt) => {
-          evt.preventDefault();
-          location.hash = '';
-        });
         return;
       }
     }
@@ -249,9 +256,10 @@
     detailPageEl.hidden = true;
     advertisePageEl.hidden = true;
     statsPageEl.hidden = true;
+    headerBackBtn.hidden = true;
     applyBodyBackground(state.view);
     renderList();
-    window.scrollTo(0, savedListScrollY);
+    window.scrollTo(0, state.listScrollY || 0);
   }
 
   // ---- List view (Movies / Theatres tabs) ----
@@ -402,7 +410,6 @@
     const theatersHtml = theaterRowsHtml(movie.theaters || [], nowMin);
 
     return `
-      <a href="#" class="back-link" id="backLink">&larr; Back to ${state.view === 'theatres' ? 'Theatres' : 'Movies'}</a>
       <div class="movie-page">
         <div class="movie-page-poster">${posterHtml}</div>
         <div class="movie-page-info">
@@ -429,7 +436,6 @@
     else stepHtml = renderAdStep4();
 
     advertisePageEl.innerHTML = `
-      <a href="#" class="back-link" id="adBack">&larr; Back to PDXFlix</a>
       <div class="ad-page">
         <h1>Advertise with PDXFlix</h1>
         <p class="ad-intro">Reach Portland moviegoers browsing showtimes. This is a demo flow — no real charge is made and nothing is sent anywhere.</p>
@@ -550,12 +556,6 @@
   }
 
   function bindAdvertiseEvents() {
-    const back = advertisePageEl.querySelector('#adBack');
-    back.addEventListener('click', (evt) => {
-      evt.preventDefault();
-      location.hash = '';
-    });
-
     if (adState.step === 1) {
       advertisePageEl.querySelector('#adHeadline').addEventListener('input', (evt) => {
         adState.headline = evt.target.value;
@@ -659,7 +659,6 @@
       .sort((a, b) => new Date(b.purchasedAt) - new Date(a.purchasedAt));
 
     statsPageEl.innerHTML = `
-      <a href="#" class="back-link" id="statsBack">&larr; Back to PDXFlix</a>
       <div class="ad-page">
         <h1>Your Ad Performance</h1>
         <p class="ad-intro">Impressions and click-throughs for ads purchased with this link. Bookmark this page to check back anytime.</p>
@@ -670,11 +669,6 @@
         </div>
       </div>
     `;
-
-    statsPageEl.querySelector('#statsBack').addEventListener('click', (evt) => {
-      evt.preventDefault();
-      location.hash = '';
-    });
 
     statsPageEl.querySelectorAll('[data-toggle-ad]').forEach((btn) => {
       btn.addEventListener('click', () => {
@@ -776,17 +770,7 @@
     renderList();
   });
 
-  // Keeps --header-height in sync with the real rendered header, so the
-  // sticky "back" link (top: var(--header-height)) sits right below it
-  // instead of guessing a fixed pixel value.
-  function updateHeaderHeightVar() {
-    const header = document.getElementById('topbar');
-    if (header) {
-      document.documentElement.style.setProperty('--header-height', header.offsetHeight + 'px');
-    }
-  }
-  updateHeaderHeightVar();
-  window.addEventListener('resize', updateHeaderHeightVar);
+  headerBackBtn.addEventListener('click', goBack);
 
   window.addEventListener('hashchange', renderRoute);
 

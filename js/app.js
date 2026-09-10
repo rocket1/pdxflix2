@@ -6,6 +6,7 @@
     query: '',
     openTheatre: null,
     openAdId: null,
+    expandedTheatreAds: {},
     listScrollY: 0,
     meta: null,
   };
@@ -19,6 +20,7 @@
     headline: '',
     description: '',
     imageDataUrl: null,
+    theatreNames: [],
     cardName: '',
     cardNumber: '',
     cardExpiry: '',
@@ -26,6 +28,7 @@
     orderId: null,
   };
   const AD_PRICE = '$99.00';
+  const THEATRE_ADS_PREVIEW_LIMIT = 3;
 
   // Purchased ads persist to localStorage so the stats-page link shown at
   // checkout keeps working after a reload. There's no real backend/account
@@ -69,6 +72,7 @@
   const detailPageEl = document.getElementById('movieDetailPage');
   const advertisePageEl = document.getElementById('advertisePage');
   const statsPageEl = document.getElementById('statsPage');
+  const adDetailPageEl = document.getElementById('adDetailPage');
   const headerBackBtn = document.getElementById('headerBack');
   const listEl = document.getElementById('movieList');
   const metaEl = document.getElementById('metaLine');
@@ -159,6 +163,18 @@
       .sort((a, b) => a.name.localeCompare(b.name));
   }
 
+  /** All known theatre names (unfiltered by search/tab state), for the ad theatre picker. */
+  function allTheatreNames() {
+    return buildTheatres(state.movies).map((t) => t.name);
+  }
+
+  /** Purchased ads targeting a given theatre, most-recent first. */
+  function adsForTheatre(theatreName) {
+    return loadAds()
+      .filter((ad) => Array.isArray(ad.theatreNames) && ad.theatreNames.includes(theatreName))
+      .sort((a, b) => new Date(b.purchasedAt) - new Date(a.purchasedAt));
+  }
+
   // Swaps the page background (green/purple/pink) via a data attribute on
   // <body>; see the body[data-page="..."] rules in css/style.css.
   function applyBodyBackground(page) {
@@ -182,6 +198,8 @@
     if (location.hash === '#/advertise') return { type: 'advertise' };
     const statsMatch = location.hash.match(/^#\/stats\/(.+)$/);
     if (statsMatch) return { type: 'stats', token: decodeURIComponent(statsMatch[1]) };
+    const adMatch = location.hash.match(/^#\/ad\/(.+)$/);
+    if (adMatch) return { type: 'ad', id: decodeURIComponent(adMatch[1]) };
     const match = location.hash.match(/^#\/movie\/(.+)$/);
     if (match) return { type: 'movie', slug: decodeURIComponent(match[1]) };
     return { type: 'list' };
@@ -218,6 +236,7 @@
       listViewEl.hidden = true;
       detailPageEl.hidden = true;
       statsPageEl.hidden = true;
+      adDetailPageEl.hidden = true;
       advertisePageEl.hidden = false;
       headerBackBtn.hidden = false;
       applyBodyBackground('advertise');
@@ -230,10 +249,24 @@
       listViewEl.hidden = true;
       detailPageEl.hidden = true;
       advertisePageEl.hidden = true;
+      adDetailPageEl.hidden = true;
       statsPageEl.hidden = false;
       headerBackBtn.hidden = false;
       applyBodyBackground('stats');
       renderStatsPage(route.token);
+      return;
+    }
+
+    if (route.type === 'ad') {
+      window.scrollTo(0, 0);
+      listViewEl.hidden = true;
+      detailPageEl.hidden = true;
+      advertisePageEl.hidden = true;
+      statsPageEl.hidden = true;
+      adDetailPageEl.hidden = false;
+      headerBackBtn.hidden = false;
+      applyBodyBackground('ad');
+      renderAdDetailPage(route.id);
       return;
     }
 
@@ -244,6 +277,7 @@
         listViewEl.hidden = true;
         advertisePageEl.hidden = true;
         statsPageEl.hidden = true;
+        adDetailPageEl.hidden = true;
         detailPageEl.hidden = false;
         headerBackBtn.hidden = false;
         applyBodyBackground('detail');
@@ -256,6 +290,7 @@
     detailPageEl.hidden = true;
     advertisePageEl.hidden = true;
     statsPageEl.hidden = true;
+    adDetailPageEl.hidden = true;
     headerBackBtn.hidden = true;
     applyBodyBackground(state.view);
     renderList();
@@ -349,6 +384,14 @@
         goToMovie(link.getAttribute('data-jump-movie'));
       });
     });
+
+    listEl.querySelectorAll('[data-show-all-ads]').forEach((btn) => {
+      btn.addEventListener('click', (evt) => {
+        evt.stopPropagation();
+        state.expandedTheatreAds[btn.getAttribute('data-show-all-ads')] = true;
+        renderList();
+      });
+    });
   }
 
   function renderTheatreDetail(theatre, nowMin) {
@@ -372,7 +415,143 @@
       })
       .join('');
 
-    return rows || '<div class="empty-detail">No movies found.</div>';
+    return (rows || '<div class="empty-detail">No movies found.</div>') + renderTheatreAdsHtml(theatre.name);
+  }
+
+  /** "Sponsored" section shown beneath a theatre's movie times, for ads targeting it. */
+  function renderTheatreAdsHtml(theatreName) {
+    const ads = adsForTheatre(theatreName);
+    if (!ads.length) return '';
+
+    const expanded = !!state.expandedTheatreAds[theatreName];
+    const visibleAds = expanded ? ads : ads.slice(0, THEATRE_ADS_PREVIEW_LIMIT);
+    const showAllBtn =
+      !expanded && ads.length > THEATRE_ADS_PREVIEW_LIMIT
+        ? `<button type="button" class="ad-show-all" data-show-all-ads="${escapeAttr(theatreName)}">Show all ${ads.length} ads &rarr;</button>`
+        : '';
+
+    return `
+      <div class="theatre-ads">
+        <h3 class="theatre-ads-heading">Sponsored</h3>
+        <div class="theatre-ads-list">${visibleAds.map(theatreAdCardHtml).join('')}</div>
+        ${showAllBtn}
+      </div>
+    `;
+  }
+
+  function theatreAdCardHtml(ad) {
+    const imageInner = ad.imageDataUrl ? `<img src="${ad.imageDataUrl}" alt="" />` : '&#127916;';
+    return `
+      <a href="#/ad/${encodeURIComponent(ad.id)}" class="ad-preview-mock theatre-ad-card">
+        <div class="ad-preview-image">${imageInner}</div>
+        <div class="ad-preview-text">
+          <div class="ad-preview-headline">${escapeHtml(ad.headline || '')}</div>
+          <div class="ad-preview-body">${escapeHtml(ad.description || '')}</div>
+          <span class="ad-preview-tag">Sponsored</span>
+        </div>
+      </a>
+    `;
+  }
+
+  // ---- Ad detail subpage (what a moviegoer sees after clicking a sponsored ad) ----
+
+  function renderAdDetailPage(id) {
+    const ad = loadAds().find((a) => a.id === id);
+
+    if (!ad) {
+      adDetailPageEl.innerHTML = `
+        <div class="ad-page">
+          <div class="content-card empty-detail">Ad not found. It may have expired.</div>
+        </div>
+      `;
+      return;
+    }
+
+    const imageInner = ad.imageDataUrl
+      ? `<img src="${ad.imageDataUrl}" alt="" />`
+      : '&#127916;';
+    const theatresHtml = (ad.theatreNames || []).map((name) => `<li>${escapeHtml(name)}</li>`).join('');
+
+    adDetailPageEl.innerHTML = `
+      <div class="ad-page">
+        <div class="content-card ad-detail-card">
+          <div class="ad-detail-image">${imageInner}</div>
+          <span class="ad-preview-tag">Sponsored</span>
+          <h1 class="ad-detail-headline">${escapeHtml(ad.headline || 'Untitled ad')}</h1>
+          ${ad.description ? `<p class="ad-detail-body">${escapeHtml(ad.description)}</p>` : ''}
+          ${theatresHtml ? `<div class="ad-detail-theatres"><h3>Valid at</h3><ul>${theatresHtml}</ul></div>` : ''}
+          <div class="ad-coupon">
+            <div class="ad-coupon-label">Show this code at the box office</div>
+            ${mockBarcodeSvg(ad.id)}
+            <div class="ad-coupon-code">${escapeHtml(ad.id)}</div>
+            <div class="ad-coupon-note">Demo coupon &mdash; not a real offer, scans to nothing.</div>
+          </div>
+        </div>
+      </div>
+    `;
+  }
+
+  /**
+   * Renders a deterministic, QR-code-shaped SVG for a given seed string --
+   * not a real, scannable barcode (there's no offer/URL to encode), just a
+   * visual stand-in so the coupon looks legit. Same seed always produces the
+   * same pattern, including 3 finder squares in the corners like a real QR
+   * code, so a given ad's "coupon" looks stable across visits.
+   */
+  function mockBarcodeSvg(seed) {
+    const modules = 17;
+    const cell = 8;
+    const quiet = 2;
+    const size = (modules + quiet * 2) * cell;
+    const rand = mulberry32(hashString(String(seed)));
+    const finders = [
+      [0, 0],
+      [0, modules - 7],
+      [modules - 7, 0],
+    ];
+
+    function finderAt(r, c) {
+      return finders.find(([r0, c0]) => r >= r0 && r < r0 + 7 && c >= c0 && c < c0 + 7);
+    }
+    function finderOn(r, c, r0, c0) {
+      const lr = r - r0;
+      const lc = c - c0;
+      return lr === 0 || lr === 6 || lc === 0 || lc === 6 || (lr >= 2 && lr <= 4 && lc >= 2 && lc <= 4);
+    }
+
+    let rects = '';
+    for (let r = 0; r < modules; r++) {
+      for (let c = 0; c < modules; c++) {
+        const finder = finderAt(r, c);
+        const on = finder ? finderOn(r, c, finder[0], finder[1]) : rand() > 0.55;
+        if (on) {
+          rects += `<rect x="${(c + quiet) * cell}" y="${(r + quiet) * cell}" width="${cell}" height="${cell}" />`;
+        }
+      }
+    }
+
+    return `<svg class="ad-coupon-barcode" viewBox="0 0 ${size} ${size}" width="${size}" height="${size}" role="img" aria-label="Mock coupon barcode">
+      <rect width="${size}" height="${size}" fill="#fff" />
+      <g fill="#111">${rects}</g>
+    </svg>`;
+  }
+
+  function hashString(str) {
+    let h = 0;
+    for (let i = 0; i < str.length; i++) {
+      h = (Math.imul(31, h) + str.charCodeAt(i)) | 0;
+    }
+    return h >>> 0;
+  }
+
+  function mulberry32(seed) {
+    let a = seed;
+    return function () {
+      a = (a + 0x6d2b79f5) | 0;
+      let t = Math.imul(a ^ (a >>> 15), 1 | a);
+      t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
+      return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+    };
   }
 
   // ---- Movie subpage ----
@@ -466,10 +645,49 @@
           <input type="file" id="adImage" accept="image/*" />
         </label>
         <div class="ad-image-preview" id="adImagePreview">${previewInner}</div>
+        ${adTheatrePickerHtml()}
         <div class="ad-actions">
           <button type="button" class="btn-primary" id="adNext1">Continue to preview &rarr;</button>
         </div>
       </div>
+    `;
+  }
+
+  function adTheatrePickerHtml() {
+    const all = allTheatreNames();
+    const available = all.filter((name) => !adState.theatreNames.includes(name));
+
+    let selectPlaceholder = 'Select a theatre…';
+    if (all.length === 0) selectPlaceholder = 'Loading theatres…';
+    else if (available.length === 0) selectPlaceholder = 'All theatres added';
+
+    const optionsHtml = available.map((name) => `<option value="${escapeAttr(name)}">${escapeHtml(name)}</option>`).join('');
+
+    const listHtml = adState.theatreNames.length
+      ? adState.theatreNames
+          .map(
+            (name) => `
+        <li class="ad-theatre-chip">
+          <span>${escapeHtml(name)}</span>
+          <button type="button" class="ad-theatre-remove" data-remove-theatre="${escapeAttr(name)}" aria-label="Remove ${escapeAttr(name)}">&times;</button>
+        </li>`
+          )
+          .join('')
+      : '<li class="ad-theatre-empty">No theatres selected yet.</li>';
+
+    return `
+      <label class="ad-field">
+        <span>Theatres showing this ad</span>
+        <div class="ad-theatre-add">
+          <select id="adTheatreSelect" ${available.length === 0 ? 'disabled' : ''}>
+            <option value="">${selectPlaceholder}</option>
+            ${optionsHtml}
+          </select>
+          <button type="button" class="btn-secondary ad-theatre-add-btn" id="adAddTheatre" ${available.length === 0 ? 'disabled' : ''}>+ Add</button>
+        </div>
+        <div class="ad-field-error" id="adTheatreError" hidden>Select at least one theatre.</div>
+      </label>
+      <ul class="ad-theatre-list" id="adTheatreList">${listHtml}</ul>
     `;
   }
 
@@ -490,6 +708,7 @@
             <span class="ad-preview-tag">Sponsored</span>
           </div>
         </div>
+        <p class="ad-preview-theatres">Showing at: ${adState.theatreNames.map(escapeHtml).join(', ')}</p>
         <div class="ad-actions">
           <button type="button" class="btn-secondary" id="adBackTo1">&larr; Edit</button>
           <button type="button" class="btn-primary" id="adNext2">Continue to payment &rarr;</button>
@@ -574,10 +793,29 @@
         };
         reader.readAsDataURL(file);
       });
+      advertisePageEl.querySelector('#adAddTheatre').addEventListener('click', () => {
+        const select = advertisePageEl.querySelector('#adTheatreSelect');
+        const name = select.value;
+        if (!name) return;
+        if (!adState.theatreNames.includes(name)) adState.theatreNames.push(name);
+        advertisePageEl.querySelector('#adTheatreError').hidden = true;
+        renderAdvertisePage();
+      });
+      advertisePageEl.querySelectorAll('[data-remove-theatre]').forEach((btn) => {
+        btn.addEventListener('click', () => {
+          const name = btn.getAttribute('data-remove-theatre');
+          adState.theatreNames = adState.theatreNames.filter((n) => n !== name);
+          renderAdvertisePage();
+        });
+      });
       advertisePageEl.querySelector('#adNext1').addEventListener('click', () => {
         const headlineEl = advertisePageEl.querySelector('#adHeadline');
         if (!adState.headline.trim()) {
           headlineEl.reportValidity();
+          return;
+        }
+        if (adState.theatreNames.length === 0) {
+          advertisePageEl.querySelector('#adTheatreError').hidden = false;
           return;
         }
         adState.step = 2;
@@ -628,6 +866,7 @@
           headline: adState.headline,
           description: adState.description,
           imageDataUrl: adState.imageDataUrl,
+          theatreNames: adState.theatreNames.slice(),
           purchasedAt: new Date().toISOString(),
           stats: { impressions, clicks },
         });
@@ -641,6 +880,7 @@
         adState.headline = '';
         adState.description = '';
         adState.imageDataUrl = null;
+        adState.theatreNames = [];
         adState.cardName = '';
         adState.cardNumber = '';
         adState.cardExpiry = '';

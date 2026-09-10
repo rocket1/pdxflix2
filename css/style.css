@@ -5,6 +5,7 @@
   --pink-bg: #f6a9d0;
   --gold-bg: #f7cf5e;
   --teal-bg: #7bd9d4;
+  --sky-bg: #a8d8f0;
   --green-accent: #33cc66;
   --blue: #1ea7e8;
   --dark: #1a1a1a;
@@ -47,6 +48,9 @@ body[data-page="advertise"] {
 }
 body[data-page="stats"] {
   --page-bg: var(--teal-bg);
+}
+body[data-page="ad"] {
+  --page-bg: var(--sky-bg);
 }
 
 header#topbar {
@@ -378,6 +382,51 @@ main {
   padding: 8px 4px;
 }
 
+.theatre-ads {
+  margin-top: 14px;
+  padding-top: 14px;
+  border-top: 1px dashed var(--page-bg);
+}
+.theatre-ads-heading {
+  margin: 0 0 10px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.theatre-ads-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.theatre-ad-card {
+  margin: 0;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+.theatre-ad-card:hover {
+  background: #ececec;
+}
+.ad-show-all {
+  display: block;
+  width: 100%;
+  text-align: center;
+  border: none;
+  background: none;
+  color: var(--pink);
+  font-weight: 700;
+  font-size: 13px;
+  padding: 10px 0 2px;
+  cursor: pointer;
+  font-family: inherit;
+}
+.ad-show-all:hover {
+  text-decoration: underline;
+}
+
 .no-results,
 .empty-detail {
   padding: 40px 20px;
@@ -597,6 +646,80 @@ footer {
   color: #999;
 }
 
+.ad-theatre-add {
+  display: flex;
+  gap: 10px;
+}
+.ad-theatre-add select {
+  flex: 1;
+  min-width: 0;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 15px;
+  font-family: inherit;
+  background: var(--white);
+}
+.ad-theatre-add-btn {
+  flex-shrink: 0;
+}
+
+.ad-field-error {
+  color: #c0392b;
+  font-size: 12px;
+  font-weight: 700;
+  margin-top: 6px;
+}
+
+.ad-theatre-list {
+  list-style: none;
+  margin: 12px 0 16px;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.ad-theatre-chip {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--row-stripe);
+  border-radius: 20px;
+  padding: 6px 6px 6px 12px;
+  font-size: 13px;
+  font-weight: 600;
+}
+.ad-theatre-empty {
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 500;
+  list-style: none;
+}
+.ad-theatre-remove {
+  border: none;
+  background: rgba(0, 0, 0, 0.08);
+  color: var(--text);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  font-size: 14px;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.ad-theatre-remove:hover {
+  background: rgba(0, 0, 0, 0.18);
+}
+
+.ad-preview-theatres {
+  font-size: 13px;
+  color: var(--muted);
+  margin: -6px 0 18px;
+}
+
 .ad-actions {
   display: flex;
   justify-content: space-between;
@@ -783,6 +906,90 @@ footer {
   margin-top: 4px;
 }
 
+/* ---- Ad detail page (moviegoer-facing, reached by clicking a sponsored ad) ---- */
+
+.ad-detail-card {
+  padding: 24px 22px;
+}
+.ad-detail-image {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 10px;
+  background: #e3e3e3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  font-size: 40px;
+  margin: 0 0 14px;
+}
+.ad-detail-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.ad-detail-headline {
+  font-size: 22px;
+  margin: 10px 0 8px;
+}
+.ad-detail-body {
+  font-size: 15px;
+  color: #444;
+  margin: 0 0 18px;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+}
+.ad-detail-theatres h3 {
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 0 0 8px;
+}
+.ad-detail-theatres ul {
+  margin: 0 0 20px;
+  padding-left: 18px;
+  font-size: 14px;
+}
+.ad-detail-theatres li {
+  margin-bottom: 4px;
+}
+
+.ad-coupon {
+  margin-top: 8px;
+  padding-top: 20px;
+  border-top: 1px dashed #ddd;
+  text-align: center;
+}
+.ad-coupon-label {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  color: var(--muted);
+  margin: 0 0 14px;
+}
+.ad-coupon-barcode {
+  display: block;
+  margin: 0 auto 12px;
+  border: 1px solid #eee;
+  border-radius: 6px;
+  max-width: 100%;
+  height: auto;
+}
+.ad-coupon-code {
+  font-family: "SFMono-Regular", Consolas, Menlo, monospace;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin: 0 0 6px;
+}
+.ad-coupon-note {
+  font-size: 11px;
+  color: var(--muted);
+}
+
 @media (max-width: 560px) {
   .movie-row-header {
     font-size: 16px;
@@ -805,5 +1012,24 @@ footer {
   .ad-preview-mock {
     flex-direction: column;
     align-items: flex-start;
+  }
+  /* Keep the sponsored theatre-ad card as a row (image left, text right)
+     even at phone widths -- stacking it like the ad-creation preview left
+     a tall card with an oversized centered image. */
+  .theatre-ad-card {
+    flex-direction: row;
+    align-items: center;
+  }
+  .theatre-ad-card .ad-preview-image {
+    flex: 0 0 64px;
+    width: 64px;
+    height: 64px;
+    font-size: 20px;
+  }
+  .theatre-ad-card .ad-preview-headline {
+    font-size: 14px;
+  }
+  .theatre-ad-card .ad-preview-body {
+    font-size: 12px;
   }
 }
